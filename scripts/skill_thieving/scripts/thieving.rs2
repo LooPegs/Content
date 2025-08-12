@@ -28,7 +28,7 @@ return(stat_random(thieving, db_getfield($data, pickpocket:success_chance, 0)));
 
 [proc,fail_pick_pocket](int $damage, int $stun_ticks, string $pocket)
 npc_say("What do you think you're doing?");
-mes("You fail to pick the <$pocket>.");
+mes("You fail to steal from the <$pocket>.");
 npc_setmode(playerface);
 p_delay(0);
 // Birds above head.
