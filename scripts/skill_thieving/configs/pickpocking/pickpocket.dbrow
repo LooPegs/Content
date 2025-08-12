@@ -1,3 +1,18 @@
+[pickpocket_peg]
+table=pickpocket
+data=npc,man
+data=npc,man2
+data=npc,man3
+data=npc,al_kharid_man
+data=npc,ardougnian_male1
+data=level,1
+data=experience,80
+data=stun_ticks,8
+data=stun_damage,1
+data=success_chance,180,240
+data=loot,coins,3,3,128
+data=pocket,man's pocket
+
 [pickpocket_man]
 table=pickpocket
 data=npc,man
