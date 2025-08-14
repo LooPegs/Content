@@ -32,6 +32,9 @@ switch_int(%arena_progress) {
         ~chatnpc("<p,skull>Get out! Whoever let you in shall be severely punished for this.");
 }
 
+[queue,arena_test]
+%arena_progress=^arena_defeated_ogre;
+
 [label,general_khazard_welldone]
 if(npc_find(coord, general_khazard, 23, 0) = false) {
     return;

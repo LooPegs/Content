@@ -50,7 +50,7 @@ sound_synth(furnace,0,0);
 // success message
 mes("You heat the sand and soda ash in the furnace to make glass.");
 // give xp
-stat_advance(crafting, 200);
+~stat_advance_boostable(crafting, 200);
 
 
 [label,craft_glass_interface]
@@ -88,4 +88,4 @@ anim(human_glassblowing,0);
 // display game message
 mes("You make <$name>.");
 // give xp
-stat_advance(crafting, struct_param($struct, productexp));
+~stat_advance_boostable(crafting, struct_param($struct, productexp));

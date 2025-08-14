@@ -336,7 +336,7 @@ if($dir = ^exact_west) {
 }
 ~agility_exactmove(human_doublepipesqueeze, 30, 3, coord, movecoord(coord, calc(3 * $mod), 0, 0), 30, 126, $dir, true);
 p_delay(0);
-stat_advance(agility, 30);
+~stat_advance_boostable(agility, 30);
 
 [oploc1,bridgecollapsed1] @upass_cross_bridge;
 [oploc1,bridgecollapsed2] @upass_cross_bridge;
