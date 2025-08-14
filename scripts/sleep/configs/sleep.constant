@@ -1,0 +1,23 @@
+^sleep_xp_divisor = 10
+^nerfed_sleep_xp_divisor = 20
+^sleep_timer_duration = 2000
+
+// ^xp_none = 0
+// ^xp_attack = 1
+// ^xp_strength = 2
+// ^xp_ranged = 3
+// ^xp_magic = 4
+// ^xp_defence = 5
+// ^xp_prayer = 6
+// ^xp_agility = 7
+// ^xp_herblore = 8
+// ^xp_thieving = 9
+// ^xp_crafting = 10
+// ^xp_runecraft = 11
+// ^xp_mining = 12
+// ^xp_smithing = 13
+// ^xp_fishing = 14
+// ^xp_cooking = 15
+// ^xp_firemaking = 16
+// ^xp_woodcutting = 17
+// ^xp_fletching = 18

@@ -1,0 +1,221 @@
+[duel_arena_bed]
+name=Bed
+desc=Beats the operating table.
+model=model_loc_417
+length=2
+ambient=15
+contrast=15
+recol1s=8456
+recol1d=20117
+recol2s=25224
+recol2d=13744
+op1=Rest
+category=bed
+
+[loc_417]
+name=Bed
+desc=Great for sleeping in.
+model=model_loc_417
+length=2
+op1=Rest
+category=bed
+
+[loc_418]
+name=Bed
+desc=A stylish looking bed.
+op1=Rest
+model=model_loc_417
+length=2
+recol1s=8456
+recol1d=21279
+recol2s=25224
+recol2d=10778
+op1=Rest
+category=bed
+
+[loc_419]
+name=Bed
+desc=A drab looking bed.
+model=model_loc_417
+length=2
+recol1s=8456
+recol1d=14594
+recol2s=25224
+recol2d=19917
+op1=Rest
+category=bed
+
+[loc_420]
+name=Bed
+desc=A stylish looking bed.
+model=model_loc_417
+length=2
+recol1s=8456
+recol1d=31201
+recol2s=25224
+recol2d=2528
+op1=Rest
+category=bed
+
+[loc_421]
+name=Bed
+desc=A stylish looking bed.
+model=model_loc_417
+length=2
+recol1s=8456
+recol1d=5252
+recol2s=25224
+recol2d=14402
+op1=Rest
+category=bed
+
+[loc_422]
+name=Bed
+desc=Technically a bed.
+model=model_loc_422
+length=2
+op1=Rest
+category=bed
+
+[loc_423]
+name=Bed
+desc=I guess I could sleep in it if I was really tired.
+model=model_loc_423
+width=2
+length=3
+op1=Rest
+category=bed
+
+[loc_424]
+name=Bed
+desc=Lovely comfy looking big bed.
+model=model_loc_424
+width=2
+length=3
+op1=Rest
+category=bed
+
+[loc_425]
+name=Bed
+desc=Lovely comfy looking big bed.
+model=model_loc_424
+width=2
+length=3
+recol1s=14336
+recol1d=31201
+recol2s=25224
+recol2d=3554
+op1=Rest
+category=bed
+
+[loc_426]
+name=Bed
+desc=Posh looking bed.
+model=model_loc_426
+width=3
+length=3
+op1=Rest
+category=bed
+
+[loc_427]
+name=Bed
+desc=A bed fit for a king.
+model=model_loc_427
+width=3
+length=3
+op1=Rest
+category=bed
+
+[loc_428]
+name=Bed
+desc=A bed fit for a king.
+model=model_loc_427
+width=3
+length=3
+recol1s=25224
+recol1d=3554
+recol2s=14336
+recol2d=31201
+op1=Rest
+category=bed
+
+[loc_429]
+name=Bed
+desc=One of the nicest beds I have ever seen.
+model=model_loc_429
+width=3
+length=3
+op1=Rest
+category=bed
+
+[loc_430]
+name=Hammock
+desc=Perfect for snoozing in the sun.
+model=model_loc_430
+width=2
+op1=Rest
+category=bed
+
+[loc_431]
+name=Chaise longue
+desc=A comfortable seat to recline and recuperate.
+model=model_loc_431
+length=2
+op1=Rest
+category=bed
+
+[loc_432]
+name=Bed
+desc=I dont think anyone's slept here for a long long time.
+model=model_loc_432
+width=3
+length=3
+op1=Rest
+category=bed
+
+[loc_433]
+name=Bed
+desc=Bamboo's a versatile material.
+model=model_loc_433
+width=2
+length=3
+op1=Rest
+category=bed
+
+[loc_434]
+name=Bed
+desc=Bamboo's a versatile material.
+model=model_loc_434
+length=2
+op1=Rest
+category=bed
+
+[loc_435]
+name=Bed
+desc=Bamboo's a versatile material.
+model=model_loc_434
+length=2
+mirror=yes
+op1=Rest
+category=bed
+
+[loc_2379]
+name=Campsite bed
+desc=Technically a bed.
+model=model_loc_422
+length=2
+op1=Rest
+category=bed
+
+[loc_2396]
+name=Bed
+desc=Distinctly feminine.
+model=model_loc_424
+width=2
+length=3
+recol1s=14336
+recol1d=28213
+recol2s=25224
+recol2d=22700
+op1=Rest
+category=bed

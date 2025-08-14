@@ -1,5 +1,6 @@
 // TODO: Change compiler to remove return value
 [logout,_]()(boolean)
+~set_sleep_logout;
 ~set_pk_skull_logout;
 ~set_antifire_logout; // TODO: should be timer
 ~follower_logout;
