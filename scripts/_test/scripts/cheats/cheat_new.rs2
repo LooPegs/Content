@@ -1,0 +1,5 @@
+[debugproc,cam]
+//cam_moveto(0_52_49_55_28, 6000, 0, 20);
+// cam_lookat(0_52_49_55_28, 600, 0, 20);
+// ~bas_set_all(human_lean_ready);
+queue(arena_test,0);
