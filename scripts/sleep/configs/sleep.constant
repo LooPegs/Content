@@ -1,6 +1,6 @@
 ^sleep_xp_divisor = 10
 ^nerfed_sleep_xp_divisor = 20
-^sleep_timer_duration = 2000
+^sleep_timer_duration = 100
 
 // ^xp_none = 0
 // ^xp_attack = 1
