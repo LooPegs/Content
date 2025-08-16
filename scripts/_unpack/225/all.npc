@@ -2168,13 +2168,46 @@ huntrange=2
 // osrs stats and Vislvl match 1:1
 // https://raw.githubusercontent.com/Joshua-F/osrs-dumps/refs/heads/master/config/dump.npc npc_2005
 
+// [greater_demon]
+// size=3
+// resizeh=110
+// resizev=110
+// walkanim=demon_walk
+// readyanim=demon_ready
+// name=testGreater demon
+// desc=Big, red, and incredibly evil.
+// op2=Attack
+// vislevel=92
+// model1=model_2942_npc
+// wanderrange=6
+// maxrange=8
+// respawnrate=30
+// hitpoints=87
+// attack=76
+// strength=78
+// defence=81
+// param=magicdefence,-10
+// param=damagetype,^slash_style
+// param=attack_anim,demon_attack
+// param=defend_anim,demon_block
+// param=death_anim,demon_death_greater
+// param=attack_sound,black_demon_attack
+// param=defend_sound,black_demon_hit
+// param=death_sound,black_demon_death
+// param=demonbane_vulnerable,yes
+// param=death_drop,ashes
+// huntmode=cowardly
+// huntrange=3
+// // osrs stats and Vislvl match 1:1
+// // https://raw.githubusercontent.com/Joshua-F/osrs-dumps/refs/heads/master/config/dump.npc npc_2025
+
 [greater_demon]
 size=3
 resizeh=110
 resizev=110
 walkanim=demon_walk
 readyanim=demon_ready
-name=Greater demon
+name=testGreater demon
 desc=Big, red, and incredibly evil.
 op2=Attack
 vislevel=92
@@ -2182,10 +2215,10 @@ model1=model_2942_npc
 wanderrange=6
 maxrange=8
 respawnrate=30
-hitpoints=87
-attack=76
-strength=78
-defence=81
+hitpoints=999
+attack=1
+strength=1
+defence=1
 param=magicdefence,-10
 param=damagetype,^slash_style
 param=attack_anim,demon_attack

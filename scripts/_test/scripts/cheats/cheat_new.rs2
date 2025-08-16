@@ -3,3 +3,26 @@
 // cam_lookat(0_52_49_55_28, 600, 0, 20);
 // ~bas_set_all(human_lean_ready);
 queue(arena_test,0);
+
+[debugproc,synth](synth $sound)
+if ($sound = null) {
+    @debugusage("::synth (name)", "::synth liquid", "");
+    return;
+}
+sound_synth($sound, 0, 0);
+
+[debugproc,test]
+sound_synth(liquid, 0, 0);
+sound_synth(ogre_bellows, 0, 1);
+sound_synth(smash_gem, 0, 2);
+sound_synth(air_elemental_attack, 0, 3);
+
+spotanim_pl(attacksword, 128, 0);
+spotanim_pl(zap, 128, 100);
+spotanim_pl(sp_attackglow_blue, 128, 200);
+
+// [debugproc,test2]
+// def_loc $test = nc_param(man, next_loc_stage_mining);
+// loc_add(0_50_50_22_22, nc_param(man, next_loc_stage_mining), 0, 0, 1);
+// // loc_add(0_50_50_22_22, lc_param(magic_tree,next_loc_stage_mining);)
+// // lc_param(magic_tree,next_loc_stage_mining);
