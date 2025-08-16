@@ -106,3 +106,17 @@ if ($rhand ! null) {
     }
 }
 return($attackrange);
+
+//check if eligible for critical hit
+[proc,crit](int $style)(int)
+//should style (aggresive, controlled, etc) be included?
+def_int $npc_def_bonus = ~npc_combat_defencebonus($style);
+if (%com_accbonus >= $npc_def_bonus) {
+    mes("Player acc: <tostring(%com_accbonus)>, Npc acc: <tostring($npc_def_bonus)>. <tostring(scale(add(sub(%com_accbonus, $npc_def_bonus), 100), 1000, 100))>% chance to crit");
+
+    if (add(sub(%com_accbonus, $npc_def_bonus), 100) >= randominc(1000)) {
+        return (1);
+    }
+    return (0);
+}
+return (0);

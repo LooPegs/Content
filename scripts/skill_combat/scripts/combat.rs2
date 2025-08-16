@@ -173,3 +173,29 @@ if ($weapon = null | (map_members = ^false & oc_members($weapon) = true)) {
     return(human_unarmedblock);
 }
 return(oc_param($weapon, defend_anim));
+
+[proc,damage_roll](int $minhit, int $maxhit, int $cap, int $flatarmour, int $normalize)(int)
+//damage rolls from 1 - maxhit
+//min hit does not shorten the roll. floors bottom rolls
+
+def_int $damage;
+//console("Max hit = <tostring($maxhit)>");
+switch_int ($normalize) {
+    case 0 : // no normalization
+        $damage = add(random($maxhit), 1);
+    case 1 : // 'normalize' damage roll by splittin roll into two parts
+        $damage = 100;
+        $damage = add($damage, randominc(scale($maxhit, 2, 100)));
+        //console("damage roll 1: <tostring($damage)>");
+        $damage = add($damage, random(scale($maxhit, 2, 100)));
+        //console("damage roll 2: <tostring($damage)>");
+        $damage = divide($damage, 100);
+    case default :
+        error("Normalize value should be 0 or 1. Unknown value <tostring($normalize)>.");
+}
+
+$damage = max($damage, $minhit);
+$damage = sub(min($damage, $cap),$flatarmour);
+$damage = max($damage, 0);
+//console("Hit = <tostring($damage)>");
+return ($damage);

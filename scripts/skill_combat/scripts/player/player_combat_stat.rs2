@@ -99,6 +99,17 @@ switch_int(%damagetype) {
     case ^ranged_style : %com_maxhit = ~combat_maxhit($ranged_strength);
 }
 
+//update accuracy bonus for selected style (doesnt include effective lvl)
+switch_int(%damagetype) {
+    case ^stab_style : %com_accbonus = $stabattack;
+    case ^slash_style : %com_accbonus = $slashattack;
+    case ^crush_style : %com_accbonus = $crushattack;
+    case ^ranged_style : %com_accbonus = $rangeattack;
+    case ^magic_style : %com_accbonus = $magicattack;
+}
+//mes("<tostring($stabattack)>");
+//mes("damagetype = <tostring(%damagetype)>. accbonus = <tostring(%com_accbonus)>");
+
 // weapon related varps
 %com_attackanim, %com_attacksound = ~combat_swing_anim_and_synth($weapon, $damagetype, %damagestyle, %attackstyle);
 %com_defendanim = ~combat_defend_anim($weapon);

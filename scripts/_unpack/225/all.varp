@@ -78,6 +78,15 @@ type=synth
 [com_maxhit]
 protect=no
 
+[com_accbonus]
+protect=no
+
+[com_moveset]
+protect=no
+
+[com_moveset_timer]
+protect=no
+
 [action_delay]
 
 [autocast_spell]
