@@ -22,6 +22,22 @@ anim(human_pickpocket, 0);
 ~stat_advance_boostable(thieving, $experience);
 sound_synth(pick, 0, 0);
 mes("You pick the <$pocket>.");
+queue(pickpocket_repeat, 4, npc_uid);
+
+//keep pickpocketing until you fail?
+//pickpocketing should fill inv then?
+//and no 100% success
+// or cap it at 5 successes?
+//hmm can drop, bury bones while thieving. spoke
+
+[queue,pickpocket_repeat](npc_uid $npc)
+if (busy = true | busy2 = true) {
+    mes("hiss!");
+    return;
+}
+if(npc_finduid($npc) = true) {
+    p_opnpc(3);
+}
 
 [proc,check_if_success_pick_pocket](dbrow $data)(boolean)
 return(stat_random(thieving, db_getfield($data, pickpocket:success_chance, 0)));
