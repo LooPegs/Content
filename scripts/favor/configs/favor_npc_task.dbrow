@@ -1,0 +1,5 @@
+//requested npc, base count, base difficulty, extra count, extra difficulty, chance
+[forester_npc_task1]
+table=task_npc_table
+data=total,128
+data=npc,rat,2,3,2,1,1

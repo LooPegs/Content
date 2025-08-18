@@ -2,3 +2,8 @@
 scope=perm
 size=^bank_total_slots
 stackall=yes
+
+[bank2]
+scope=perm
+size=^bank_total_slots
+stackall=yes

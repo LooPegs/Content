@@ -1,0 +1,195 @@
+//todo: chathead expressions
+[opnpcu,forester]
+if (last_useitem = %favor_task_obj & %favor_taskgiver = ^taskgiver_forester) {
+    @forester_task_complete;
+}
+switch_obj(last_useitem) {
+    case default : ~chatnpc("<p,confused>Er... Thanks, but no thanks!");
+}
+
+[opnpc1,forester]
+~chatnpc("<p,neutral>Greetings. I am forester. How can I help you?");
+if (%favor_test = 0)  {
+    @multi2("Begging for money.", forester_begging, "Nevermind.", forester_nevermind);
+} else if (%favor_taskgiver ! ^taskgiver_forester) {
+    @multi2("Begging for money.", forester_begging, "Do you have any tasks you need help with?", forester_ask_task);
+}
+else {
+    //if you're for sure not done with your task
+    if (%favor_task_type = ^task_type_obj & (inv_total(inv, %favor_task_obj) < %favor_task_progress) | (%favor_task_type = ^task_type_npc & %favor_task_progress > 0)) {
+        @multi2("Begging for money.", forester_begging, "What was my task again?", forester_what_was_task);
+    }
+    else {
+    //ok if task if some tasks not complete at this point.
+    @multi3("Begging for money.", forester_begging, "What was my task again?", forester_what_was_task, "I'm done with my task.", forester_task_complete);
+    }
+}
+
+[label,forester_nevermind]
+~chatplayer("<p,neutral>Nevermind.");
+
+[label,forester_begging]
+~chatplayer("<p,neutral>red:Begging for money");
+inv_add(inv, coins, 5);
+~chatnpc("<p,neutral>Here you go.");
+
+[label,forester_ask_task]
+~chatplayer("<p,neutral>Do you have any tasks you need help with?");
+if (%favor_taskgiver = ^taskgiver_forester) {
+    error("r");
+}
+else if (%favor_taskgiver ! ^taskgiver_none) {
+    ~chatnpc("<p,neutral>It looks like you've already got your hands full helping someone else.");
+    if (%favor_skipped = true) {
+        @forester_oops;
+    }
+    else {
+        @multi2("Oops, I better take care of that first.", forester_oops, "I can drop what I was doing and help you out.", forester_drop);
+    }
+}
+@forester_give_task(%favor_test);
+
+[label,forester_oops]
+~chatplayer("<p,neutral>Oops, I better take care of that first.");
+
+[label,forester_drop]
+~chatplayer("<p,neutral>I can drop what I was doing and help you out.");
+~chatnpc("<p,neutral>Well, if you're sure about that, I do have something in mind...");
+@forester_skip;
+
+[label,forester_what_was_task]
+~chatplayer("<p,neutral>What was my task again?");
+@forester_state_task;
+
+[label,forester_state_task]
+
+// note: might want restate task to have different text in some situations
+if (%favor_taskgiver ! ^taskgiver_forester) {
+    @forester_dont_remember;
+}
+else if (%favor_task_type = ^task_type_obj) {
+    ~chatnpc("<p,neutral>I need you to bring me <~pluralise(%favor_task_progress, oc_name( %favor_task_obj))>.");
+    @forester_task_confirm;
+}
+else if (%favor_task_type = ^task_type_npc) {
+    //todo: dynamic npc names
+    if (%favor_task_progress = 0) {
+        //should this option even exist? or should it just be hidden if you've already completed?
+        ~chatnpc("<p,neutral> You've already finished actually.");
+        @forester_task_complete;
+    }
+    ~chatnpc("<p,neutral>I need you to kill <~pluralise(%favor_task_progress, "rat")>.");
+    @forester_task_confirm;
+}
+else {
+    error("r");
+}
+[label,forester_task_confirm]
+@multi2("Sounds good.", forester_ok, "I can't do that right now. Do you have anything else?", forester_ask_skip);
+
+[label,forester_ok]
+~chatplayer("<p,neutral> Sounds good.");
+
+[label,forester_skip]
+~reset_task;
+%favor_skipped = true;
+@forester_give_task(%favor_test);
+
+[label,forester_ask_skip]
+//can skip once per sleep
+~chatplayer("<p,neutral> I can't do that right now. Do you have anything else?");
+if (%favor_skipped = false) {
+    ~chatnpc("Hmmm. There is something else actually.");
+    @forester_skip;
+} 
+else {
+    ~chatnpc("Nothing really. You can try again later if you want.");
+}
+
+[label,forester_dont_remember]
+~chatnpc("<p,neutral>Umm.. I don't remember giving you a task.");
+
+[label,forester_task_complete]
+if (%favor_taskgiver ! ^taskgiver_forester) {
+    @forester_dont_remember;
+}
+if (%favor_task_type = ^task_type_obj) {
+    if (inv_total(inv, %favor_task_obj) < %favor_task_progress) {
+        ~chatnpc("<p,neutral>Thats too small.");
+        //todo: restate the task
+        return;
+    }
+    ~chatnpc("<p,neutral>Thank you. Here is your reward.");
+    inv_del(inv, %favor_task_obj, %favor_task_progress);
+    @forester_give_reward(%favor_task_difficulty, %favor_task_type, %favor_test);
+}
+else if (%favor_task_type = ^task_type_npc) {
+    if (%favor_task_progress > 0) {
+        //todo: dynamic npc name
+        ~chatnpc("<p,neutral>You still have <~pluralise(%favor_task_progress, "rat")> left to kill.");
+        return;
+    }
+    ~chatnpc("<p,neutral>Thank you. Here is your reward.");
+    @forester_give_reward(%favor_task_difficulty, %favor_task_type, %favor_test);
+}
+else {
+    console("todo");
+}
+
+
+[label,forester_give_task](int $favor)
+if (%favor_task_type ! ^task_type_none) {
+    error("task type not supposed to be > 0 here.");
+}
+%favor_taskgiver = ^taskgiver_forester;
+//choose type of task
+def_int $rand = random(4);
+if ($rand <=1) {
+    def_namedobj $obj;
+    def_int $count;
+    def_int $difficulty;
+    $obj, $count, $difficulty = ~roll_obj_task_table(forester_obj_task1, 3);
+
+    %favor_task_type = ^task_type_obj;
+    %favor_task_obj = $obj;
+    %favor_task_progress = $count;
+    %favor_task_difficulty = $difficulty;
+}
+else if ($rand <= 4) {
+    def_npc $npc;
+    def_int $count;
+    def_int $difficulty;
+    $npc, $count, $difficulty = ~roll_npc_task_table(forester_npc_task1, 0);
+
+    %favor_task_type = ^task_type_npc;
+    %favor_task_npc = $npc;
+    %favor_task_progress = $count;
+    %favor_task_difficulty = $difficulty;
+}
+else {
+    //todo: custom tasks
+}
+@forester_state_task;
+
+[label,forester_give_reward](int $difficulty, int $task_type, int $favor)
+if ($task_type = ^task_type_obj) {
+    def_namedobj $obj;
+    def_int $count;
+    $obj, $count = ~roll_on_drop_table(forester_reward_table1);
+    //$count = multiply($count, $difficulty);
+    inv_add(inv, $obj, $count);
+    %favor_test = add(%favor_test, $difficulty);
+    ~reset_task;
+}
+else if ($task_type = ^task_type_npc) {
+    def_namedobj $obj;
+    def_int $count;
+    $obj, $count = ~roll_on_drop_table(forester_reward_table1);
+    //$count = multiply($count, $difficulty);
+    inv_add(inv, $obj, $count);
+    %favor_test = add(%favor_test, $difficulty);
+    ~reset_task;
+}
+else {
+    error("r");
+}

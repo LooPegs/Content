@@ -328,3 +328,12 @@
 327=com_accbonus
 328=com_moveset
 329=com_moveset_timer
+330=favor_test
+331=favor_skipped
+332=favor_food
+333=favor_taskgiver
+334=favor_task_npc
+335=favor_task_obj
+336=favor_task_type
+337=favor_task_progress
+338=favor_task_difficulty

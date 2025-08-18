@@ -11,3 +11,10 @@ if (%hetty_progress = ^hetty_started | %hetty_progress = ^hetty_objects_given) {
         obj_add(npc_coord, rats_tail, 1, ^lootdrop_duration);
     }
 }
+
+//favor
+if (%favor_task_type=^task_type_npc & %favor_task_npc = rat) {
+    if (%favor_task_progress > 0) {
+        %favor_task_progress = sub(%favor_task_progress, 1);
+    }
+}

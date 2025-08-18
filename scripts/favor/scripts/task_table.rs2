@@ -1,0 +1,68 @@
+[proc,roll_obj_task_table](dbrow $data, int $max_variance)(namedobj, int, int)
+def_namedobj $obj;
+def_int $base_count;
+def_int $base_difficulty;
+def_int $extra_count;
+def_int $extra_difficulty;
+def_int $chance;
+
+def_int $total = db_getfield($data, task_obj_table:total, 0);
+def_int $rand = random($total);
+//console("total=<tostring($total)>");
+
+def_int $i = 0;
+while($i < db_getfieldcount($data, task_obj_table:obj)) {
+    $obj, $base_count, $base_difficulty, $extra_count, $extra_difficulty, $chance = db_getfield($data, task_obj_table:obj, $i);
+    //console("base_count=<tostring($base_count)>");
+
+    $total = sub($total, $chance);
+    if ($rand >= $total) {
+        def_int $variance = randominc($max_variance);
+        $base_count = add($base_count, multiply($extra_count, $variance));
+        $base_difficulty = add($base_difficulty, multiply($extra_difficulty, $variance));
+        return($obj, $base_count, $base_difficulty);
+    } else {
+        $i = add($i, 1);
+    }
+}
+// if drop table doesnt add up to the total chance, return the last drop
+def_int $variance = randominc($max_variance);
+$base_count = add($base_count, multiply($extra_count, $variance));
+$base_difficulty = add($base_difficulty, multiply($extra_difficulty, $variance));
+return($obj, $base_count, $base_difficulty);
+
+
+
+//todo: roll npc task table
+[proc,roll_npc_task_table](dbrow $data, int $max_variance)(npc, int, int)
+def_npc $npc;
+def_int $base_count;
+def_int $base_difficulty;
+def_int $extra_count;
+def_int $extra_difficulty;
+def_int $chance;
+
+def_int $total = db_getfield($data, task_npc_table:total, 0);
+def_int $rand = random($total);
+//console("total=<tostring($total)>");
+
+def_int $i = 0;
+while($i < db_getfieldcount($data, task_npc_table:npc)) {
+    $npc, $base_count, $base_difficulty, $extra_count, $extra_difficulty, $chance = db_getfield($data, task_npc_table:npc, $i);
+    //console("base_count=<tostring($base_count)>");
+
+    $total = sub($total, $chance);
+    if ($rand >= $total) {
+        def_int $variance = randominc($max_variance);
+        $base_count = add($base_count, multiply($extra_count, $variance));
+        $base_difficulty = add($base_difficulty, multiply($extra_difficulty, $variance));
+        return($npc, $base_count, $base_difficulty);
+    } else {
+        $i = add($i, 1);
+    }
+}
+// if drop table doesnt add up to the total chance, return the last drop
+def_int $variance = randominc($max_variance);
+$base_count = add($base_count, multiply($extra_count, $variance));
+$base_difficulty = add($base_difficulty, multiply($extra_difficulty, $variance));
+return($npc, $base_count, $base_difficulty);

@@ -973,5 +973,5 @@ y=301
 width=305
 height=11
 font=p11
-text=(Once you press Accept items can't be taken out of the chest!)
+text=Warning: Items placed in the crate can't be taken out!
 colour=0x808080

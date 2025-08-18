@@ -1,5 +1,5 @@
 [oploc1,_bed]
-mes("sleep_prayer = <tostring(%sleep_prayer)>");
+//mes("sleep_prayer = <tostring(%sleep_prayer)>");
 anim(human_getinbed, 0);
 mes("You lie down...");
 p_delay(1);
@@ -12,6 +12,7 @@ mes("...");
 p_delay(1);
 mes("You wake up refreshed.");
 //mes("Sleep:<tostring(sub(%sleep, map_clock))>");
+%favor_skipped = false;
 ~sleep_reset_stats;
 ~grant_sleep_xp;
 ~start_sleep_timer(^sleep_timer_duration);

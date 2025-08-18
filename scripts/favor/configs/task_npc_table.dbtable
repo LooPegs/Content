@@ -1,0 +1,3 @@
+[task_npc_table]
+column=total,int
+column=npc,npc,int,int,int,int,int

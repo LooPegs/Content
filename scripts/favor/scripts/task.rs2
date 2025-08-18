@@ -1,0 +1,7 @@
+[proc,reset_task]
+%favor_taskgiver = ^taskgiver_none;
+%favor_task_type = ^task_type_none;
+%favor_task_obj = null;
+%favor_task_npc = null;
+%favor_task_progress = 0;
+%favor_task_difficulty = 0;

@@ -1,0 +1,7 @@
+//requested obj, base count, base difficulty, extra count, extra difficulty, chance
+[forester_obj_task1]
+table=task_obj_table
+data=total,128
+data=obj,oak_logs,3,2,1,1,30
+data=obj,feather,12,1,1,1,90
+data=obj,logs,6,1,1,1,1

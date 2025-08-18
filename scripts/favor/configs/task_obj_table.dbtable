@@ -1,0 +1,3 @@
+[task_obj_table]
+column=total,int
+column=obj,namedobj,int,int,int,int,int

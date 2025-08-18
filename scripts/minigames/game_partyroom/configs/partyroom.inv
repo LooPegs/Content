@@ -1,7 +1,19 @@
 [partyroom_dropinv]
-scope=shared
+scope=perm
 size=216
 
+// [partyroom_tempinv]
+// size=8
+// protect=no
+
 [partyroom_tempinv]
+scope=perm
+size=8
+
+[partyroom_dropinv2]
+scope=perm
+size=216
+
+[partyroom_tempinv2]
 size=8
 protect=no

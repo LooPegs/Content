@@ -1,0 +1,6 @@
+^task_type_none = 0
+^task_type_obj = 1
+^task_type_npc = 2
+
+^taskgiver_none = 0
+^taskgiver_forester = 1

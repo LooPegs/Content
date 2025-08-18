@@ -1,7 +1,14 @@
 [oploc1,loc_2417]
 ~open_chest(loc_2418);
 
-[oploc2,loc_2418]
+// [oploc2,loc_2418]
+[oploc1,_empty_crate]
+if ((%favor_task_type ! ^task_type_obj) | (%favor_task_obj = null) | (%favor_taskgiver ! ^taskgiver_forester)) {
+    //~chatnpc("<p,neutral> Oi, Keep out of my crates!");
+    ~mesbox("I have no reason to use this right now");
+    return;
+}
+~mesbox("WARNING: Items placed in here can't be taken out!");
 inv_transmit(partyroom_dropinv, party_drop_chest:inv);
 inv_transmit(partyroom_tempinv, party_drop_chest:playerinv);
 inv_transmit(inv, party_drop_chest_side:inv);
@@ -11,7 +18,8 @@ if_openmain_side(party_drop_chest, party_drop_chest_side);
 inv_stoptransmit(party_drop_chest_side:inv);
 inv_stoptransmit(party_drop_chest:inv);
 inv_stoptransmit(party_drop_chest:playerinv);
-~moveallinv(partyroom_tempinv, inv);
+//~moveallinv(partyroom_tempinv, inv);
+
 
 [oploc3,loc_2418]
 ~close_chest(loc_2417);
@@ -28,6 +36,7 @@ if ($amount <= 0) {
     if (last_int <= 0) return;
     $amount = last_int;
 }
+
 def_obj $obj = inv_getobj(partyroom_tempinv, $slot);
 def_int $total = inv_total(partyroom_tempinv, $obj);
 if ($amount < $total) $total = $amount;
@@ -41,25 +50,63 @@ inv_moveitem(partyroom_tempinv, inv, $obj, $total);
 [inv_buttond,party_drop_chest_side:inv] inv_movetoslot(inv, inv, last_slot, last_targetslot);
 
 [label,deposit_partychest](int $slot, int $amount)
+
+if ((%favor_task_type ! ^task_type_obj) | (%favor_task_obj = null) | (%favor_taskgiver ! ^taskgiver_forester)) {
+    error("r");
+    return;
+}
+
+if (%favor_task_progress <= 0) {
+    error("e");
+    return;
+}
+
+def_obj $obj = inv_getobj(inv, $slot);
+if (%favor_task_obj = null) {
+    mes("You have no need to store that item in here.");
+    return;
+}
+if ($obj ! %favor_task_obj) {
+    mes("You have no need to store that item in here.");
+    return;
+}
+
 if ($amount <= 0) {
     p_countdialog;
     if (last_int <= 0) return;
     $amount = last_int;
 }
 
-def_obj $obj = inv_getobj(inv, $slot);
-if (oc_tradeable($obj) = false) { // also map_members check (after room is moved to f2p probably)
-    mes("You can't offer this item.");
+
+// if (oc_tradeable($obj) = false) { // also map_members check (after room is moved to f2p probably)
+//     mes("You can't offer this item.");
+//     return;
+// }
+def_int $total = inv_total(partyroom_dropinv, $obj);
+
+if ($total > %favor_task_progress) {
+    error("re");
     return;
 }
-def_int $total = inv_total(inv, $obj);
-if ($amount < $total) $total = $amount;
-if(oc_stackable($obj) = false & $total > inv_freespace(partyroom_tempinv)) $total = inv_freespace(partyroom_tempinv);
-if($total = 0 | inv_itemspace(partyroom_tempinv, $obj, $total, inv_size(partyroom_tempinv)) = false) {
-    mes("You must accept the current items before adding any more."); // 2006 https://www.youtube.com/watch?v=Ve5UF8B3BMw&t=194s
+
+// if ($amount < $total) $total = $amount;
+// if(oc_stackable($obj) = false & $total > inv_freespace(partyroom_tempinv)) $total = inv_freespace(partyroom_tempinv);
+// if($total = 0 | inv_itemspace(partyroom_tempinv, $obj, $total, inv_size(partyroom_tempinv)) = false) {
+//     mes("You must accept the current items before adding any more."); // 2006 https://www.youtube.com/watch?v=Ve5UF8B3BMw&t=194s
+//     return;
+// }
+
+def_int $remaining = sub(%favor_task_progress, $total);
+if ($remaining = 0) {
+    mes("The crate is full.");
     return;
 }
-inv_moveitem(inv, partyroom_tempinv, $obj, $total);
+if ($amount > $remaining) {
+    mes("The crate is full.");
+    $amount = $remaining;
+}
+
+inv_moveitem(inv, partyroom_dropinv, $obj, $amount);
 
 [if_button,party_drop_chest:com_89]
 def_int $i = 0;

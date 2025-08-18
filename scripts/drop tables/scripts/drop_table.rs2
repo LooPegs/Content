@@ -7,7 +7,9 @@ def_int $total = db_getfield($data, drop_table:total, 0);
 def_int $rand = random($total);
 
 def_int $i = 0;
-while($i <= db_getfieldcount($data, drop_table:drop)) {
+// bugged? -> while($i <= db_getfieldcount($data, drop_table:drop)) {
+// i guess it works as long as drop table is full
+while($i < db_getfieldcount($data, drop_table:drop)) {
     $drop, $drop_count, $drop_chance = db_getfield($data, drop_table:drop, $i);
     $total = sub($total, $drop_chance);
     if ($rand >= $total) {
