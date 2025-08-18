@@ -89,3 +89,13 @@ while ($slot < inv_size(trail_rewardinv)) {
     $slot = calc($slot + 1);
 }
 inv_clear(trail_rewardinv);
+
+[proc,test_trail_give_reward]
+def_int $slot = 0;
+while ($slot < inv_size(trail_rewardinv)) {
+    if (inv_getnum(trail_rewardinv, $slot) > 0) {
+        inv_movefromslot(trail_rewardinv, inv, $slot);
+    }
+    $slot = calc($slot + 1);
+}
+inv_clear(trail_rewardinv);

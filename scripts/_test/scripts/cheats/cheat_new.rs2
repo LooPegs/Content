@@ -1,8 +1,55 @@
 [debugproc,cam]
-//cam_moveto(0_52_49_55_28, 6000, 0, 20);
-// cam_lookat(0_52_49_55_28, 600, 0, 20);
-// ~bas_set_all(human_lean_ready);
-queue(arena_test,0);
+cam_moveto(movecoord(coord, 0, 0, -8), 2500, 0, 100);
+cam_lookat(movecoord(coord, 0, 0, 2), 1276, 0, 100);
+//p_delay(0); //walktrigger gets messed up if you are moving while this procs
+walktrigger(lean_on_wall);
+
+[debugproc,favor]
+if (p_finduid(uid) = true) {
+    mes("Forester favor : <tostring(%favor_test)>");
+}
+[debugproc,resetfavor]
+if (p_finduid(uid) = true) {
+    %favor_skipped = false;
+    ~reset_task;
+}
+[debugproc,favor2]
+if (p_finduid(uid) = true) {
+    %favor_taskgiver = 2;
+}
+[debugproc,suff]
+if (p_finduid(uid) = true) {
+    ~mesbox("Warning: Items placed in the crate can't be taken out!");
+}
+
+[debugproc,inv]
+~trail_clue_hard_rare;
+inv_transmit(trail_rewardinv, trail_reward:inv);
+if_openmain(trail_reward);
+queue(trail_give_reward, 0);
+
+[debugproc,inv2]
+if (p_finduid(uid) = true) {
+    mes("inv2");
+    inv_transmit(bank, party_drop_chest:inv);
+    if_openmain_side(party_drop_chest, party_drop_chest_side);
+}
+
+[debugproc,inv3]
+if (p_finduid(uid) = true) {
+    mes("inv3");
+    ~trail_clue_hard_rare;
+    inv_transmit(trail_rewardinv, party_drop_chest:inv);
+    if_openmain_side(party_drop_chest, party_drop_chest_side);
+}
+
+[debugproc,inv4]
+if (p_finduid(uid) = true) {
+    mes("inv4");
+    ~trail_clue_hard_rare;
+    inv_transmit(partyroom_dropinv, party_drop_chest:inv);
+    if_openmain_side(party_drop_chest, party_drop_chest_side);
+}
 
 [debugproc,synth](synth $sound)
 if ($sound = null) {

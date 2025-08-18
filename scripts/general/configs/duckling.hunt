@@ -6,3 +6,11 @@ check_vis=lineofsight
 find_keephunting=off
 rate=11
 find_newmode=opnpc3
+
+[gnomechild_hunt]
+type=npc
+check_npc=gnome
+check_vis=lineofsight
+find_keephunting=off
+rate=11
+find_newmode=opnpc3

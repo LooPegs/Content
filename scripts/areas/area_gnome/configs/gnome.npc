@@ -381,6 +381,9 @@ param=death_sound,gnome_death
 // https://raw.githubusercontent.com/Joshua-F/osrs-dumps/refs/heads/master/config/dump.npc npc_6078
 
 [gnomechild]
+huntmode=gnomechild_hunt
+huntrange=10
+defaultmode=none
 name=Gnome child
 desc=Small, even by gnome standards.
 resizeh=100
