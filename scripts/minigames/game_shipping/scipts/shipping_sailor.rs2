@@ -1,0 +1,87 @@
+/*
+General
+*/
+[label,shipping_cargo]
+        ~chatplayer("<p,neutral>I'd like to transport some cargo.");
+        ~chatnpc("<p,happy> Well, you've come to the right place!");
+        ~chatnpc("<p,neutral> Find one of our dock workers and they'll show you where to load your cargo");
+
+[label,shipping_buy_ticket_sarim]
+        if (~shipping_pay_ticket = false) return;
+        else {
+        
+                ~chatplayer("<p,neutral> Here you go.");
+                inv_del(inv, coins, 50);
+                inv_add(inv, ticket_sarim, 1);
+                ~chatnpc("<p,neutral> Cross the gangplank with your ticket when you're ready. We next set sail in 0");
+        }
+
+[label,shipping_buy_ticket_karamja]
+        if (~shipping_pay_ticket = false) return;
+        else {
+                ~chatplayer("<p,neutral> Here you go.");
+                inv_del(inv, coins, 50);
+                inv_add(inv, ticket_karamja, 1);
+                ~chatnpc("<p,neutral> Cross the gangplank with your ticket when you're ready. We next set sail in 0");
+        }
+
+[proc,shipping_pay_ticket]()(boolean)
+        ~chatnpc("<p,happy> Ok, that'll be 50 coins");
+        //already have a ticket? looks fine from here (could be some strats)
+        if (inv_total(inv, coins) < 50) {
+                ~chatplayer("<p,sad>Oh dear. I don't seem to have enough money.");
+                return (false);
+        } 
+        return (true);
+
+[label,shipping_when_set_sail]
+        ~chatnpc("<p,neutral> We will set sail in 0");
+
+/*
+Karamja sailor
+*/
+[opnpc1,karamja_shipping]
+        ~chatnpc("<p,happy> Hello welcome to Pig^tm shipping. Tickets are just 50 coins.");
+        ~chatnpc("<p,happy> We can also transport cargo for an extra 500 gold per barrel.");
+        //todo:add job option
+        @multi3("Where can you take me?", shipping_dest_not_karamja,"I'd like to buy a ticket", shipping_ticket_not_karamja, "I'd like to transport some cargo", shipping_cargo);
+
+[label,shipping_dest_not_karamja]
+        ~chatplayer("<p,quiz>Where can you take me?");
+        ~chatnpc("<p,happy> Port Sarim");
+        @multi2("I'd like to buy a ticket", shipping_ticket_not_karamja, "I'd like to transport some cargo", shipping_cargo);
+
+[label,shipping_ticket_not_karamja]
+        ~chatplayer("<p,neutral>I'd like to buy a ticket.");
+        if (inv_totalcat(inv,shipping_ticket) > 0) {
+                ~chatnpc("<p,neutral> You already have a ticket.");
+                return;
+        }    
+        ~chatnpc("<p,happy> Sure thing! Where would you like to sail?");
+        ~chatplayer("<p,neutral>sarim");
+        @shipping_buy_ticket_sarim;
+
+/*
+Port Sarim sailor
+*/
+[opnpc1,sarim_shipping]
+        ~chatnpc("<p,happy> Hello welcome to Pig^tm shipping. Tickets are just 50 coins.");
+        ~chatnpc("<p,happy> We can also transport cargo for an extra 500 gold per barrel.");
+        //todo:add job option
+        @multi3("Where can you take me?", shipping_dest_not_sarim,"I'd like to buy a ticket", shipping_ticket_not_sarim, "I'd like to transport some cargo", shipping_cargo);
+
+[label,shipping_dest_not_sarim]
+        ~chatplayer("<p,quiz>Where can you take me?");
+        ~chatnpc("<p,happy>Karamja");
+        @multi2("I'd like to buy a ticket", shipping_ticket_not_sarim, "I'd like to transport some cargo", shipping_cargo);
+
+[label,shipping_ticket_not_sarim]
+        ~chatplayer("<p,neutral>I'd like to buy a ticket.");
+        if (inv_totalcat(inv,shipping_ticket) > 0) {
+                ~chatnpc("<p,neutral> You already have a ticket.");
+                return;
+        }     
+        ~chatnpc("<p,happy> Sure thing! Where would you like to sail?");
+        ~chatplayer("<p,neutral> karamja");
+        @shipping_buy_ticket_karamja;
+        

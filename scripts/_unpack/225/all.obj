@@ -75,6 +75,32 @@ model=model_2600_obj
 2dxan=380
 weight=15g
 
+[ticket_karamja]
+name=Ticket
+desc=A ticket to karamja.
+category=shipping_ticket
+cost=1
+model=model_2600_obj
+2dxof=1
+2dyof=7
+2dzoom=1040
+2dyan=120
+2dxan=380
+weight=15g
+
+[ticket_sarim]
+name=Ticket
+desc=A ticket to Port Sarim.
+category=shipping_ticket
+cost=1
+model=model_2600_obj
+2dxof=1
+2dyof=7
+2dzoom=1040
+2dyan=120
+2dxan=380
+weight=15g
+
 [grey_wolf_fur]
 model=model_2631_obj
 recol1s=18849

@@ -1,0 +1,7 @@
+[last_dest]
+protect=yes
+scope=perm
+
+[next_dest]
+protect=yes
+scope=perm

@@ -1,3 +1,14 @@
+[debugproc,ship]
+if (p_finduid(uid) = true) {
+    ~player_teleport_normal(0_39_54_50_60);
+}
+
+[debugproc,shake]
+if (p_finduid(uid) = true) {
+    cam_shake(3, 0, 255, 1);
+    //cam_shake(1, 0, 10, 1);
+}
+
 [debugproc,cam]
 cam_moveto(movecoord(coord, 0, 0, -8), 2500, 0, 100);
 cam_lookat(movecoord(coord, 0, 0, 2), 1276, 0, 100);
@@ -20,6 +31,11 @@ if (p_finduid(uid) = true) {
 [debugproc,suff]
 if (p_finduid(uid) = true) {
     ~mesbox("Warning: Items placed in the crate can't be taken out!");
+}
+
+[debugproc,bank2]
+if (p_finduid(uid) = true) {
+    @openbank2;
 }
 
 [debugproc,inv]

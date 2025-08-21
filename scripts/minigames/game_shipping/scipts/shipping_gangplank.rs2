@@ -1,0 +1,33 @@
+[oploc1,port_sarim_gangplank_board]
+    if (inv_total(inv, ticket_karamja) >= 1) { // OR each viable ticket together
+        %last_dest = ^dest_sarim;
+        @board_ship;
+    }
+    else {
+        if (npc_find(0_39_54_58_58,rpdt_employee, 8, 0) = true) {
+            ~chatnpc("<p,angry>Hey! You need a ticket to board.");
+            return;
+        }
+        else error("r");
+    }
+
+[oploc1,karamja_gangplank_board]
+    if (inv_total(inv, ticket_sarim) >= 1) {
+        %last_dest = ^dest_karamja;
+        @board_ship;
+    }
+    else {
+        //should probably find local employee? idk
+        if (npc_find(0_39_54_58_58,rpdt_employee, 8, 0) = true) {
+            ~chatnpc("<p,angry>Hey! You need a ticket to board.");
+            return;
+        }
+        else error("r");
+    }
+
+[label,board_ship]
+if (%last_dest <= 0) {
+    error("r");
+    return;
+}
+p_teleport(^shipping_lobby);

@@ -1,0 +1,28 @@
+// [shipping_coffers]
+// scope=perm
+// size=1
+
+[crate_a1]
+scope=perm
+size=4
+stackall=yes
+
+[crate_a2]
+scope=perm
+size=4
+stackall=yes
+
+// [crate_a1]
+// scope=perm
+// size=4
+// stackall=yes
+
+[crate_b1]
+scope=perm
+size=4
+stackall=yes
+
+[crate_b2]
+scope=perm
+size=4
+stackall=yes

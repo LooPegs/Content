@@ -337,3 +337,5 @@
 336=favor_task_type
 337=favor_task_progress
 338=favor_task_difficulty
+339=last_dest
+340=next_dest

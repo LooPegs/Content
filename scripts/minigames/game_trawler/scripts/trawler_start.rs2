@@ -1,4 +1,20 @@
+//only 1 murphy at a time?!
+[ai_timer,murphy]
+if (%npc_int < map_clock) {
+    npc_queue(5, 0, 0);
+}
+else {
+    def_int $remaining = scale(sub(%npc_int,map_clock),5,3);
+    if ($remaining <= 10) {
+    npc_say("All aboard! Next ship leaves in <tostring($remaining)> seconds");
+    }
+    else {
+        npc_say("Get your tickets! Next ship leaves in <tostring($remaining)> seconds");
+    }
+}
+
 [ai_queue5,murphy]
+%npc_int = add(map_clock, 100);
 if (~playercount_coord_pair_table(trawler_game_zones) > 0 | ~playercount_coord_pair_table(trawler_lobby_zones) < 1) {
     return;
 }
@@ -43,8 +59,8 @@ if_close;
 if_openmain(trawler_help);
 // CamShake(type = 4, shakeIntensity = 0, movementIntensity = 20, speed = 4)
 // CamShake(type = 1, shakeIntensity = 0, movementIntensity = 20, speed = 5)
-cam_shake(4, 0, 20, 4);
-cam_shake(1, 0, 20, 5);
+//cam_shake(4, 0, 20, 1);
+//cam_shake(1, 0, 20, 1);
 
 [ai_queue5,murphy_normal]
 npc_settimer(5);

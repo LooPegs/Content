@@ -31,6 +31,7 @@ head1=model_55_idk_head
 head2=model_81_idk_head
 head3=model_37_npc_head
 wanderrange=2
+timer=10
 
 [murphy_normal]
 vislevel=hide
