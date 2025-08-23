@@ -309,6 +309,7 @@ param=death_anim,midget_death
 param=death_sound,gnome_death
 
 [gnomechildgreen]
+timer=18
 name=Gnome child
 desc=Small, even by gnome standards.
 resizeh=100
@@ -325,7 +326,7 @@ model1=model_2909_npc
 model2=model_2899_npc
 model3=model_2918_npc
 head1=model_16_npc_head
-respawnrate=100
+respawnrate=10
 hitpoints=2
 param=attackbonus,-42
 param=strengthbonus,-42
@@ -345,6 +346,7 @@ param=death_sound,gnome_death
 // https://raw.githubusercontent.com/Joshua-F/osrs-dumps/refs/heads/master/config/dump.npc npc_6077
 
 [gnomechildblue]
+timer=20
 name=Gnome child
 desc=Small, even by gnome standards.
 resizeh=100
@@ -361,7 +363,7 @@ model1=model_2909_npc
 model2=model_2899_npc
 model3=model_2918_npc
 head1=model_16_npc_head
-respawnrate=100
+respawnrate=10
 hitpoints=2
 param=attackbonus,-42
 param=strengthbonus,-42

@@ -1,0 +1,23 @@
+[ai_queue1,thief1] 
+    // gosub(npc_default_retaliate);
+    return;
+
+//take damage
+[ai_queue2,thief1]
+    ~npc_default_damage(last_int);
+    //only first hit queues
+    if (%npc_int = 0 & last_int > 0) {
+        %npc_int = 1;
+        npc_say("urgh");
+        npc_queue(4, 0, 7);  
+    }
+
+[ai_queue4,thief1]
+npc_changetype_keepall(guard2, 500);
+huntall(npc_coord, 8, ^vis_lineofsight);
+if (huntnext = true) {
+    npc_setmode(opplayer2);
+}
+
+[ai_timer,thief1]
+if (%npc_int = 0) npc_say("zzz");

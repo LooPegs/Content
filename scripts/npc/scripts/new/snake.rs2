@@ -1,0 +1,36 @@
+[ai_queue1,snake] 
+    if (%npc_int = 0) gosub(npc_default_retaliate);
+
+//take damage
+[ai_queue2,snake]
+    ~npc_default_damage(last_int);
+    //only first hit queues
+    if (%npc_int = 0 & last_int > 0) {
+        %npc_int = 1;
+        npc_queue(4, 0, 5);  
+    }
+
+//death
+[ai_queue3,snake]
+    gosub(npc_death);
+    if (npc_findhero = ^false) {
+        return;
+    }
+    if (map_blocked(npc_coord) = false) {
+        obj_add(npc_coord, eye_of_newt, 1, ^lootdrop_duration);
+    }
+
+//custom: run to water
+[ai_queue4,snake]
+    npc_say("I gotta get outta here.");
+    npc_setmode(none);
+    npc_settimer(2);
+    npc_walk(npc_param(dest));
+
+    [ai_timer,snake]
+    if (map_blocked(npc_coord) = true) {
+        npc_say("Heh!");
+        spotanim_npc(watersplash, 0, 0);
+        npc_delay(0);
+        npc_del;
+    }

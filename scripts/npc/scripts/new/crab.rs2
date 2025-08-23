@@ -1,0 +1,25 @@
+[ai_queue3,gnomechildblue]
+    gosub(npc_death);
+    if (npc_findhero = ^false) {
+        return;
+    }
+    obj_add(npc_coord, sapphire, 1, ^lootdrop_duration);
+
+[ai_queue3,gnomechildgreen]
+    gosub(npc_death);
+    if (npc_findhero = ^false) {
+        return;
+    }
+    obj_add(npc_coord, emerald, 1, ^lootdrop_duration);
+    
+// [opnpcu,gnomechildblue]
+// npc_changetype_keepall(sheepsheered,5);
+
+// [ai_timer,gnomechildblue]
+// npc_changetype_keepall(gnomechildgreen,5);
+[ai_timer,gnomechildgreen]
+//todo: make this pj
+//todo: this can be performance optimized?
+npc_delay(0);
+if(npc_stat(hitpoints) > 0)
+npc_changetype_keepall(gnomechildblue, 9);

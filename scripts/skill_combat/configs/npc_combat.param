@@ -37,3 +37,7 @@ default=no
 [retreat]
 type=int
 default=null
+
+[dest]
+type=coord
+default=null
