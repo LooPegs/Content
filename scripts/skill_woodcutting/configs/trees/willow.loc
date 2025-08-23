@@ -1,4 +1,18 @@
 //might be wrong
+[willow_tree_felling]
+name=Willow
+category=felling
+desc=These trees are found near water.
+model=model_loc_1308
+width=2
+length=2
+mapscene=3
+op1=Chop down
+op3=hidden
+// category=tree
+param=next_loc_stage,loc_1344
+param=ent,macro_ent_willow
+
 [willow_tree]
 name=Willow
 desc=These trees are found near water.
@@ -9,5 +23,5 @@ mapscene=3
 op1=Chop down
 op3=hidden
 category=tree
-param=next_loc_stage,loc_1344
+param=next_loc_stage,willow_tree_felling
 param=ent,macro_ent_willow

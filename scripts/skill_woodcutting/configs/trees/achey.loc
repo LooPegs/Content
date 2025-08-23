@@ -1,3 +1,17 @@
+[achey_tree_felling]
+name=Achey Tree
+category=felling
+desc=An interesting tree with long straight branches.
+model=model_loc_2023
+width=2
+length=2
+mapscene=0
+op1=Chop
+op3=hidden
+// category=tree
+param=next_loc_stage,achey_tree_stump
+// todo: figure out if an ent exists for this?
+
 [achey_tree]
 name=Achey Tree
 desc=An interesting tree with long straight branches.
@@ -8,5 +22,5 @@ mapscene=0
 op1=Chop
 op3=hidden
 category=tree
-param=next_loc_stage,achey_tree_stump
+param=next_loc_stage,achey_tree_felling
 // todo: figure out if an ent exists for this?

@@ -1,3 +1,16 @@
+[oak_tree_felling]
+name=Oak
+category=felling
+desc=A beautiful old oak.
+model=model_loc_1281
+width=3
+length=3
+op1=Chop down
+op3=hidden
+mapscene=1
+param=next_loc_stage,oak_tree_stump
+param=ent,macro_ent_oak
+
 [oak_tree]
 name=Oak
 desc=A beautiful old oak.
@@ -8,5 +21,5 @@ op1=Chop down
 op3=hidden
 mapscene=1
 category=tree
-param=next_loc_stage,oak_tree_stump
+param=next_loc_stage,oak_tree_felling
 param=ent,macro_ent_oak

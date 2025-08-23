@@ -1,3 +1,17 @@
+[maple_tree_felling]
+name=Maple tree
+category=felling
+desc=I bet this makes good syrup!
+model=model_loc_1307
+width=2
+mapscene=2
+length=2
+op1=Chop down
+op3=hidden
+// category=tree
+param=next_loc_stage,loc_1344
+param=ent,macro_ent_maple
+
 [maple_tree]
 name=Maple tree
 desc=I bet this makes good syrup!
@@ -8,5 +22,5 @@ length=2
 op1=Chop down
 op3=hidden
 category=tree
-param=next_loc_stage,loc_1344
+param=next_loc_stage,maple_tree_felling
 param=ent,macro_ent_maple
