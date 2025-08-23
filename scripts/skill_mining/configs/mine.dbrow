@@ -7,6 +7,7 @@ data=rock_output,blankrune
 data=rock_level,1
 data=rock_exp,50
 data=rock_successchance,256,256
+data=hardness,10
 
 [clay_rock_table]
 table=mining_table
@@ -20,6 +21,7 @@ data=rock_level,1
 data=rock_exp,50
 data=rock_successchance,128,400
 data=rock_respawnrate,6
+data=hardness,10
 
 [copper_rock_table]
 table=mining_table
@@ -33,6 +35,7 @@ data=rock_level,1
 data=rock_exp,175
 data=rock_successchance,128,400
 data=rock_respawnrate,10
+data=hardness,30
 
 [tin_rock_table]
 table=mining_table
@@ -46,6 +49,7 @@ data=rock_level,1
 data=rock_exp,175
 data=rock_successchance,128,400
 data=rock_respawnrate,10
+data=hardness,30
 
 [iron_rock_table]
 table=mining_table
@@ -59,6 +63,7 @@ data=rock_level,15
 data=rock_exp,350
 data=rock_successchance,96,350
 data=rock_respawnrate,20
+data=hardness,40
 
 [coal_rock_table]
 table=mining_table
@@ -72,6 +77,7 @@ data=rock_level,30
 data=rock_exp,500
 data=rock_successchance,16,100
 data=rock_respawnrate,100
+data=hardness,20
 
 [gold_rock_table]
 table=mining_table
@@ -85,6 +91,7 @@ data=rock_level,40
 data=rock_exp,650
 data=rock_successchance,7,75
 data=rock_respawnrate,200
+data=hardness,30
 
 [silver_rock_table]
 table=mining_table
@@ -98,6 +105,7 @@ data=rock_level,20
 data=rock_exp,400
 data=rock_successchance,25,200
 data=rock_respawnrate,200
+data=hardness,20
 
 [mithril_rock_table]
 table=mining_table
@@ -111,6 +119,7 @@ data=rock_level,55
 data=rock_exp,800
 data=rock_successchance,5,50
 data=rock_respawnrate,400
+data=hardness,60
 
 [adamantite_rock_table]
 table=mining_table
@@ -124,6 +133,7 @@ data=rock_level,70
 data=rock_exp,950
 data=rock_successchance,2,25
 data=rock_respawnrate,800
+data=hardness,70
 
 [runite_rock_table]
 table=mining_table
@@ -137,6 +147,7 @@ data=rock_level,85
 data=rock_exp,1250
 data=rock_successchance,1,18
 data=rock_respawnrate,2400
+data=hardness,80
 
 // TODO: add the correct success rates here (not currently on wiki)
 // using limestone rates (lvl-10 mining req) for now
@@ -150,6 +161,7 @@ data=rock_level,10
 data=rock_exp,175
 data=rock_successchance,95,350
 data=rock_respawnrate,80
+data=hardness,4
 
 [gem_rock]
 table=mining_table
@@ -160,6 +172,7 @@ data=rock_level,40
 data=rock_exp,650
 data=rock_successchance,28,70
 data=rock_respawnrate,200
+data=hardness,6
 
 [desertrescue_rock]
 table=mining_table
@@ -170,3 +183,4 @@ data=rock_level,1
 data=rock_exp,10
 data=rock_successchance,128,400
 data=rock_respawnrate,30
+data=hardness,1

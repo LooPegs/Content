@@ -4,4 +4,8 @@ default=null
 
 [mining_rate]
 type=int
-default=0
+default=3
+
+[hardness]
+type=int
+default=1
