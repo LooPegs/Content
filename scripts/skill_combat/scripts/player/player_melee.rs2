@@ -85,8 +85,10 @@ if (~player_npc_hit_roll(%damagetype) = true) {
 
 if ($weapon ! null) {
     def_int $poison_severity = oc_param($weapon, poison_severity);
-    if ($damage > 0 & $poison_severity > 0 & random(4) = 0) { // 1/4 chance to poison
+    // if ($damage > 0 & $poison_severity > 0 & random(4) = 0) { // 1/4 chance to poison
+    if ($damage > 0 & $poison_severity > 0) { // 1/4 chance to poison
         // poison npc
+        npc_say("im poisoned");
         ~npc_poison_start($poison_severity);
     }
 }

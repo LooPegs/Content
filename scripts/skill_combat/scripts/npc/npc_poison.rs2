@@ -2,9 +2,10 @@
 
 [proc,npc_poison_timer]
 // damage npc
-%npc_poison = sub(%npc_poison, 1);
+
 if (%npc_poison > 0) {
-    npc_damage(^hitmark_poison, divide(add(%npc_poison, 4), 5));
+    npc_damage(^hitmark_poison, %npc_poison);
+    %npc_poison = sub(%npc_poison, 1);
     // They died
     if (npc_stat(hitpoints) = 0){
         npc_queue(3, 0, 0);
@@ -25,6 +26,7 @@ npc_settimer(0); // npc_cleartimer?
 
 
 [proc,npc_poison_start](int $severity)
+//need to make npcs with preexisting timers immune? does weird stuff with timer
 if (~npc_is_attackable() = false) {
     return;
 }
@@ -33,6 +35,6 @@ if (map_members = ^false) {
 }
 
 if ($severity > %npc_poison) {
-    npc_settimer(30);
+    npc_settimer(10);
     %npc_poison = $severity;
 }
