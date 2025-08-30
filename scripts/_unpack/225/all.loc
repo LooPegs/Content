@@ -14942,6 +14942,7 @@ width=2
 op1=Search
 
 [chompybird_spitroast_chicken]
+op1=Take
 name=Ogre spit-roast
 desc=Useful for ogre dinners.
 model=model_ogre_spitroast_with_chompy

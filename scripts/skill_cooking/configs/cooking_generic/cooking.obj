@@ -1,3 +1,15 @@
+[sugarcane]
+name=Sugarcane
+// desc=A number of wooden logs.
+cost=4
+model=model_2800_obj
+weight=2kg
+2dxof=3
+2dyof=66
+2dzoom=670
+2dyan=120
+2dxan=280
+
 [asgarnian_ale]
 name=Asgarnian ale
 desc=Probably the finest ale in Asgarnia.

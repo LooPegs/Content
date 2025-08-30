@@ -1,0 +1,12 @@
+[sugarcane]
+name=Sugarcane
+// desc=A splendid tree.
+model=model_loc_1301
+width=1
+length=1
+op1=Chop down
+op3=hidden
+mapscene=3
+category=tree
+param=next_loc_stage,sugarcane_stump
+// param=ent,macro_ent_yew

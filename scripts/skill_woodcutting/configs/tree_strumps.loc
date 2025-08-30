@@ -163,6 +163,15 @@ model=model_loc_1355
 width=3
 length=3
 
+[sugarcane_stump]
+name=Sugarcane stump
+// desc=This tree has been cut down.
+model=model_loc_1341
+mapscene=5
+blockwalk=no
+recol1s=4194
+recol1d=5218
+
 [loc_1356]
 name=Tree stump
 desc=This tree has been cut down.

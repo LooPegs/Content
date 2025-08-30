@@ -83,10 +83,11 @@ else mes("felling: false");
 if (loc_category = tree) mes("tree: true");
 else mes("tree: false");
 // mes("level req = <tostring(loc_param(levelrequired))>");
+def_int $felltime = db_getfield($data, woodcutting_trees:felltime, 0);
 
-if ((loc_category ! felling) & (db_getfield($data, woodcutting_trees:levelrequired, 0) ! 0)) {
+if ((loc_category ! felling) & ($felltime > 0)) {
     def_int $respawn = db_getfield($data, woodcutting_trees:respawnrate, 0);
-    def_int $felltime = db_getfield($data, woodcutting_trees:felltime, 0);
+    //def_int $felltime = db_getfield($data, woodcutting_trees:felltime, 0);
     //can you chain like this?
     mes("You swing your axe at the tree.");
     loc_change(loc_param(next_loc_stage),1000);

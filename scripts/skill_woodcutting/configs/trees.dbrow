@@ -26,7 +26,7 @@ data=levelrequired,0
 data=productexp,250
 data=product,logs
 data=respawnrate,0
-data=felltime,-1
+data=felltime,0
 data=successchance,160,500
 // data=successchance,adamant_axe,192,600
 data=hardness,30
@@ -53,9 +53,8 @@ data=levelrequired,0
 data=productexp,250
 data=product,charcoal
 data=respawnrate,0
-data=felltime,-1
+data=felltime,0
 data=successchance,192,600
-
 data=hardness,10
 
 [achey_tree_table]
@@ -66,10 +65,20 @@ data=levelrequired,0
 data=productexp,250
 data=product,achey_tree_logs
 data=respawnrate,0
-data=felltime,-1
+data=felltime,0
 data=successchance,192,600
-
 data=hardness,30
+
+[sugarcane_tree_table]
+table=woodcutting_trees
+data=tree,sugarcane
+data=levelrequired,0
+data=productexp,250
+data=product,sugarcane
+data=respawnrate,0
+data=felltime,0
+data=successchance,160,500
+data=hardness,10
 
 [oak_tree_table]
 table=woodcutting_trees

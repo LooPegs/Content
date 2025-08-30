@@ -438,6 +438,19 @@ data=cantcookmessage_fire,You need a proper oven to cook that.
 data=successmessage,You remove the half baked batta.
 data=burnmessage,You accidentally burn the batta.
 
+[cooking_generic_sugar]
+table=cooking_generic
+data=uncooked,sugarcane
+data=cooked,sugar
+data=burnt,burnt_seaturtle
+data=levelrequired,1
+data=experience,30
+data=successchance,118,492
+data=cookmessage_range,You cook down the sugarcane...
+data=cantcookmessage_fire,You need a proper oven to cook that.
+data=successmessage,You remove the processed sugar.
+data=burnmessage,You accidentally burn the sugarcane.
+
 [cooking_generic_chocolate_saturday]
 table=cooking_generic
 data=uncooked,unfinished_chocolate_saturday2

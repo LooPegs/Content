@@ -1,0 +1,47 @@
+// [oplocu,chompybird_spitroast_chicken]
+// @attempt_cook_spit(last_useitem);
+
+// [label,attempt_cook_spit](obj $uncooked_item)
+// //not sure if this is used
+// p_arrivedelay();
+// // get item data from db
+// db_find(cooking_generic:uncooked, $uncooked_item);
+// def_dbrow $data = db_findnext;
+// if ($data = null) {
+//     ~mesbox("You can't cook that.");
+//     return;
+// }
+
+// // check if player has high enough level
+// def_int $levelrequired = db_getfield($data,cooking_generic:levelrequired,0);
+// if (stat(cooking) < $levelrequired) {
+//     ~mesbox("You need a Cooking level of <tostring($levelrequired)> to cook <lowercase(oc_name($cooked_item))>.");
+//     return;
+// }
+
+// // macro event
+// if (afk_event = ^true) {
+//     ~macro_event_general_spawn(~macro_event_set_random);
+//     return;
+// }
+// // def variables
+// def_string $cookmessage;
+// def_string $succesmessage = db_getfield($data,cooking_generic:successmessage,0);
+// def_string $burnmessage = db_getfield($data,cooking_generic:burnmessage,0);
+// def_seq $anim;
+// // field can specify "0" to not show any message at all. Only applies to heating up cocktails AFAIK
+// // else if not specified at all it just shows the default message below.
+// if (string_length($succesmessage) < 1 & compare($succesmessage, "0") ! 0) {
+//     $succesmessage = "The <lowercase(oc_name($cooked_item))> is now nicely cooked.";
+// }
+// if (string_length($burnmessage) < 1 & compare($burnmessage, "0") ! 0) {
+//     $burnmessage = "You accidentally burn the <lowercase(oc_name($cooked_item))>.";
+// }
+
+
+// def_boolean $passes_roll;
+
+// def_namedobj $burnt_item = db_getfield($data,cooking_generic:burnt,0);
+// def_namedobj $additional_item = db_getfield($data,cooking_generic:additional,0);
+// def_int $experience = db_getfield($data,cooking_generic:experience,0);
+// @cook_item($passes_roll, $anim, $cookmessage, $succesmessage, $burnmessage, $uncooked_item, $cooked_item, $burnt_item, $additional_item, $experience);
