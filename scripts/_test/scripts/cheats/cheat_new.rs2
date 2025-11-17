@@ -1,0 +1,15 @@
+// [debugproc,synth](synth $s)
+// if ($s = null) {
+//     $s = smokepuff;
+// }
+// // sound_synth(milk_cow, 0, 0);
+// // if ($sound = null) {
+// //     @debugusage("::synth (name)", "::synth liquid", "");
+// //     return;
+// // }
+// sound_synth($s, 0, 0);
+
+[debugproc,house]//test area
+if_close;
+if (p_finduid(uid) = false) { @please_finish; return; }
+~player_teleport_normal(0_43_74_22_22);
