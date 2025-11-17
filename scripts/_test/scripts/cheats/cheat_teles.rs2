@@ -23,6 +23,11 @@ if_close;
 if (p_finduid(uid) = false) { @please_finish; return; }
 ~player_teleport_normal(0_50_50_22_22);
 
+[debugproc,home]//test area
+if_close;
+if (p_finduid(uid) = false) { @please_finish; return; }
+~player_teleport_normal(0_43_74_22_22);
+
 [debugproc,varrock]
 if_close;
 if (p_finduid(uid) = false) { @please_finish; return; }
