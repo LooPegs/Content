@@ -3280,12 +3280,6 @@ width=4
 length=2
 op1=Play
 
-[bed]
-name=Bed
-desc=Great for sleeping in.
-model=bed
-length=2
-
 [bluebed]
 name=Bed
 desc=A stylish-looking bed.
@@ -129906,6 +129900,7 @@ anim=burgh_furnace_smoke
 name=Rubble
 desc=Hardened earth, with bits of rock in it, not easy to move.
 model=burgh_outside_rubble_pile
+category=mining_shortcut_t1
 mapscene=12
 blockrange=no
 op1=Mine
@@ -129935,9 +129930,11 @@ op3=hidden
 [burgh_rubble_a_4]
 name=Rubble
 desc=Hard rubble reduced to small pieces, it's quite dusty and not easy to move.
+category=pass_mining_t1
 model=burgh_rubble_a4
 mapscene=12
 blockrange=no
+op1=Climb
 
 [burgh_fencegate_l]
 name=Gate

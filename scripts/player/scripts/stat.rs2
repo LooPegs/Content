@@ -75,6 +75,17 @@ while ($i <= enum_getoutputcount(stats)) {
     $i = calc($i + 1);
 }
 
+//resets all skill stats except hitpoints and prayer
+[proc,stat_reset_noncombat]
+def_int $i = 1;
+def_stat $stat;
+while ($i <= enum_getoutputcount(stats)) {
+    $stat = enum(int, stat, stats, $i);
+    if ($stat ! hitpoints & $stat ! prayer)
+        ~stat_reset($stat);
+    $i = calc($i + 1);
+}
+
 [proc,.stat_reset](stat $stat)
 def_int $d = sub(.stat($stat), .stat_base($stat));
 

@@ -141,7 +141,7 @@ if(%slayer_count <= 0) {
 }
 if(npc_finduid($uid) = true) {
     %slayer_count = sub(%slayer_count, 1);
-    stat_advance(slayer, calc(10 * npc_basestat(hitpoints)));
+    ~stat_advance_boostable(slayer, calc(10 * npc_basestat(hitpoints)));
     if(%slayer_count = 0) ~complete_task;
 }
 
@@ -151,7 +151,7 @@ if(%slayer_count <= 0) {
 }
 if(npc_finduid($uid) = true) {
     %slayer_count = sub(%slayer_count, 1);
-    stat_advance(slayer, calc(10 * (npc_basestat(hitpoints) / 2)));
+    ~stat_advance_boostable(slayer, calc(10 * (npc_basestat(hitpoints) / 2)));
     if(%slayer_count = 0) ~complete_task;
 }
 

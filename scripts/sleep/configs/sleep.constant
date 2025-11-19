@@ -1,0 +1,9 @@
+// 4.16% xp is tracked
+^sleep_xp_divisor = 24 
+// 3.33% xp tracked for nerfed skills
+^nerfed_sleep_xp_divisor = 30
+
+^sleep_timer_duration_min = 50
+^sleep_timer_duration = 100
+
+

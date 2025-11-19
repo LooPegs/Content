@@ -1,5 +1,6 @@
 [logout,_]()(boolean)
 ~macro_event_logout;
+~set_sleep_logout; //saves sleep timer
 return (true);
 
 [if_button,logout:com_8]

@@ -1,0 +1,17 @@
+[oploc1,_bed]
+mes("sleep_prayer = <tostring(%sleep_prayer)>");
+anim(human_getinbed, 0);
+mes("You lie down...");
+p_delay(1);
+if (sub(%sleep, map_clock) > ^sleep_timer_duration_min) {
+    ~mesbox("You're not tired enough to fall asleep yet.");
+    mes("Sleep:<tostring(sub(%sleep, map_clock))>");
+    return;
+}
+mes("...");
+p_delay(1);
+mes("You wake up refreshed.");
+mes("Sleep:<tostring(sub(%sleep, map_clock))>");
+~rest_heal;
+~grant_sleep_xp;
+~start_sleep_timer(^sleep_timer_duration);

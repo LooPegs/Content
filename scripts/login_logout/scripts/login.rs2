@@ -21,6 +21,8 @@ settimer(general_macro_events, 500);
 // npc spawns only after interface is closed
 queue(macro_event_login, 0);
 
+~set_sleep_login; // resume sleep timer
+
 ~initalltabs;
 
 if (map_production = true) {

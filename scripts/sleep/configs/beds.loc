@@ -1,0 +1,7 @@
+[bed]
+name=Bed
+desc=Great for sleeping in.
+model=bed
+length=2
+op1=Rest
+category=bed

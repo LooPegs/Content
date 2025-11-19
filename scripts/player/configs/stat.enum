@@ -21,8 +21,30 @@ val=16,cooking
 val=17,firemaking
 val=18,woodcutting
 val=19,fletching
-val=20,slayer
-val=21,farming
+
+[stats_reverse]
+inputtype=stat
+outputtype=int
+default=null
+val=attack,1
+val=strength,2
+val=ranged,3
+val=magic,4
+val=defence,5
+val=hitpoints,6
+val=prayer,7
+val=agility,8
+val=herblore,9
+val=thieving,10
+val=crafting,11
+val=runecraft,12
+val=mining,13
+val=smithing,14
+val=fishing,15
+val=cooking,16
+val=firemaking,17
+val=woodcutting,18
+val=fletching,19
 
 [stats_free]
 inputtype=int
@@ -67,8 +89,6 @@ val=cooking,Cooking
 val=firemaking,Firemaking
 val=woodcutting,Woodcutting
 val=fletching,Fletching
-val=slayer,Slayer
-val=farming,Farming
 
 [stat_members]
 inputtype=stat
@@ -92,6 +112,3 @@ val=fishing,^false
 val=cooking,^false
 val=firemaking,^false
 val=woodcutting,^false
-val=fletching,^true
-val=slayer,^true
-val=farming,^true
