@@ -1,0 +1,5 @@
+//todo: initialize these with account creation/server reset
+
+[generalshop1_capital]
+type=int
+scope=perm

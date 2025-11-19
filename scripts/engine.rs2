@@ -811,11 +811,14 @@
 // info: Get the secondary inv config's size
 [command,.inv_size](inv $inv)(int) // todo: remove this
 // info: Get the base stock of $obj in the inv config
-[command,inv_stockbase](inv $inv, obj $obj)(int)
+[command,inv_stockbase](inv $inv, obj $obj)(int) //returns -1 if not sold at all?
+
+//if disable namedobj protection. can this be cheatengined?
 // info: Add an object to an inventory
 [command,inv_add](inv $inv, namedobj $obj, int $count)
 // info: Add an object to a secondary inventory
 [command,.inv_add](inv $inv, namedobj $obj, int $count)
+
 // info: Replace an object in an inventory
 [command,inv_changeslot](inv $inv, namedobj $find, namedobj $replace, int $replace_count) // Unconfirmed arguments, inferred from comment in a released script
 // info: Replace an object in a secondary inventory

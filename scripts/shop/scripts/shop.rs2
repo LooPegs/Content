@@ -5,24 +5,66 @@
 %shop_buy = $shop_buy;
 %shop_sell = $shop_sell;
 %shop_haggle = $shop_haggle;
+%shop_max_capital = npc_param(shop_max_capital);
+
+//~init_fraction_shop(%shop, npc_param(fraction_shop_denominator));
+
 if_settext(shop_template:com_76, $title);
 inv_transmit(inv, shop_template_side:inv);
-inv_transmit($shop, shop_template:inv);
+inv_transmit(%shop, shop_template:inv);
 if_openmain_side(shop_template, shop_template_side);
+~update_shop_gp_if;
 
 [proc,openshop_activenpc]
 %shop = npc_param(owned_shop);
 %shop_buy = npc_param(shop_buy_multiplier);
 %shop_sell = npc_param(shop_sell_multiplier);
 %shop_haggle = npc_param(shop_delta);
+%shop_max_capital = npc_param(shop_max_capital);
+
+//mes("obj 1 = <oc_name(inv_getobj(%shop, 0))>");
+//~init_fraction_shop(%shop, npc_param(fraction_shop_denominator));
+
 if_settext(shop_template:com_76, npc_param(shop_title));
 inv_transmit(inv, shop_template_side:inv);
 inv_transmit(%shop, shop_template:inv);
 if_openmain_side(shop_template, shop_template_side);
+~update_shop_gp_if;
 
 [if_close,shop_template]
 inv_stoptransmit(shop_template_side:inv);
 inv_stoptransmit(shop_template:inv);
+
+[proc,update_shop_gp_if]
+//todo: add comma
+if_settext(shop_template:capital, "<tostring(~get_shop_gp(%shop))>g");
+
+[proc,get_shop_gp](inv $shop)(int)
+switch_inv($shop) {
+    case generalshop1 : return(%generalshop1_capital);
+    case default : return(1);
+}
+
+[proc,add_shop_gp](inv $shop, int $capital)
+if ($shop = generalshop1) {
+    %generalshop1_capital = calc(%generalshop1_capital + $capital);
+}
+
+// [proc,init_fraction_shop](inv $shop, int $denominator) //no ret. just modify fractional_shop
+// def_int $i = 0;
+// mes("shop size = <tostring(inv_size($shop))>");
+// while ($i < inv_size($shop)) {
+//     def_obj $obj = inv_getobj($shop, $i);
+//     mes("obj = <oc_name($obj)>");
+//     def_int $total = inv_total($shop, $obj);
+//     mes("total= <tostring($total)>");
+//     def_int $new_total = scale($total, $denominator, 1);
+//     mes("new total = <tostring($new_total)>");
+//     mes("denom = <tostring($denominator)>");
+//     inv_add(fractional_shop, $obj, $new_total);
+//     $i = calc($i + 1);
+//     mes("i = <tostring($i)>");
+// }
 
 [proc,can_sell_obj](obj $item)(boolean)
 def_boolean $item_is_tradable = oc_tradeable(oc_uncert($item));
@@ -40,6 +82,7 @@ if ($item = coins) {
     mes("You can't sell this item to this shop.");
     return (false);
 }
+
 return (true);
 
 // sell value
@@ -93,11 +136,27 @@ while($i < $amount) {
         mes("You don't have enough inventory space.");
         return;
     }
+    def_int $shop_gp = ~get_shop_gp(%shop);
+    if (calc($added_amt + $shop_gp) > %shop_max_capital) {
+        mes("The shop can't store any more coins!");
+        return;
+    }
+    //can't buy items sold by players (even yourself)
+    if (inv_stockbase(%shop, $obj) = -1) {
+        mes("You can't buy that item.");
+        return;
+    }
+
+    //successful buy
     $total_cost = calc($total_cost + $added_amt);
     inv_del(inv, coins, $added_amt);
     inv_moveitem_uncert(%shop, inv, $obj, 1);
+    ~add_shop_gp(%shop, $added_amt);
     $i = calc($i + 1);
+    ~update_shop_gp_if;
+
 }
+
 wealth_event(^wealth_shop_buy, oc_debugname($obj), $i, $total_cost);
 
 // Sell an item to the shop
@@ -113,7 +172,9 @@ if(inv_itemspace(inv, coins, $sell_amount, inv_size(inv)) = false & oc_stackable
     mes("You don't have enough inventory space.");
     return;
 }
+
 // Check if the shop will have enough space to hold the obj
+mes("shop size = <tostring(inv_size(%shop))>");
 if(inv_itemspace(%shop, oc_uncert($obj), $sell_amount, inv_size(%shop)) = false) {
     mes("The shop has run out of space.");
     return;
@@ -125,12 +186,36 @@ while($i < $sell_amount) {
     $total_value = calc($total_value + $added_amt);
     $i = calc($i + 1);
 }
+
+//shop has limited capital to buy player's items
+def_int $shop_gp = ~get_shop_gp(%shop);
+if ($total_value > $shop_gp) {
+    if ($sell_amount > 1) {
+        mes("The shop doesn't have enough coins to buy those items.");
+    }
+    else {
+        mes("The shop doesn't have enough coins to buy that item.");
+    }
+    return;
+}
 // now perform the transaction 
 inv_moveitem_uncert(inv, %shop, $obj, $sell_amount);
+//if existing stock is full, dont overstock (ironique)
+$shop_total = inv_total(%shop, oc_uncert($obj));
+// mes("shop stock = <tostring($shop_stock)>");
+// mes("obj = <oc_name($obj)>");
+if (($shop_total > inv_stockbase(%shop, oc_uncert($obj))) & (inv_stockbase(%shop, oc_uncert($obj)) ! -1)) {
+    def_int $diff = calc($shop_total - inv_stockbase(%shop, oc_uncert($obj)));
+    mes("diff = <tostring($diff)>");
+    inv_del(%shop, oc_uncert($obj), $diff);
+}
 wealth_event(^wealth_shop_sell, oc_debugname($obj), $sell_amount, $total_value);
 if($total_value > 0) {
     inv_add(inv, coins, $total_value);
+    ~add_shop_gp(%shop, calc($total_value * -1));
+    ~update_shop_gp_if;
 }
+
 
 [proc,price_mod](inv $inv, int $diff, obj $obj)(int)
 def_int $base = inv_stockbase($inv, $obj);
@@ -139,7 +224,7 @@ if($base = -1) {
 }
 return (calc($diff - $base));
 
-// Purchase cost at a specifc stack count
+// Purchase cost at a specific stack count
 [proc,adjusted_item_cost_buying](obj $obj, int $diff)(int)
 def_int $cost = oc_cost($obj);
 def_int $value = ~calc_shop_value($cost, %shop_haggle, %shop_sell, ~price_mod(%shop, $diff, $obj));

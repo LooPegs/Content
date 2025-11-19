@@ -13,3 +13,8 @@ scope=temp
 [shop_haggle]
 type=int
 scope=temp
+
+[shop_max_capital]
+type=int
+scope=temp
+

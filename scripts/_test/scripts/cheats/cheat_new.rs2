@@ -13,3 +13,9 @@
 if_close;
 if (p_finduid(uid) = false) { @please_finish; return; }
 ~player_teleport_normal(0_43_74_22_22);
+
+// [debugproc,candle]
+// ~macro_candlelight_start;
+
+[opnpc3,shantay]
+~openshop_activenpc;

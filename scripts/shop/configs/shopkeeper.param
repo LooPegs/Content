@@ -17,3 +17,11 @@ default=10
 [shop_title]
 type=string
 default=Shop.
+
+// [fraction_shop_denominator]
+// type=int
+// default=4
+
+[shop_max_capital]
+type=int
+default=50000

@@ -4,3 +4,11 @@ if ($anim = null) {
 }
 
 anim($anim, 0);
+
+[debugproc,seq](seq $seq)
+if ($seq = null) {
+    @debugusage("::seq (name)", "::seq human_castteleport", "");
+    return;
+}
+
+anim($seq, 0);

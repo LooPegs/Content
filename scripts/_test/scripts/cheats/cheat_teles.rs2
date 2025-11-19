@@ -117,3 +117,13 @@ p_telejump(0_52_51_42_4);
 if_close;
 if (p_finduid(uid) = false) { @please_finish; return; }
 p_telejump(0_41_49_52_34);
+
+[debugproc,taverley]
+if_close;
+if (p_finduid(uid) = false) { @please_finish; return; }
+p_telejump(0_45_53_11_56);
+
+[debugproc,burthorpe]
+if_close;
+if (p_finduid(uid) = false) { @please_finish; return; }
+p_telejump(0_45_55_19_24);
