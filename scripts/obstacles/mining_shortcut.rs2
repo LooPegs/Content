@@ -1,0 +1,63 @@
+[oploc1,_mining_shortcut_t1] @start_mining_shortcut(30);
+[oploc3,_mining_shortcut_t1] @continue_mining_shortcut(30);
+[oploc1,_pass_mining_t1]@pass_mining_shortcut(30);
+
+// [oploc1,_mining_shortcut_t2] @start_mining_shortcut(50);
+// [oploc3,_mining_shortcut_t2] @continue_mining_shortcut(50);
+// [oploc1,_pass_mining_t2]@pass_mining_shortcut(50);
+
+// [oploc1,_mining_shortcut_t3] @start_mining_shortcut(70);
+// [oploc3,_mining_shortcut_t3] @continue_mining_shortcut(70);
+// [oploc1,_pass_mining_t3]@pass_mining_shortcut(70);
+
+[label,pass_mining_shortcut](int $levelreq)
+if (stat(mining) < $levelreq) {
+    // anim(null, 0);
+    ~mesbox("You need a mining level of <tostring($levelreq)> to pass this obstacle.");
+    return;
+}
+else {
+    @climb;
+}
+
+[label,start_mining_shortcut](int $levelreq)
+if (stat(mining) < $levelreq) {
+    // anim(null, 0);
+    ~mesbox("You need a mining level of <tostring($levelreq)> to mine this rock.");
+    return;
+}
+
+//todo: check pickaxe
+
+sound_synth(mine_quick, 0, 0);
+anim(human_mining_bronze_pickaxe, 0);
+mes("You swing your pick at the rock.");
+%action_delay = calc(map_clock + 3);
+p_oploc(3);
+
+[label,continue_mining_shortcut](int $levelreq)
+mes("continuing...");
+if (stat(mining) < $levelreq) {
+    // anim(null, 0);
+    ~mesbox("You need a mining level of <tostring($levelreq)> to mine this rock.");
+    return;
+}
+//todo: check pickaxe
+
+sound_synth(mine_quick, 0, 0);
+anim(human_mining_bronze_pickaxe, 0);
+
+if (%action_delay < map_clock) {
+    %action_delay = calc(map_clock + 3);
+    p_oploc(3);
+    return;
+}
+else if (%action_delay = map_clock) {
+    if (stat_random(mining, 1, 100) = true) {
+        mes("You clear the rubble");
+        loc_change(burgh_rubble_a_4, 20);
+        anim(null, 0);
+        ~stat_advance_boostable(mining, 100);
+    }
+}
+p_oploc(3);
