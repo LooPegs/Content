@@ -41,7 +41,8 @@ def_int $duration = 64;
 $duration = ~player_projectile(npc_coord, coord, uid, npc_param(proj_travel), 40, 36, 32, 15, 0, 11, 5);
 
 if (randominc($attack_roll) > randominc($defence_roll)) {
-    ~playerhit_n_ranged(randominc($maxhit), $duration, npc_param(attackrate));
+    def_int $damage = ~damage_roll(0, $maxhit, 1000, 0, true);
+    ~playerhit_n_ranged($damage, $duration, npc_param(attackrate));
     return;
 }
 ~playerhit_n_ranged(0, $duration, npc_param(attackrate));

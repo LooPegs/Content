@@ -179,3 +179,29 @@ if ($shield ! null & oc_category($shield) = armour_shield){
     return(human_shield_defence);
 }
 return(oc_param($weapon, defend_anim));
+
+
+//damage rolls from 1 - maxhit
+//min hit does not shorten the roll. floors bottom rolls
+[proc,damage_roll](int $minhit, int $maxhit, int $cap, int $flatarmour, boolean $normalize)(int)
+
+def_int $damage;
+console("Max hit = <tostring($maxhit)>");
+if ($normalize = true) {
+    // 'normalize' damage roll by splitting into two parts
+        $damage = 100;
+        $damage = add($damage, randominc(scale($maxhit, 2, 100)));
+        console("damage roll 1: <tostring($damage)>");
+        $damage = add($damage, random(scale($maxhit, 2, 100)));
+        console("damage roll 2: <tostring($damage)>");
+        $damage = divide($damage, 100);
+}
+else {
+    $damage = add(random($maxhit), 1);
+}
+
+$damage = max($damage, $minhit);
+$damage = sub(min($damage, $cap),$flatarmour);
+$damage = max($damage, 0);
+console("Hit = <tostring($damage)>");
+return ($damage);

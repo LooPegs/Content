@@ -37,7 +37,8 @@ def_int $maxhit = ~npc_melee_maxhit;
 // npc_say("Clock: <tostring(map_clock)>, NPC A: <tostring($attack_roll)>, Player D: <tostring($defence_roll)>, NPC Max: <tostring($maxhit)>");
 
 if (randominc($attack_roll) > randominc($defence_roll)) {
-    ~playerhit_n_melee(randominc($maxhit), npc_param(attackrate));
+    def_int $damage = ~damage_roll(0, $maxhit, 1000, 0, true);
+    ~playerhit_n_melee($damage, npc_param(attackrate));
     return;
 }
 ~playerhit_n_melee(0, npc_param(attackrate));

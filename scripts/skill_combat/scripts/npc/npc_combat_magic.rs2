@@ -117,7 +117,8 @@ return($duration);
 [proc,npc_spell_success](dbrow $spell_data, int $maxhit, int $duration)
 if_close;
 sound_synth(db_getfield($spell_data, magic_spell_table:sound_cast, 0), 0, 0);
-def_int $damage = randominc($maxhit);
+
+def_int $damage = ~damage_roll(0, $maxhit, 1000, 0, true);
 if ($maxhit ! null) {
     // npc vs player spells have no 1t extra damage delay. Whereas player vs npc spells do (osrs)
     queue(combat_damage_player, calc($duration / 30), $damage);

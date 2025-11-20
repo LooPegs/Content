@@ -1548,6 +1548,16 @@ op2=Attack
 vislevel=2
 param=slayer_category,^slayer_cow
 
+// [lesser_demon]
+// name=Lesser demon
+// desc=Lesser, but still pretty big.
+// model1=poh_demon_8
+// size=2
+// walkanim=demon_walk
+// readyanim=demon_ready
+// op2=Attack
+// vislevel=82
+
 [lesser_demon]
 name=Lesser demon
 desc=Lesser, but still pretty big.
@@ -1556,7 +1566,25 @@ size=2
 walkanim=demon_walk
 readyanim=demon_ready
 op2=Attack
-vislevel=82
+wanderrange=6
+maxrange=8
+respawnrate=5
+hitpoints=255
+attack=1
+strength=1
+defence=1
+param=magicdefence,-10
+param=damagetype,^slash_style
+param=attack_anim,demon_attack
+param=defend_anim,demon_block
+param=death_anim,demon_death_greater
+param=attack_sound,black_demon_attack
+param=defend_sound,black_demon_hit
+param=death_sound,black_demon_death
+param=demonbane_vulnerable,yes
+param=death_drop,ashes
+huntmode=cowardly
+huntrange=3
 
 [greater_demon]
 name=Greater demon
