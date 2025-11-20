@@ -1,3 +1,6 @@
 [woodcutting_struct]
 type=struct
 default=null
+
+[hardness]
+type=int

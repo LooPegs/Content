@@ -43,6 +43,7 @@ model=loc_14912_8
 2dzoom=1060
 2dyan=1196
 2dxan=520
+wearpos=righthand
 iop2=Wield
 manwear=obj_iron_axe_manwear,0
 womanwear=obj_iron_axe_manwear,6
