@@ -1,0 +1,18 @@
+[bonfire_starter]
+name=Bonfire starter
+desc=Yep
+recol1s=12548
+recol1d=2453
+recol2s=10434
+recol2d=5755
+recol3s=19912
+recol3d=5755
+members=yes
+model=obj_logs
+2dyof=-7
+2dzoom=1180
+2dyan=1852
+2dxan=120
+ambient=15
+op4=Light
+weight=2kg

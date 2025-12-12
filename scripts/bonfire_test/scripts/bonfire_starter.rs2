@@ -1,0 +1,63 @@
+//todo: change placeholder item
+[opheldu,fire_orb]
+
+if (last_useitem ! magic_logs) {
+    ~displaymessage(^dm_default);
+    return;
+} else {
+    if (inv_total(inv, magic_logs) < 5) {
+        mes("You need at least five magic logs to make a bonfire starter.");
+        return;
+    } else {
+        inv_del(inv, magic_logs, 5);
+        inv_del(inv, fire_orb, 1);
+        inv_add(inv, bonfire_starter, 1);
+        ~stat_advance_boostable(firemaking, 500);
+        mes("You combine the 'fire orb' with the magic logs to make a bonfire starter.");
+    }
+}
+
+[opheldu,bonfire_starter]
+if (last_useitem = tinderbox) {
+    anim(human_createfire, 0);
+    queue(bonfire_start,1);
+} else {
+    ~displaymessage(^dm_default);
+}
+
+[queue,bonfire_start]
+@bonfire_finish;
+
+[label,bonfire_finish]
+if (inv_total(inv, bonfire_starter) < 1) {
+    return;
+}
+def_coord $center = coord;
+//not quite sure what lineofwalk check does
+if (map_blocked($center) = true | // center
+    map_blocked(movecoord($center, 0, 0, 1)) = true | // north
+    map_blocked(movecoord($center, 1, 0, 1)) = true | // north-east
+    map_blocked(movecoord($center, 1, 0, 0)) = true | // east
+    map_blocked(movecoord($center, 1, 0, -1)) = true | // south-east
+    map_blocked(movecoord($center, 0, 0, -1)) = true | // south
+    map_blocked(movecoord($center, -1, 0, -1)) = true | // south-west
+    map_blocked(movecoord($center, -1, 0, 0)) = true | // west
+    map_blocked(movecoord($center, -1, 0, 1)) = true | // north-west
+    lineofwalk(movecoord($center, 0, 0, 1), movecoord($center, 0, 0, -1)) = false |
+    lineofwalk(movecoord($center, 1, 0, 0), movecoord($center, -1, 0, 0)) = false |
+    lineofwalk(movecoord($center, 1, 0, 1), movecoord($center, -1, 0, -1)) = false |
+    lineofwalk(movecoord($center, -1, 0, 1), movecoord($center, 1, 0, -1)) = false)
+{
+    mes("There isn't enough space to start a bonfire here");
+    return;
+}
+if (npc_findcat(coord, bonfire, 8, 0) = true) {
+    mes("There's already a bonfire nearby.");
+    return;
+}
+inv_del(inv, bonfire_starter, 1);
+npc_add(coord, bonfire3, ^max_32bit_int);
+def_coord $random = movecoord(coord, ~random_range(-1,1), 0, ~random_range(-1,1));
+~playerwalk3($random);
+mes("You start a bonfire.");
+~stat_advance_boostable(firemaking, 1000);

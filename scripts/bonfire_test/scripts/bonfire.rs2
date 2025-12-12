@@ -1,0 +1,62 @@
+[ai_spawn,bonfire3]
+%bonfire_duration = add(map_clock, 350);
+
+[ai_timer,_bonfire]
+if (%bonfire_duration <= map_clock) {
+    npc_del;
+    return;
+}
+npc_say("Hunting! <tostring(sub(%bonfire_duration, map_clock))>");
+huntall(npc_coord, npc_param(bonfire_range), 0);
+~update_bonfire_state();
+while (huntnext = true) {
+    healenergy(300);
+    //mes("last combat: <tostring(%lastcombat)>, map clock: <tostring(map_clock)>");
+    if (add(%lastcombat, 5) <= map_clock) {
+        if (random(120) < stat_base(hitpoints)) {
+            stat_heal(hitpoints, 1, 0);
+        }
+    }
+    
+}
+
+[proc,update_bonfire_state]
+def_int $remaining = sub(%bonfire_duration, map_clock);
+if ($remaining > 400) {
+    npc_changetype_keepall(bonfire4, ^max_32bit_int);
+} else if ($remaining > 300) {
+    npc_changetype_keepall(bonfire3, ^max_32bit_int);
+} else if ($remaining > 200) {
+    npc_changetype_keepall(bonfire2, ^max_32bit_int);
+} else if ($remaining > 100) {
+    npc_changetype_keepall(bonfire1, ^max_32bit_int);
+}
+else {
+    npc_changetype(bonfire0, ^max_32bit_int);
+}
+
+//add logs to the fire
+[opnpcu,_bonfire]
+
+
+db_find(bonfire_logs:obj, last_useitem);
+def_dbrow $data = db_findnext;
+if ($data = null) {
+    mes("You shouldn't add that to the bonfire.");
+    return;
+}
+if (sub(%bonfire_duration, map_clock) >= ^bonfire_max_duration) {
+        mes("The bonfire is already blazing.");
+        return;
+}
+def_int $base_duration = db_getfield($data, bonfire_logs:duration, 0);
+def_int $xp = db_getfield($data, bonfire_logs:experience, 0);
+
+//up to +100% duration at 99 fm
+inv_del(inv, last_useitem, 1);
+mes("You add the logs to the bonfire.");
+%bonfire_duration = add(%bonfire_duration, calc($base_duration + scale(stat(firemaking), 99, $base_duration)));
+npc_say("Yum!");
+~update_bonfire_state;
+~stat_advance_boostable(firemaking, $xp);
+

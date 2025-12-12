@@ -1,0 +1,107 @@
+// [bonfire]
+// name=Bonfire
+// desc=hmm.
+// readyanim=pyrefiend_ready
+// model1=obj_slayerguide_pyrfiend
+// recol1s=31011
+// recol1d=32767
+// ambient=60
+// contrast=60
+// vislevel=hide
+// minimap=no
+// defaultmode=none
+// moverestrict=nomove
+// category=bonfire
+// timer=10
+
+[bonfire0]
+name=Bonfire
+desc=A tier 0 bonfire.
+model1=obj_slayerguide_pyrfiend
+recol1s=31011
+recol1d=29568
+resizeh=80
+resizev=80
+ambient=60
+contrast=60
+vislevel=hide
+minimap=no
+defaultmode=none
+moverestrict=nomove
+alwaysontop=yes
+category=bonfire
+param=bonfire_range,1
+
+[bonfire1]
+name=Bonfire
+desc=A tier 1 bonfire.
+model1=obj_slayerguide_pyrfiend
+recol1s=31011
+recol1d=29250
+resizeh=100
+resizev=100
+ambient=60
+contrast=60
+vislevel=hide
+minimap=no
+defaultmode=none
+moverestrict=nomove
+alwaysontop=yes
+category=bonfire
+param=bonfire_range,2
+
+[bonfire2]
+name=Bonfire
+desc=A tier 2 bonfire.
+model1=obj_slayerguide_pyrfiend
+recol1s=31011
+recol1d=29954
+resizeh=120
+resizev=120
+ambient=60
+contrast=60
+vislevel=hide
+minimap=no
+defaultmode=none
+moverestrict=nomove
+alwaysontop=yes
+category=bonfire
+param=bonfire_range,3
+
+//starts as bonfire3
+[bonfire3]
+name=Bonfire
+desc=A tier 3 bonfire.
+model1=obj_slayerguide_pyrfiend
+recol1s=31011
+recol1d=31744
+resizeh=140
+resizev=140
+ambient=60
+contrast=60
+vislevel=hide
+minimap=no
+defaultmode=none
+moverestrict=nomove
+alwaysontop=yes
+category=bonfire
+param=bonfire_range,4
+timer=10
+
+[bonfire4]
+name=Bonfire
+desc=A tier 4 bonfire.
+model1=obj_slayerguide_pyrfiend
+recol1s=31011
+recol1d=863
+resizeh=160
+resizev=160
+ambient=60
+contrast=60
+vislevel=hide
+minimap=no
+defaultmode=none
+moverestrict=nomove
+alwaysontop=yes
+category=bonfire
+param=bonfire_range,5

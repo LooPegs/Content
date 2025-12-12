@@ -1,0 +1,93 @@
+[fire1]
+name=Bonfire
+desc=Hot!
+model=loc_2732
+anim=fire
+blockwalk=no
+blockrange=no
+recol1s=4316
+recol1d=12577
+ambient=75
+contrast=75
+category=bonfire
+
+[fire2]
+name=Bonfire
+desc=Hot!
+model=loc_2732
+anim=fire
+blockwalk=no
+blockrange=no
+recol1s=20641
+recol1d=19679
+recol2s=24833
+recol2d=22619
+recol3s=31105
+recol3d=11287
+recol4s=31393
+recol4d=17427
+recol5s=31297
+recol5d=19487
+ambient=75
+contrast=75
+category=bonfire
+
+// [loc_11406]
+// name=Fire
+// desc=Hot!
+// model=loc_2732
+// recol1s=20641
+// recol1d=6719
+// recol2s=24833
+// recol2d=2491
+// recol3s=31105
+// recol3d=279
+// recol4s=31393
+// recol4d=19
+// recol5s=31297
+// recol5d=153
+// anim=fire
+// blockwalk=no
+// blockrange=no
+// ambient=75
+// contrast=75
+
+// [loc_11405]
+// name=Fire
+// desc=Hot!
+// model=loc_2732
+// recol1s=20641
+// recol1d=7142
+// recol2s=24833
+// recol2d=2914
+// recol3s=31105
+// recol3d=736
+// recol4s=31393
+// recol4d=608
+// recol5s=31297
+// recol5d=992
+// anim=fire
+// blockwalk=no
+// blockrange=no
+// ambient=75
+// contrast=75
+
+// [loc_11404]
+// name=Fire
+// desc=Hot!
+// model=loc_2732
+// recol1s=20641
+// recol1d=30753
+// recol2s=24833
+// recol2d=26657
+// recol3s=31105
+// recol3d=22561
+// recol4s=31393
+// recol4d=24609
+// recol5s=31297
+// recol5d=30753
+// anim=fire
+// blockwalk=no
+// blockrange=no
+// ambient=75
+// contrast=75
