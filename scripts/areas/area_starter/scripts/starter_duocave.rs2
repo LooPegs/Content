@@ -1,0 +1,33 @@
+[oploc1,_duocave_closed]
+mes("The door is locked by some mechanism.");
+
+[oploc1,_duocave_open]
+if (p_finduid(uid) = true) {
+    say("I'm in!");
+}
+[zone,0_50_50_16_16]
+mes("zone entered");
+softtimer(duocave_pressure_plate, 1);
+
+[zoneexit,0_50_50_16_16]
+mes("zone exited");
+clearsofttimer(duocave_pressure_plate);
+
+[softtimer,duocave_pressure_plate]
+mes("timer");
+def_int $range = 3;
+//doors are hardcoded
+    if (loc_find(coord, duocave_pressure_plate_1) = true) {
+        huntall(coord, 3, 0);
+        while (.huntnext = true) {
+            if (.loc_find(.coord, duocave_pressure_plate_2) = true) {
+                if ((loc_find(0_50_50_21_20, duocave_door_left) = true ) & (.loc_find(0_50_50_22_20, duocave_door_right) = true)) {
+                    loc_change(duocave_door_left_open, 25);
+                    .loc_change(duocave_door_right_open, 25);
+                    mes("You hear a click as a mechanism activates.");
+                    .mes("You hear a click as a mechanism activates.");
+                    return;
+                }
+            } 
+        }
+    }

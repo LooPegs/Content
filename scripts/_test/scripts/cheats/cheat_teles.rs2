@@ -18,6 +18,16 @@ if_close;
 if (p_finduid(uid) = false) { @please_finish; return; }
 p_teleport(movecoord(coord, 0, 0, calc(0 - max($distance, 1))));
 
+[debugproc,up]//up a level
+if_close;
+if (p_finduid(uid) = false) { @please_finish; return; }
+p_teleport(movecoord(coord, 0, 1, 0));
+
+[debugproc,down]//down a level
+if_close;
+if (p_finduid(uid) = false) { @please_finish; return; }
+p_teleport(movecoord(coord, 0, -1, 0));
+
 [debugproc,home]//Lumby
 if_close;
 if (p_finduid(uid) = false) { @please_finish; return; }

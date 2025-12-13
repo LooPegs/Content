@@ -1,0 +1,39 @@
+[duocave_door_left]
+name=Door
+desc=The door is closed.
+model=door
+active=yes
+category=duocave_closed
+op1=Open
+
+[duocave_door_left_open]
+name=Door
+desc=The door is closed.
+model=door
+active=yes
+category=duocave_open
+op1=Enter
+
+[duocave_door_right]
+name=Door
+desc=The door is closed.
+model=door
+active=yes
+category=duocave_closed
+op1=Open
+
+[duocave_door_right_open]
+name=Door
+desc=The door is closed.
+model=door
+active=yes
+category=duocave_open
+op1=Enter
+
+[duocave_pressure_plate_1]
+model=dagannoth_pressure_pad1
+forcedecor=yes
+
+[duocave_pressure_plate_2]
+model=dagannoth_pressure_pad1
+forcedecor=yes
