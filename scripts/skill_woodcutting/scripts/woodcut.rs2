@@ -2,6 +2,16 @@
 // "hidden" op
 [oploc3,_tree] @cut_tree;
 
+[opheld1,pineapple]
+p_stopaction;
+anim(null,0);
+anim(human_eat, 0);
+%action_delay = calc(map_clock + 1);
+// } else if (%action_delay = map_clock) {
+//     say("Yum!");
+//     anim(null, 0);
+// }
+
 // click use axe on tree
 [oplocu,_tree]
 switch_obj(last_useitem) {
@@ -68,6 +78,7 @@ anim(struct_param(oc_param($axe, woodcutting_struct), skill_anim), 0);
 sound_synth(woodchop1, 0, 0);
 mes("You swing your axe at the tree.");
 if (%action_delay = map_clock) {
+    spotanim_pl(trek_glowing_circle, 0, 0);
     @get_logs($data, $axe);
 }
 

@@ -3538,48 +3538,48 @@ width=2
 length=4
 
 // todo: name used from 244
-[plainrock1]
-name=Rocks
-desc=Stoney!
-model=rock1
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
+// [plainrock1]
+// name=Rocks
+// desc=Stoney!
+// model=rock1
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
 
 // todo: name used from 244
-[plainrock1_alt]
-name=Rocks
-desc=Stoney!
-model=rock2
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
+// [plainrock1_alt]
+// name=Rocks
+// desc=Stoney!
+// model=rock2
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
 
 // todo: name used from 244
-[plainrock2]
-name=Rocks
-desc=Stoney!
-model=rock2
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
+// [plainrock2]
+// name=Rocks
+// desc=Stoney!
+// model=rock2
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
 
-// todo: name used from 244
-[plainrock3]
-name=Rocks
-desc=Stoney!
-model=rock3
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
+// // todo: name used from 244
+// [plainrock3]
+// name=Rocks
+// desc=Stoney!
+// model=rock3
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
 
 [loc_454]
 name=Cave rocks
@@ -14216,295 +14216,295 @@ name=Rockery
 desc=Ornamental.
 model=rockery
 
-// todo: name used from 244
-[copperrock1]
-name=Rocks
-desc=A rocky outcrop.
-model=rock1
-recol1s=6342
-recol1d=14596
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
+// // todo: name used from 244
+// [copperrock1]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock1
+// recol1s=6342
+// recol1d=14596
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
 
-// todo: name used from 244
-[copperrock2]
-name=Rocks
-desc=A rocky outcrop.
-model=rock2
-recol1s=6342
-recol1d=14596
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
+// // todo: name used from 244
+// [copperrock2]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock2
+// recol1s=6342
+// recol1d=14596
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
 
-// todo: name used from 244
-[ironrock1]
-name=Rocks
-desc=A rocky outcrop.
-model=rock1
-recol1s=6342
-recol1d=6242
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
+// // todo: name used from 244
+// [ironrock1]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock1
+// recol1s=6342
+// recol1d=6242
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
 
-// todo: name used from 244
-[ironrock2]
-name=Rocks
-desc=A rocky outcrop.
-model=rock2
-recol1s=6342
-recol1d=6242
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
+// // todo: name used from 244
+// [ironrock2]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock2
+// recol1s=6342
+// recol1d=6242
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
 
-// todo: name used from 244
-[tinrock1]
-name=Rocks
-desc=A rocky outcrop.
-model=rock1
-recol1s=6342
-recol1d=13741
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
+// // todo: name used from 244
+// [tinrock1]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock1
+// recol1s=6342
+// recol1d=13741
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
 
-// todo: name used from 244
-[tinrock2]
-name=Rocks
-desc=A rocky outcrop.
-model=rock2
-recol1s=6342
-recol1d=13741
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
+// // todo: name used from 244
+// [tinrock2]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock2
+// recol1s=6342
+// recol1d=13741
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
 
-// todo: name used from 244
-[coalrock1]
-name=Rocks
-desc=A rocky outcrop.
-model=rock1
-recol1s=6342
-recol1d=4226
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
+// // todo: name used from 244
+// [coalrock1]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock1
+// recol1s=6342
+// recol1d=4226
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
 
-// todo: name used from 244
-[coalrock2]
-name=Rocks
-desc=A rocky outcrop.
-model=rock2
-recol1s=6342
-recol1d=4226
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
+// // todo: name used from 244
+// [coalrock2]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock2
+// recol1s=6342
+// recol1d=4226
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
 
-// todo: name used from 244
-[goldrock1]
-name=Rocks
-desc=A rocky outcrop.
-model=rock1
-recol1s=6342
-recol1d=23108
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
+// // todo: name used from 244
+// [goldrock1]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock1
+// recol1s=6342
+// recol1d=23108
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
 
-// todo: name used from 244
-[goldrock2]
-name=Rocks
-desc=A rocky outcrop.
-model=rock2
-recol1s=6342
-recol1d=23108
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
+// // todo: name used from 244
+// [goldrock2]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock2
+// recol1s=6342
+// recol1d=23108
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
 
-// todo: name used from 244
-[silverrock1]
-name=Rocks
-desc=A rocky outcrop.
-model=rock1
-recol1s=6342
-recol1d=19026
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
+// // todo: name used from 244
+// [silverrock1]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock1
+// recol1s=6342
+// recol1d=19026
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
 
-// todo: name used from 244
-[silverrock2]
-name=Rocks
-desc=A rocky outcrop.
-model=rock2
-recol1s=6342
-recol1d=19026
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
+// // todo: name used from 244
+// [silverrock2]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock2
+// recol1s=6342
+// recol1d=19026
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
 
-// todo: name used from 244
-[mithrilrock1]
-name=Rocks
-desc=A rocky outcrop.
-model=rock1
-recol1s=6342
-recol1d=6346
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
+// // todo: name used from 244
+// [mithrilrock1]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock1
+// recol1s=6342
+// recol1d=6346
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
 
-// todo: name used from 244
-[mithrilrock2]
-name=Rocks
-desc=A rocky outcrop.
-model=rock2
-recol1s=6342
-recol1d=6346
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
+// // todo: name used from 244
+// [mithrilrock2]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock2
+// recol1s=6342
+// recol1d=6346
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
 
-// todo: name used from 244
-[adamantiterock1]
-name=Rocks
-desc=A rocky outcrop.
-model=rock1
-recol1s=6342
-recol1d=6438
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
+// // todo: name used from 244
+// [adamantiterock1]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock1
+// recol1s=6342
+// recol1d=6438
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
 
-// todo: name used from 244
-[adamantiterock2]
-name=Rocks
-desc=A rocky outcrop.
-model=rock2
-recol1s=6342
-recol1d=6438
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
+// // todo: name used from 244
+// [adamantiterock2]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock2
+// recol1s=6342
+// recol1d=6438
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
 
-// todo: name used from 244
-[runiterock1]
-name=Rocks
-desc=A rocky outcrop.
-model=rock1
-recol1s=6342
-recol1d=8721
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
+// // todo: name used from 244
+// [runiterock1]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock1
+// recol1s=6342
+// recol1d=8721
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
 
-// todo: name used from 244
-[runiterock2]
-name=Rocks
-desc=A rocky outcrop.
-model=rock2
-recol1s=6342
-recol1d=8721
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
+// // todo: name used from 244
+// [runiterock2]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock2
+// recol1s=6342
+// recol1d=8721
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
 
-// todo: name used from 244
-[clayrock1]
-name=Rocks
-desc=A rocky outcrop.
-model=rock1
-recol1s=6342
-recol1d=18854
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
+// // todo: name used from 244
+// [clayrock1]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock1
+// recol1s=6342
+// recol1d=18854
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
 
-// todo: name used from 244
-[clayrock2]
-name=Rocks
-desc=A rocky outcrop.
-model=rock2
-recol1s=6342
-recol1d=18854
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
+// // todo: name used from 244
+// [clayrock2]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock2
+// recol1s=6342
+// recol1d=18854
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
 
-// todo: name used from 244
-[bluriterock]
-name=Rocks
-desc=A rocky outcrop.
-model=loc_2110
-recol1s=9513
-recol1d=24511
-recol2s=6342
-recol2d=382
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=25
-blockrange=no
-ambient=10
-ambient=20
+// // todo: name used from 244
+// [bluriterock]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=loc_2110
+// recol1s=9513
+// recol1d=24511
+// recol2s=6342
+// recol2d=382
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=25
+// blockrange=no
+// ambient=10
+// ambient=20
 
-// todo: name used from 244
-[gemrock]
-name=Rocks
-desc=A rocky outcrop.
-model=rock2
-recol1s=6342
-recol1d=15407
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
+// // todo: name used from 244
+// [gemrock]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock2
+// recol1s=6342
+// recol1d=15407
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
 
 [loc_2112]
 name=Door
@@ -18272,54 +18272,54 @@ active=yes
 op1=Climb-up
 mapscene=7
 
-// todo: name used from 244
-[potters_wheel]
-name=Potter's Wheel
-desc=Used for fashioning clay items.
-model=loc_2642
-forceapproach=east
+// // todo: name used from 244
+// [potters_wheel]
+// name=Potter's Wheel
+// desc=Used for fashioning clay items.
+// model=loc_2642
+// forceapproach=east
 
-// todo: name used from 244
-[pottery_oven]
-name=Pottery Oven
-desc=Bake your clay items in here.
-model=loc_2643
-length=2
-forceapproach=east
-op1=Fire
+// // todo: name used from 244
+// [pottery_oven]
+// name=Pottery Oven
+// desc=Bake your clay items in here.
+// model=loc_2643
+// length=2
+// forceapproach=east
+// op1=Fire
 
-// todo: name used from 244
-[spinning_wheel]
-name=Spinning wheel
-desc=Used for spinning thread.
-model=loc_2644
-forceapproach=south
-op2=Spin
+// // todo: name used from 244
+// [spinning_wheel]
+// name=Spinning wheel
+// desc=Used for spinning thread.
+// model=loc_2644
+// forceapproach=south
+// op2=Spin
 
-// todo: name used from 244
-[sand_pit]
-name=Sand pit
-desc=A tray of sand.
-model=specimen_tray
-width=2
-length=2
+// // todo: name used from 244
+// [sand_pit]
+// name=Sand pit
+// desc=A tray of sand.
+// model=specimen_tray
+// width=2
+// length=2
 
-// todo: name used from 244
-[flax_ground]
-name=Flax
-desc=A plant cultivated for fibres.
-model=loc_2646
-op2=Pick
-mapscene=32
-blockwalk=no
+// // todo: name used from 244
+// [flax_ground]
+// name=Flax
+// desc=A plant cultivated for fibres.
+// model=loc_2646
+// op2=Pick
+// mapscene=32
+// blockwalk=no
 
-// todo: name used from 244
-[crafting_guild_door]
-name=Guild Door
-desc=The door to the Crafting Guild.
-model=door
-active=yes
-op1=Open
+// // todo: name used from 244
+// [crafting_guild_door]
+// name=Guild Door
+// desc=The door to the Crafting Guild.
+// model=door
+// active=yes
+// op1=Open
 
 [loc_2648]
 model=loc_2648

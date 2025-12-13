@@ -1096,14 +1096,14 @@ size=216
 [partyroom_tempinv]
 size=8
 
-[crafting_make_rings]
-size=1
+// [crafting_make_rings]
+// size=1
 
-[crafting_make_necklaces]
-size=1
+// [crafting_make_necklaces]
+// size=1
 
-[crafting_make_amulets]
-size=1
+// [crafting_make_amulets]
+// size=1
 
 [blurberrybar]
 size=7

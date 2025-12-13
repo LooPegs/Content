@@ -4559,202 +4559,202 @@ iop1=Read
 cost=1
 weight=20g
 
-[clay]
-name=Clay
-desc=Some hard dry clay.
-recol1s=21140
-recol1d=22025
-model=obj_unicorn_horn_dust
-2dxof=-6
-2dzoom=1210
-2dyan=1892
-2dxan=264
-weight=1kg
+// [clay]
+// name=Clay
+// desc=Some hard dry clay.
+// recol1s=21140
+// recol1d=22025
+// model=obj_unicorn_horn_dust
+// 2dxof=-6
+// 2dzoom=1210
+// 2dyan=1892
+// 2dxan=264
+// weight=1kg
 
 [cert_clay]
 certlink=clay
 certtemplate=template_for_cert
 
-[copper_ore]
-name=Copper ore
-desc=This needs refining.
-recol1s=11488
-recol1d=29095
-cost=3
-model=obj_copper_ore
-2dxof=1
-2dyof=15
-2dzoom=1400
-2dyan=1576
-2dxan=368
-weight=5lb
+// [copper_ore]
+// name=Copper ore
+// desc=This needs refining.
+// recol1s=11488
+// recol1d=29095
+// cost=3
+// model=obj_copper_ore
+// 2dxof=1
+// 2dyof=15
+// 2dzoom=1400
+// 2dyan=1576
+// 2dxan=368
+// weight=5lb
 
 [cert_copper_ore]
 certlink=copper_ore
 certtemplate=template_for_cert
 
-[tin_ore]
-name=Tin ore
-desc=This needs refining.
-recol1s=11488
-recol1d=14798
-cost=3
-model=obj_copper_ore
-2dxof=1
-2dyof=15
-2dzoom=1400
-2dyan=1576
-2dxan=368
-weight=5lb
+// [tin_ore]
+// name=Tin ore
+// desc=This needs refining.
+// recol1s=11488
+// recol1d=14798
+// cost=3
+// model=obj_copper_ore
+// 2dxof=1
+// 2dyof=15
+// 2dzoom=1400
+// 2dyan=1576
+// 2dxan=368
+// weight=5lb
 
 [cert_tin_ore]
 certlink=tin_ore
 certtemplate=template_for_cert
 
-[iron_ore]
-name=Iron ore
-desc=This needs refining.
-recol1s=11488
-recol1d=6242
-recol2s=11627
-recol2d=6242
-cost=17
-model=obj_copper_ore
-2dxof=1
-2dyof=15
-2dzoom=1400
-2dyan=1576
-2dxan=368
-weight=5lb
+// [iron_ore]
+// name=Iron ore
+// desc=This needs refining.
+// recol1s=11488
+// recol1d=6242
+// recol2s=11627
+// recol2d=6242
+// cost=17
+// model=obj_copper_ore
+// 2dxof=1
+// 2dyof=15
+// 2dzoom=1400
+// 2dyan=1576
+// 2dxan=368
+// weight=5lb
 
 [cert_iron_ore]
 certlink=iron_ore
 certtemplate=template_for_cert
 
-[silver_ore]
-name=Silver ore
-desc=This needs refining.
-recol1s=11488
-recol1d=22198
-recol2s=11627
-recol2d=22198
-cost=75
-model=obj_copper_ore
-2dxof=1
-2dyof=15
-2dzoom=1400
-2dyan=1576
-2dxan=368
-weight=5lb
+// [silver_ore]
+// name=Silver ore
+// desc=This needs refining.
+// recol1s=11488
+// recol1d=22198
+// recol2s=11627
+// recol2d=22198
+// cost=75
+// model=obj_copper_ore
+// 2dxof=1
+// 2dyof=15
+// 2dzoom=1400
+// 2dyan=1576
+// 2dxan=368
+// weight=5lb
 
 [cert_silver_ore]
 certlink=silver_ore
 certtemplate=template_for_cert
 
-[gold_ore]
-name=Gold ore
-desc=This needs refining.
-recol1s=11488
-recol1d=31393
-recol2s=11627
-recol2d=31393
-cost=150
-model=obj_copper_ore
-2dxof=1
-2dyof=15
-2dzoom=1400
-2dyan=1576
-2dxan=368
-weight=5lb
+// [gold_ore]
+// name=Gold ore
+// desc=This needs refining.
+// recol1s=11488
+// recol1d=31393
+// recol2s=11627
+// recol2d=31393
+// cost=150
+// model=obj_copper_ore
+// 2dxof=1
+// 2dyof=15
+// 2dzoom=1400
+// 2dyan=1576
+// 2dxan=368
+// weight=5lb
 
 [cert_gold_ore]
 certlink=gold_ore
 certtemplate=template_for_cert
 
-[perfect_gold_ore]
-name='perfect' gold ore
-desc=This needs refining.
-recol1s=11488
-recol1d=31393
-recol2s=11627
-recol2d=31393
-cost=150
-model=obj_copper_ore
-2dxof=1
-2dyof=15
-2dzoom=1400
-2dyan=1576
-2dxan=368
-members=yes
-weight=5lb
+// [perfect_gold_ore]
+// name='perfect' gold ore
+// desc=This needs refining.
+// recol1s=11488
+// recol1d=31393
+// recol2s=11627
+// recol2d=31393
+// cost=150
+// model=obj_copper_ore
+// 2dxof=1
+// 2dyof=15
+// 2dzoom=1400
+// 2dyan=1576
+// 2dxan=368
+// members=yes
+// weight=5lb
 
-[mithril_ore]
-name=Mithril ore
-desc=This needs refining.
-recol1s=11488
-recol1d=6346
-cost=162
-model=obj_copper_ore
-2dxof=1
-2dyof=15
-2dzoom=1400
-2dyan=1576
-2dxan=368
-weight=4lb
+// [mithril_ore]
+// name=Mithril ore
+// desc=This needs refining.
+// recol1s=11488
+// recol1d=6346
+// cost=162
+// model=obj_copper_ore
+// 2dxof=1
+// 2dyof=15
+// 2dzoom=1400
+// 2dyan=1576
+// 2dxan=368
+// weight=4lb
 
 [cert_mithril_ore]
 certlink=mithril_ore
 certtemplate=template_for_cert
 
-[adamantite_ore]
-name=Adamantite ore
-desc=This needs refining.
-recol1s=11488
-recol1d=6438
-cost=400
-model=obj_copper_ore
-2dxof=1
-2dyof=15
-2dzoom=1400
-2dyan=1576
-2dxan=368
-weight=6lb
+// [adamantite_ore]
+// name=Adamantite ore
+// desc=This needs refining.
+// recol1s=11488
+// recol1d=6438
+// cost=400
+// model=obj_copper_ore
+// 2dxof=1
+// 2dyof=15
+// 2dzoom=1400
+// 2dyan=1576
+// 2dxan=368
+// weight=6lb
 
 [cert_adamantite_ore]
 certlink=adamantite_ore
 certtemplate=template_for_cert
 
-[runite_ore]
-name=Runite ore
-desc=This needs refining.
-recol1s=11488
-recol1d=6476
-cost=3200
-model=obj_copper_ore
-2dxof=1
-2dyof=15
-2dzoom=1400
-2dyan=1576
-2dxan=368
-weight=5lb
+// [runite_ore]
+// name=Runite ore
+// desc=This needs refining.
+// recol1s=11488
+// recol1d=6476
+// cost=3200
+// model=obj_copper_ore
+// 2dxof=1
+// 2dyof=15
+// 2dzoom=1400
+// 2dyan=1576
+// 2dxan=368
+// weight=5lb
 
 [cert_runite_ore]
 certlink=runite_ore
 certtemplate=template_for_cert
 
-[coal]
-name=Coal
-desc=Hmm a non-renewable energy source!
-recol1s=11488
-recol1d=4226
-cost=45
-model=obj_copper_ore
-2dxof=1
-2dyof=15
-2dzoom=1400
-2dyan=1576
-2dxan=368
-weight=5lb
+// [coal]
+// name=Coal
+// desc=Hmm a non-renewable energy source!
+// recol1s=11488
+// recol1d=4226
+// cost=45
+// model=obj_copper_ore
+// 2dxof=1
+// 2dyof=15
+// 2dzoom=1400
+// 2dyan=1576
+// 2dxan=368
+// weight=5lb
 
 [cert_coal]
 certlink=coal
@@ -14521,148 +14521,148 @@ weight=5lb
 certlink=dragon_spear_p
 certtemplate=template_for_cert
 
-[bronze_pickaxe]
-name=Bronze pickaxe
-desc=Used for mining.
-recol1s=15855
-recol1d=8354
-cost=1
-model=loc_14910_8
-manwear=obj_bronze_pickaxe_manwear,0
-womanwear=obj_bronze_pickaxe_manwear,6
-2dxof=-2
-2dyof=-19
-2dzoom=1070
-2dyan=1056
-2dxan=224
-iop2=Wield
-category=weapon_pickaxe
-param=stabattack,4
-param=slashattack,-2
-param=crushattack,2
-param=slashdefence,1
-param=strengthbonus,5
-param=levelrequire,0
-param=mining_rate,7
-param=mining_animation,human_mining_bronze_pickaxe
-param=attackrate,5
-param=stabattack_anim,human_blunt_pound
-param=crushattack_anim,human_blunt_spike
-param=defend_anim,human_axe_block
-param=stab_sound,baxe_slash
-param=crush_sound,baxe_crush
-param=broken,macro_broken_bronze_pickaxe
-param=pickaxe_head,macro_bronze_pickaxehead
-weight=5lb
-wearpos=righthand
+// [bronze_pickaxe]
+// name=Bronze pickaxe
+// desc=Used for mining.
+// recol1s=15855
+// recol1d=8354
+// cost=1
+// model=loc_14910_8
+// manwear=obj_bronze_pickaxe_manwear,0
+// womanwear=obj_bronze_pickaxe_manwear,6
+// 2dxof=-2
+// 2dyof=-19
+// 2dzoom=1070
+// 2dyan=1056
+// 2dxan=224
+// iop2=Wield
+// category=weapon_pickaxe
+// param=stabattack,4
+// param=slashattack,-2
+// param=crushattack,2
+// param=slashdefence,1
+// param=strengthbonus,5
+// param=levelrequire,0
+// param=mining_rate,7
+// param=mining_animation,human_mining_bronze_pickaxe
+// param=attackrate,5
+// param=stabattack_anim,human_blunt_pound
+// param=crushattack_anim,human_blunt_spike
+// param=defend_anim,human_axe_block
+// param=stab_sound,baxe_slash
+// param=crush_sound,baxe_crush
+// param=broken,macro_broken_bronze_pickaxe
+// param=pickaxe_head,macro_bronze_pickaxehead
+// weight=5lb
+// wearpos=righthand
 
 [cert_bronze_pickaxe]
 certlink=bronze_pickaxe
 certtemplate=template_for_cert
 
-[iron_pickaxe]
-name=Iron pickaxe
-desc=Used for mining.
-recol1s=15855
-recol1d=8456
-cost=140
-model=loc_14910_8
-manwear=obj_bronze_pickaxe_manwear,0
-womanwear=obj_bronze_pickaxe_manwear,6
-2dxof=-2
-2dyof=-19
-2dzoom=1070
-2dyan=1056
-2dxan=224
-iop2=Wield
-weight=5lb
-wearpos=righthand
+// [iron_pickaxe]
+// name=Iron pickaxe
+// desc=Used for mining.
+// recol1s=15855
+// recol1d=8456
+// cost=140
+// model=loc_14910_8
+// manwear=obj_bronze_pickaxe_manwear,0
+// womanwear=obj_bronze_pickaxe_manwear,6
+// 2dxof=-2
+// 2dyof=-19
+// 2dzoom=1070
+// 2dyan=1056
+// 2dxan=224
+// iop2=Wield
+// weight=5lb
+// wearpos=righthand
 
 [cert_iron_pickaxe]
 certlink=iron_pickaxe
 certtemplate=template_for_cert
 
-[steel_pickaxe]
-name=Steel pickaxe
-desc=Used for mining.
-cost=500
-model=loc_14910_8
-manwear=obj_bronze_pickaxe_manwear,0
-womanwear=obj_bronze_pickaxe_manwear,6
-2dxof=-2
-2dyof=-19
-2dzoom=1070
-2dyan=1056
-2dxan=224
-iop2=Wield
-weight=5lb
-wearpos=righthand
+// [steel_pickaxe]
+// name=Steel pickaxe
+// desc=Used for mining.
+// cost=500
+// model=loc_14910_8
+// manwear=obj_bronze_pickaxe_manwear,0
+// womanwear=obj_bronze_pickaxe_manwear,6
+// 2dxof=-2
+// 2dyof=-19
+// 2dzoom=1070
+// 2dyan=1056
+// 2dxan=224
+// iop2=Wield
+// weight=5lb
+// wearpos=righthand
 
 [cert_steel_pickaxe]
 certlink=steel_pickaxe
 certtemplate=template_for_cert
 
-[adamant_pickaxe]
-name=Adamant pickaxe
-desc=Used for mining.
-recol1s=15855
-recol1d=6438
-cost=3200
-model=loc_14910_8
-manwear=obj_bronze_pickaxe_manwear,0
-womanwear=obj_bronze_pickaxe_manwear,6
-2dxof=-2
-2dyof=-19
-2dzoom=1070
-2dyan=1056
-2dxan=224
-iop2=Wield
-weight=6lb
-wearpos=righthand
+// [adamant_pickaxe]
+// name=Adamant pickaxe
+// desc=Used for mining.
+// recol1s=15855
+// recol1d=6438
+// cost=3200
+// model=loc_14910_8
+// manwear=obj_bronze_pickaxe_manwear,0
+// womanwear=obj_bronze_pickaxe_manwear,6
+// 2dxof=-2
+// 2dyof=-19
+// 2dzoom=1070
+// 2dyan=1056
+// 2dxan=224
+// iop2=Wield
+// weight=6lb
+// wearpos=righthand
 
 [cert_adamant_pickaxe]
 certlink=adamant_pickaxe
 certtemplate=template_for_cert
 
-[mithril_pickaxe]
-name=Mithril pickaxe
-desc=Used for mining.
-recol1s=15855
-recol1d=6346
-cost=1300
-model=loc_14910_8
-manwear=obj_bronze_pickaxe_manwear,0
-womanwear=obj_bronze_pickaxe_manwear,6
-2dxof=-2
-2dyof=-19
-2dzoom=1070
-2dyan=1056
-2dxan=224
-iop2=Wield
-weight=4lb
-wearpos=righthand
+// [mithril_pickaxe]
+// name=Mithril pickaxe
+// desc=Used for mining.
+// recol1s=15855
+// recol1d=6346
+// cost=1300
+// model=loc_14910_8
+// manwear=obj_bronze_pickaxe_manwear,0
+// womanwear=obj_bronze_pickaxe_manwear,6
+// 2dxof=-2
+// 2dyof=-19
+// 2dzoom=1070
+// 2dyan=1056
+// 2dxan=224
+// iop2=Wield
+// weight=4lb
+// wearpos=righthand
 
 [cert_mithril_pickaxe]
 certlink=mithril_pickaxe
 certtemplate=template_for_cert
 
-[rune_pickaxe]
-name=Rune pickaxe
-desc=Used for mining.
-recol1s=15855
-recol1d=6476
-cost=32000
-model=loc_14910_8
-manwear=obj_bronze_pickaxe_manwear,0
-womanwear=obj_bronze_pickaxe_manwear,6
-2dxof=-2
-2dyof=-19
-2dzoom=1070
-2dyan=1056
-2dxan=224
-iop2=Wield
-weight=5lb
-wearpos=righthand
+// [rune_pickaxe]
+// name=Rune pickaxe
+// desc=Used for mining.
+// recol1s=15855
+// recol1d=6476
+// cost=32000
+// model=loc_14910_8
+// manwear=obj_bronze_pickaxe_manwear,0
+// womanwear=obj_bronze_pickaxe_manwear,6
+// 2dxof=-2
+// 2dyof=-19
+// 2dzoom=1070
+// 2dyan=1056
+// 2dxan=224
+// iop2=Wield
+// weight=5lb
+// wearpos=righthand
 
 [cert_rune_pickaxe]
 certlink=rune_pickaxe
@@ -16619,18 +16619,18 @@ weight=4lb
 certlink=dragon_mace
 certtemplate=template_for_cert
 
-[blankrune]
-name=Rune essence
-desc=An uncharged Rune Stone.
-recol1s=15855
-recol1d=11627
-cost=4
-model=obj_blankrune
-2dyof=1
-2dzoom=740
-2dyan=1012
-2dxan=528
-weight=2g
+// [blankrune]
+// name=Rune essence
+// desc=An uncharged Rune Stone.
+// recol1s=15855
+// recol1d=11627
+// cost=4
+// model=obj_blankrune
+// 2dyof=1
+// 2dzoom=740
+// 2dyan=1012
+// 2dxan=528
+// weight=2g
 
 [cert_blankrune]
 certlink=blankrune
@@ -18712,143 +18712,143 @@ weight=3g
 certlink=crushed_gemstone
 certtemplate=template_for_cert
 
-[gold_ring]
-name=Gold ring
-desc=A valuable ring.
-recol1s=32767
-recol1d=22241
-cost=350
-model=obj_gold_ring
-2dxof=3
-2dyof=-35
-2dzoom=830
-2dyan=180
-2dzan=2024
-2dxan=268
-iop2=Wear
-wearpos=ring
-weight=4g
+// [gold_ring]
+// name=Gold ring
+// desc=A valuable ring.
+// recol1s=32767
+// recol1d=22241
+// cost=350
+// model=obj_gold_ring
+// 2dxof=3
+// 2dyof=-35
+// 2dzoom=830
+// 2dyan=180
+// 2dzan=2024
+// 2dxan=268
+// iop2=Wear
+// wearpos=ring
+// weight=4g
 
 [cert_gold_ring]
 certlink=gold_ring
 certtemplate=template_for_cert
 
-[sapphire_ring]
-name=Sapphire ring
-desc=A valuable ring.
-recol1s=32767
-recol1d=23
-cost=900
-model=obj_perfect_ruby_ring
-2dxof=3
-2dyof=-35
-2dzoom=830
-2dyan=180
-2dzan=2024
-2dxan=268
-iop2=Wear
-wearpos=ring
-weight=6g
+// [sapphire_ring]
+// name=Sapphire ring
+// desc=A valuable ring.
+// recol1s=32767
+// recol1d=23
+// cost=900
+// model=obj_perfect_ruby_ring
+// 2dxof=3
+// 2dyof=-35
+// 2dzoom=830
+// 2dyan=180
+// 2dzan=2024
+// 2dxan=268
+// iop2=Wear
+// wearpos=ring
+// weight=6g
 
 [cert_sapphire_ring]
 certlink=sapphire_ring
 certtemplate=template_for_cert
 
-[emerald_ring]
-name=Emerald ring
-desc=A valuable ring.
-recol1s=32767
-recol1d=672
-cost=1275
-model=obj_perfect_ruby_ring
-2dxof=3
-2dyof=-35
-2dzoom=830
-2dyan=180
-2dzan=2024
-2dxan=268
-iop2=Wear
-wearpos=ring
-weight=6g
+// [emerald_ring]
+// name=Emerald ring
+// desc=A valuable ring.
+// recol1s=32767
+// recol1d=672
+// cost=1275
+// model=obj_perfect_ruby_ring
+// 2dxof=3
+// 2dyof=-35
+// 2dzoom=830
+// 2dyan=180
+// 2dzan=2024
+// 2dxan=268
+// iop2=Wear
+// wearpos=ring
+// weight=6g
 
 [cert_emerald_ring]
 certlink=emerald_ring
 certtemplate=template_for_cert
 
-[ruby_ring]
-name=Ruby ring
-desc=A valuable ring.
-recol1s=32767
-recol1d=30753
-cost=2025
-model=obj_perfect_ruby_ring
-2dxof=3
-2dyof=-35
-2dzoom=830
-2dyan=180
-2dzan=2024
-2dxan=268
-iop2=Wear
-wearpos=ring
-weight=6g
+// [ruby_ring]
+// name=Ruby ring
+// desc=A valuable ring.
+// recol1s=32767
+// recol1d=30753
+// cost=2025
+// model=obj_perfect_ruby_ring
+// 2dxof=3
+// 2dyof=-35
+// 2dzoom=830
+// 2dyan=180
+// 2dzan=2024
+// 2dxan=268
+// iop2=Wear
+// wearpos=ring
+// weight=6g
 
 [cert_ruby_ring]
 certlink=ruby_ring
 certtemplate=template_for_cert
 
-[diamond_ring]
-name=Diamond ring
-desc=A valuable ring.
-cost=3525
-model=obj_perfect_ruby_ring
-2dxof=3
-2dyof=-35
-2dzoom=830
-2dyan=180
-2dzan=2024
-2dxan=268
-iop2=Wear
-wearpos=ring
-weight=6g
+// [diamond_ring]
+// name=Diamond ring
+// desc=A valuable ring.
+// cost=3525
+// model=obj_perfect_ruby_ring
+// 2dxof=3
+// 2dyof=-35
+// 2dzoom=830
+// 2dyan=180
+// 2dzan=2024
+// 2dxan=268
+// iop2=Wear
+// wearpos=ring
+// weight=6g
 
 [cert_diamond_ring]
 certlink=diamond_ring
 certtemplate=template_for_cert
 
-[dragonstone_ring]
-name=Dragonstone ring
-desc=A valuable ring.
-recol1s=32767
-recol1d=12307
-cost=17625
-model=obj_perfect_ruby_ring
-2dxof=3
-2dyof=-35
-2dzoom=830
-2dyan=180
-2dzan=2024
-2dxan=268
-members=yes
-iop2=Wear
-wearpos=ring
-weight=6g
+// [dragonstone_ring]
+// name=Dragonstone ring
+// desc=A valuable ring.
+// recol1s=32767
+// recol1d=12307
+// cost=17625
+// model=obj_perfect_ruby_ring
+// 2dxof=3
+// 2dyof=-35
+// 2dzoom=830
+// 2dyan=180
+// 2dzan=2024
+// 2dxan=268
+// members=yes
+// iop2=Wear
+// wearpos=ring
+// weight=6g
 
 [cert_dragonstone_ring]
 certlink=dragonstone_ring
 certtemplate=template_for_cert
 
-[black_ring]
-recol1s=32767
-recol1d=4228
-recol2s=31457
-recol2d=4228
-model=obj_perfect_ruby_ring
-2dxof=3
-2dyof=-35
-2dzoom=830
-2dyan=180
-2dzan=2024
-2dxan=268
+// [black_ring]
+// recol1s=32767
+// recol1d=4228
+// recol2s=31457
+// recol2d=4228
+// model=obj_perfect_ruby_ring
+// 2dxof=3
+// 2dyof=-35
+// 2dzoom=830
+// 2dyan=180
+// 2dzan=2024
+// 2dxan=268
 
 [cert_black_ring]
 name=Whoopsie
@@ -18862,180 +18862,180 @@ model=obj_priest_robe
 2dzoom=1940
 2dxan=572
 
-[invis_ring1]
-name=Sapphire ring
-desc=A valuable ring.
-model=minigame_start_icon_0
-2dxan=68
+// [invis_ring1]
+// name=Sapphire ring
+// desc=A valuable ring.
+// model=minigame_start_icon_0
+// 2dxan=68
 
-[invis_ring2]
-name=Emerald ring
-desc=A valuable ring.
-model=minigame_start_icon_0
-2dxan=68
+// [invis_ring2]
+// name=Emerald ring
+// desc=A valuable ring.
+// model=minigame_start_icon_0
+// 2dxan=68
 
-[invis_ring3]
-name=Ruby ring
-desc=A valuable ring.
-model=minigame_start_icon_0
-2dxan=68
+// [invis_ring3]
+// name=Ruby ring
+// desc=A valuable ring.
+// model=minigame_start_icon_0
+// 2dxan=68
 
-[invis_ring4]
-name=Diamond ring
-desc=A valuable ring.
-model=minigame_start_icon_0
-2dxan=68
+// [invis_ring4]
+// name=Diamond ring
+// desc=A valuable ring.
+// model=minigame_start_icon_0
+// 2dxan=68
 
-[invis_ring5]
-name=Dragonstone ring
-desc=A valuable ring.
-model=minigame_start_icon_0
-2dxan=68
+// [invis_ring5]
+// name=Dragonstone ring
+// desc=A valuable ring.
+// model=minigame_start_icon_0
+// 2dxan=68
 
-[gold_necklace]
-name=Gold necklace
-desc=I wonder if this is valuable.
-recol1s=10570
-recol1d=31457
-cost=450
-model=obj_perfect_ruby_necklace
-2dxof=1
-2dyof=16
-2dzoom=620
-2dyan=68
-2dxan=424
-iop2=Wear
-manwear=obj_perfect_ruby_necklace_manwear,0
-womanwear=obj_perfect_ruby_necklace_womanwear,0
-wearpos=front
-weight=7g
+// [gold_necklace]
+// name=Gold necklace
+// desc=I wonder if this is valuable.
+// recol1s=10570
+// recol1d=31457
+// cost=450
+// model=obj_perfect_ruby_necklace
+// 2dxof=1
+// 2dyof=16
+// 2dzoom=620
+// 2dyan=68
+// 2dxan=424
+// iop2=Wear
+// manwear=obj_perfect_ruby_necklace_manwear,0
+// womanwear=obj_perfect_ruby_necklace_womanwear,0
+// wearpos=front
+// weight=7g
 
 [cert_gold_necklace]
 certlink=gold_necklace
 certtemplate=template_for_cert
 
-[sapphire_necklace]
-name=Sapphire necklace
-desc=I wonder if this is valuable.
-recol1s=10570
-recol1d=23
-cost=1050
-model=obj_perfect_ruby_necklace
-2dxof=1
-2dyof=16
-2dzoom=620
-2dyan=68
-2dxan=424
-iop2=Wear
-manwear=obj_perfect_ruby_necklace_manwear,0
-womanwear=obj_perfect_ruby_necklace_womanwear,0
-wearpos=front
-weight=10g
+// [sapphire_necklace]
+// name=Sapphire necklace
+// desc=I wonder if this is valuable.
+// recol1s=10570
+// recol1d=23
+// cost=1050
+// model=obj_perfect_ruby_necklace
+// 2dxof=1
+// 2dyof=16
+// 2dzoom=620
+// 2dyan=68
+// 2dxan=424
+// iop2=Wear
+// manwear=obj_perfect_ruby_necklace_manwear,0
+// womanwear=obj_perfect_ruby_necklace_womanwear,0
+// wearpos=front
+// weight=10g
 
 [cert_sapphire_necklace]
 certlink=sapphire_necklace
 certtemplate=template_for_cert
 
-[emerald_necklace]
-name=Emerald necklace
-desc=I wonder if this is valuable.
-recol1s=10570
-recol1d=672
-cost=1425
-model=obj_perfect_ruby_necklace
-2dxof=1
-2dyof=16
-2dzoom=620
-2dyan=68
-2dxan=424
-iop2=Wear
-manwear=obj_perfect_ruby_necklace_manwear,0
-womanwear=obj_perfect_ruby_necklace_womanwear,0
-wearpos=front
-weight=10g
+// [emerald_necklace]
+// name=Emerald necklace
+// desc=I wonder if this is valuable.
+// recol1s=10570
+// recol1d=672
+// cost=1425
+// model=obj_perfect_ruby_necklace
+// 2dxof=1
+// 2dyof=16
+// 2dzoom=620
+// 2dyan=68
+// 2dxan=424
+// iop2=Wear
+// manwear=obj_perfect_ruby_necklace_manwear,0
+// womanwear=obj_perfect_ruby_necklace_womanwear,0
+// wearpos=front
+// weight=10g
 
 [cert_emerald_necklace]
 certlink=emerald_necklace
 certtemplate=template_for_cert
 
-[ruby_necklace]
-name=Ruby necklace
-desc=I wonder if this is valuable.
-recol1s=10570
-recol1d=30753
-cost=2175
-model=obj_perfect_ruby_necklace
-2dxof=1
-2dyof=16
-2dzoom=620
-2dyan=68
-2dxan=424
-iop2=Wear
-manwear=obj_perfect_ruby_necklace_manwear,0
-womanwear=obj_perfect_ruby_necklace_womanwear,0
-wearpos=front
-weight=10g
+// [ruby_necklace]
+// name=Ruby necklace
+// desc=I wonder if this is valuable.
+// recol1s=10570
+// recol1d=30753
+// cost=2175
+// model=obj_perfect_ruby_necklace
+// 2dxof=1
+// 2dyof=16
+// 2dzoom=620
+// 2dyan=68
+// 2dxan=424
+// iop2=Wear
+// manwear=obj_perfect_ruby_necklace_manwear,0
+// womanwear=obj_perfect_ruby_necklace_womanwear,0
+// wearpos=front
+// weight=10g
 
 [cert_ruby_necklace]
 certlink=ruby_necklace
 certtemplate=template_for_cert
 
-[diamond_necklace]
-name=Diamond necklace
-desc=I wonder if this is valuable.
-recol1s=10570
-recol1d=32767
-cost=3675
-model=obj_perfect_ruby_necklace
-2dxof=1
-2dyof=16
-2dzoom=620
-2dyan=68
-2dxan=424
-iop2=Wear
-manwear=obj_perfect_ruby_necklace_manwear,0
-womanwear=obj_perfect_ruby_necklace_womanwear,0
-wearpos=front
-weight=10g
+// [diamond_necklace]
+// name=Diamond necklace
+// desc=I wonder if this is valuable.
+// recol1s=10570
+// recol1d=32767
+// cost=3675
+// model=obj_perfect_ruby_necklace
+// 2dxof=1
+// 2dyof=16
+// 2dzoom=620
+// 2dyan=68
+// 2dxan=424
+// iop2=Wear
+// manwear=obj_perfect_ruby_necklace_manwear,0
+// womanwear=obj_perfect_ruby_necklace_womanwear,0
+// wearpos=front
+// weight=10g
 
 [cert_diamond_necklace]
 certlink=diamond_necklace
 certtemplate=template_for_cert
 
-[dragonstone_necklace]
-name=Dragon necklace
-desc=I wonder if this is valuable.
-recol1s=10570
-recol1d=12307
-cost=18375
-model=obj_perfect_ruby_necklace
-2dxof=1
-2dyof=16
-2dzoom=620
-2dyan=68
-2dxan=424
-members=yes
-iop2=Wear
-manwear=obj_perfect_ruby_necklace_manwear,0
-womanwear=obj_perfect_ruby_necklace_womanwear,0
-wearpos=front
-weight=10g
+// [dragonstone_necklace]
+// name=Dragon necklace
+// desc=I wonder if this is valuable.
+// recol1s=10570
+// recol1d=12307
+// cost=18375
+// model=obj_perfect_ruby_necklace
+// 2dxof=1
+// 2dyof=16
+// 2dzoom=620
+// 2dyan=68
+// 2dxan=424
+// members=yes
+// iop2=Wear
+// manwear=obj_perfect_ruby_necklace_manwear,0
+// womanwear=obj_perfect_ruby_necklace_womanwear,0
+// wearpos=front
+// weight=10g
 
 [cert_dragonstone_necklace]
 certlink=dragonstone_necklace
 certtemplate=template_for_cert
 
-[black_necklace]
-recol1s=10570
-recol1d=4228
-recol2s=31457
-recol2d=4228
-model=obj_perfect_ruby_necklace
-2dxof=1
-2dyof=16
-2dzoom=620
-2dyan=68
-2dxan=424
+// [black_necklace]
+// recol1s=10570
+// recol1d=4228
+// recol2s=31457
+// recol2d=4228
+// model=obj_perfect_ruby_necklace
+// 2dxof=1
+// 2dyof=16
+// 2dzoom=620
+// 2dyan=68
+// 2dxan=424
 
 [cert_black_necklace]
 name=Whoopsie
@@ -19049,159 +19049,159 @@ model=obj_priest_robe
 2dzoom=1940
 2dxan=572
 
-[invis_necklace1]
-name=Sapphire necklace
-desc=I wonder if this is valuable.
-model=minigame_start_icon_0
-2dyan=4
-2dxan=20
+// [invis_necklace1]
+// name=Sapphire necklace
+// desc=I wonder if this is valuable.
+// model=minigame_start_icon_0
+// 2dyan=4
+// 2dxan=20
 
-[invis_necklace2]
-name=Emerald necklace
-desc=I wonder if this is valuable.
-model=minigame_start_icon_0
-2dyan=4
-2dxan=20
+// [invis_necklace2]
+// name=Emerald necklace
+// desc=I wonder if this is valuable.
+// model=minigame_start_icon_0
+// 2dyan=4
+// 2dxan=20
 
-[invis_necklace3]
-name=Ruby necklace
-desc=I wonder if this is valuable.
-model=minigame_start_icon_0
-2dyan=4
-2dxan=20
+// [invis_necklace3]
+// name=Ruby necklace
+// desc=I wonder if this is valuable.
+// model=minigame_start_icon_0
+// 2dyan=4
+// 2dxan=20
 
-[invis_necklace4]
-name=Diamond necklace
-desc=I wonder if this is valuable.
-model=minigame_start_icon_0
-2dyan=4
-2dxan=20
+// [invis_necklace4]
+// name=Diamond necklace
+// desc=I wonder if this is valuable.
+// model=minigame_start_icon_0
+// 2dyan=4
+// 2dxan=20
 
-[invis_necklace5]
-name=Dragon necklace
-desc=I wonder if this is valuable.
-model=minigame_start_icon_0
-2dyan=4
-2dxan=20
+// [invis_necklace5]
+// name=Dragon necklace
+// desc=I wonder if this is valuable.
+// model=minigame_start_icon_0
+// 2dyan=4
+// 2dxan=20
 
-[unstrung_gold_amulet]
-name=Gold amulet
-desc=It needs a string so I can wear it.
-recol1s=32767
-recol1d=22241
-cost=350
-model=obj_unstrung_gold_amulet
-2dxof=8
-2dyof=106
-2dzoom=370
-2dyan=100
-2dxan=304
-weight=4g
+// [unstrung_gold_amulet]
+// name=Gold amulet
+// desc=It needs a string so I can wear it.
+// recol1s=32767
+// recol1d=22241
+// cost=350
+// model=obj_unstrung_gold_amulet
+// 2dxof=8
+// 2dyof=106
+// 2dzoom=370
+// 2dyan=100
+// 2dxan=304
+// weight=4g
 
 [cert_unstrung_gold_amulet]
 certlink=unstrung_gold_amulet
 certtemplate=template_for_cert
 
-[unstrung_sapphire_amulet]
-name=Sapphire amulet
-desc=It needs a string so I can wear it.
-recol1s=32767
-recol1d=23
-cost=900
-model=obj_unstrung_gold_amulet
-2dxof=8
-2dyof=106
-2dzoom=370
-2dyan=100
-2dxan=304
-weight=4g
+// [unstrung_sapphire_amulet]
+// name=Sapphire amulet
+// desc=It needs a string so I can wear it.
+// recol1s=32767
+// recol1d=23
+// cost=900
+// model=obj_unstrung_gold_amulet
+// 2dxof=8
+// 2dyof=106
+// 2dzoom=370
+// 2dyan=100
+// 2dxan=304
+// weight=4g
 
 [cert_unstrung_sapphire_amulet]
 certlink=unstrung_sapphire_amulet
 certtemplate=template_for_cert
 
-[unstrung_emerald_amulet]
-name=Emerald amulet
-desc=It needs a string so I can wear it.
-recol1s=32767
-recol1d=672
-cost=1275
-model=obj_unstrung_gold_amulet
-2dxof=8
-2dyof=106
-2dzoom=370
-2dyan=100
-2dxan=304
-weight=4g
+// [unstrung_emerald_amulet]
+// name=Emerald amulet
+// desc=It needs a string so I can wear it.
+// recol1s=32767
+// recol1d=672
+// cost=1275
+// model=obj_unstrung_gold_amulet
+// 2dxof=8
+// 2dyof=106
+// 2dzoom=370
+// 2dyan=100
+// 2dxan=304
+// weight=4g
 
 [cert_unstrung_emerald_amulet]
 certlink=unstrung_emerald_amulet
 certtemplate=template_for_cert
 
-[unstrung_ruby_amulet]
-name=Ruby amulet
-desc=It needs a string so I can wear it.
-recol1s=32767
-recol1d=30753
-cost=2025
-model=obj_unstrung_gold_amulet
-2dxof=8
-2dyof=106
-2dzoom=370
-2dyan=100
-2dxan=304
-weight=4g
+// [unstrung_ruby_amulet]
+// name=Ruby amulet
+// desc=It needs a string so I can wear it.
+// recol1s=32767
+// recol1d=30753
+// cost=2025
+// model=obj_unstrung_gold_amulet
+// 2dxof=8
+// 2dyof=106
+// 2dzoom=370
+// 2dyan=100
+// 2dxan=304
+// weight=4g
 
 [cert_unstrung_ruby_amulet]
 certlink=unstrung_ruby_amulet
 certtemplate=template_for_cert
 
-[unstrung_diamond_amulet]
-name=Diamond amulet
-desc=It needs a string so I can wear it.
-cost=3525
-model=obj_unstrung_gold_amulet
-2dxof=8
-2dyof=106
-2dzoom=370
-2dyan=100
-2dxan=304
-weight=4g
+// [unstrung_diamond_amulet]
+// name=Diamond amulet
+// desc=It needs a string so I can wear it.
+// cost=3525
+// model=obj_unstrung_gold_amulet
+// 2dxof=8
+// 2dyof=106
+// 2dzoom=370
+// 2dyan=100
+// 2dxan=304
+// weight=4g
 
 [cert_unstrung_diamond_amulet]
 certlink=unstrung_diamond_amulet
 certtemplate=template_for_cert
 
-[unstrung_dragonstone_amulet]
-name=Dragonstone ammy
-desc=It needs a string so I can wear it.
-recol1s=32767
-recol1d=12307
-cost=17625
-model=obj_unstrung_gold_amulet
-2dxof=8
-2dyof=106
-2dzoom=370
-2dyan=100
-2dxan=304
-members=yes
-weight=4g
+// [unstrung_dragonstone_amulet]
+// name=Dragonstone ammy
+// desc=It needs a string so I can wear it.
+// recol1s=32767
+// recol1d=12307
+// cost=17625
+// model=obj_unstrung_gold_amulet
+// 2dxof=8
+// 2dyof=106
+// 2dzoom=370
+// 2dyan=100
+// 2dxan=304
+// members=yes
+// weight=4g
 
 [cert_unstrung_dragonstone_amulet]
 certlink=unstrung_dragonstone_amulet
 certtemplate=template_for_cert
 
-[black_amulet]
-recol1s=32767
-recol1d=4228
-recol2s=31649
-recol2d=4228
-model=obj_unstrung_gold_amulet
-2dxof=8
-2dyof=106
-2dzoom=370
-2dyan=100
-2dxan=304
+// [black_amulet]
+// recol1s=32767
+// recol1d=4228
+// recol2s=31649
+// recol2d=4228
+// model=obj_unstrung_gold_amulet
+// 2dxof=8
+// 2dyof=106
+// 2dzoom=370
+// 2dyan=100
+// 2dxan=304
 
 [cert_black_amulet]
 name=Whoopsie
@@ -19215,40 +19215,40 @@ model=obj_priest_robe
 2dzoom=1940
 2dxan=572
 
-[invis_amulet1]
-name=Sapphire amulet
-desc=It needs a string so I can wear it.
-model=minigame_start_icon_0
-2dyan=4
-2dxan=20
+// [invis_amulet1]
+// name=Sapphire amulet
+// desc=It needs a string so I can wear it.
+// model=minigame_start_icon_0
+// 2dyan=4
+// 2dxan=20
 
-[invis_amulet2]
-name=Emerald amulet
-desc=It needs a string so I can wear it.
-model=minigame_start_icon_0
-2dyan=4
-2dxan=20
+// [invis_amulet2]
+// name=Emerald amulet
+// desc=It needs a string so I can wear it.
+// model=minigame_start_icon_0
+// 2dyan=4
+// 2dxan=20
 
-[invis_amulet3]
-name=Ruby amulet
-desc=It needs a string so I can wear it.
-model=minigame_start_icon_0
-2dyan=4
-2dxan=20
+// [invis_amulet3]
+// name=Ruby amulet
+// desc=It needs a string so I can wear it.
+// model=minigame_start_icon_0
+// 2dyan=4
+// 2dxan=20
 
-[invis_amulet4]
-name=Diamond amulet
-desc=It needs a string so I can wear it.
-model=minigame_start_icon_0
-2dyan=4
-2dxan=20
+// [invis_amulet4]
+// name=Diamond amulet
+// desc=It needs a string so I can wear it.
+// model=minigame_start_icon_0
+// 2dyan=4
+// 2dxan=20
 
-[invis_amulet5]
-name=Dragonstone ammy
-desc=It needs a string so I can wear it.
-model=minigame_start_icon_0
-2dyan=4
-2dxan=20
+// [invis_amulet5]
+// name=Dragonstone ammy
+// desc=It needs a string so I can wear it.
+// model=minigame_start_icon_0
+// 2dyan=4
+// 2dxan=20
 
 [strung_gold_amulet]
 name=Gold amulet
@@ -19545,16 +19545,16 @@ weight=10g
 certlink=amulet_of_glory_4
 certtemplate=template_for_cert
 
-[nostringstar]
-name=Unstrung symbol
-desc=It needs a string so I can wear it.
-cost=200
-model=obj_nostringstar
-2dyof=4
-2dzoom=600
-2dyan=92
-2dxan=352
-weight=4g
+// [nostringstar]
+// name=Unstrung symbol
+// desc=It needs a string so I can wear it.
+// cost=200
+// model=obj_nostringstar
+// 2dyof=4
+// 2dzoom=600
+// 2dyan=92
+// 2dxan=352
+// weight=4g
 
 [cert_nostringstar]
 certlink=nostringstar
@@ -19616,20 +19616,20 @@ weight=7g
 certlink=blessedstar
 certtemplate=template_for_cert
 
-[nostringsnake]
-name=Unstrung emblem
-desc=It needs a string so I can wear it.
-recol1s=25249
-recol1d=24311
-cost=200
-model=obj_nostringsnake
-2dxof=1
-2dyof=3
-2dzoom=600
-2dyan=172
-2dxan=336
-members=yes
-weight=4g
+// [nostringsnake]
+// name=Unstrung emblem
+// desc=It needs a string so I can wear it.
+// recol1s=25249
+// recol1d=24311
+// cost=200
+// model=obj_nostringsnake
+// 2dxof=1
+// 2dyof=3
+// 2dzoom=600
+// 2dyan=172
+// 2dxan=336
+// members=yes
+// weight=4g
 
 [cert_nostringsnake]
 certlink=nostringsnake
@@ -19835,15 +19835,15 @@ weight=4oz
 certlink=shears
 certtemplate=template_for_cert
 
-[wool]
-name=Wool
-desc=I think this came from a sheep.
-model=obj_wool
-2dyof=-7
-2dzoom=1070
-2dyan=160
-2dxan=332
-weight=3g
+// [wool]
+// name=Wool
+// desc=I think this came from a sheep.
+// model=obj_wool
+// 2dyof=-7
+// 2dzoom=1070
+// 2dyan=160
+// 2dxan=332
+// weight=3g
 
 [cert_wool]
 certlink=wool
@@ -20054,17 +20054,17 @@ weight=12g
 certlink=ball_of_wool
 certtemplate=template_for_cert
 
-[softclay]
-name=Soft clay
-desc=Clay soft enough to mould.
-model=obj_softclay
-2dxof=2
-2dyof=-19
-2dzoom=890
-2dyan=1936
-2dxan=220
-cost=2
-weight=2lb
+// [softclay]
+// name=Soft clay
+// desc=Clay soft enough to mould.
+// model=obj_softclay
+// 2dxof=2
+// 2dyof=-19
+// 2dzoom=890
+// 2dyan=1936
+// 2dxan=220
+// cost=2
+// weight=2lb
 
 [cert_softclay]
 certlink=softclay
@@ -20207,18 +20207,18 @@ weight=14g
 certlink=bow_string
 certtemplate=template_for_cert
 
-[flax]
-name=Flax
-desc=I should use this with a spinning wheel.
-cost=5
-members=yes
-model=obj_flax
-2dxof=4
-2dzoom=770
-2dyan=1076
-2dzan=1840
-2dxan=428
-weight=1lb
+// [flax]
+// name=Flax
+// desc=I should use this with a spinning wheel.
+// cost=5
+// members=yes
+// model=obj_flax
+// 2dxof=4
+// 2dzoom=770
+// 2dyan=1076
+// 2dzan=1840
+// 2dxan=428
+// weight=1lb
 
 [cert_flax]
 certlink=flax
@@ -20280,58 +20280,58 @@ weight=2oz
 certlink=glassblowingpipe
 certtemplate=template_for_cert
 
-[pot_unfired]
-name=Unfired pot
-desc=I need to put this in a pottery oven.
-recol1s=16643
-recol1d=11488
-model=obj_pot_unfired
-2dxof=-1
-2dyof=2
-2dzoom=990
-2dyan=8
-2dxan=112
-cost=1
-weight=24oz
+// [pot_unfired]
+// name=Unfired pot
+// desc=I need to put this in a pottery oven.
+// recol1s=16643
+// recol1d=11488
+// model=obj_pot_unfired
+// 2dxof=-1
+// 2dyof=2
+// 2dzoom=990
+// 2dyan=8
+// 2dxan=112
+// cost=1
+// weight=24oz
 
 [cert_pot_unfired]
 certlink=pot_unfired
 certtemplate=template_for_cert
 
-[piedish_unfired]
-name=Unfired pie dish
-desc=I need to put this in a pottery oven.
-recol1s=7399
-recol1d=11488
-recol2s=10570
-recol2d=11488
-recol3s=15855
-recol3d=11488
-cost=3
-model=obj_piedish_unfired
-2dyof=-9
-2dzoom=950
-2dyan=104
-2dxan=192
-weight=24oz
+// [piedish_unfired]
+// name=Unfired pie dish
+// desc=I need to put this in a pottery oven.
+// recol1s=7399
+// recol1d=11488
+// recol2s=10570
+// recol2d=11488
+// recol3s=15855
+// recol3d=11488
+// cost=3
+// model=obj_piedish_unfired
+// 2dyof=-9
+// 2dzoom=950
+// 2dyan=104
+// 2dxan=192
+// weight=24oz
 
 [cert_piedish_unfired]
 certlink=piedish_unfired
 certtemplate=template_for_cert
 
-[bowl_unfired]
-name=Unfired bowl
-desc=I need to put this in a pottery oven.
-recol1s=16705
-recol1d=11488
-recol2s=19841
-recol2d=11488
-cost=2
-model=obj_goldbowl_empty
-2dzoom=910
-2dyan=1856
-2dxan=204
-weight=24oz
+// [bowl_unfired]
+// name=Unfired bowl
+// desc=I need to put this in a pottery oven.
+// recol1s=16705
+// recol1d=11488
+// recol2s=19841
+// recol2d=11488
+// cost=2
+// model=obj_goldbowl_empty
+// 2dzoom=910
+// 2dyan=1856
+// 2dxan=204
+// weight=24oz
 
 [cert_bowl_unfired]
 certlink=bowl_unfired
@@ -29756,22 +29756,22 @@ weight=1lb
 certlink=rotten_food
 certtemplate=template_for_cert
 
-[silver_sickle]
-name=Silver sickle
-desc=It's a silver sickle.
-cost=175
-model=obj_silver_sickle
-2dxof=-4
-2dyof=2
-2dzoom=980
-2dyan=948
-2dxan=604
-iop2=Wield
-manwear=obj_silver_sickle_manwear,0
-womanwear=obj_silver_sickle_manwear,6
-members=yes
-wearpos=righthand
-weight=56oz
+// [silver_sickle]
+// name=Silver sickle
+// desc=It's a silver sickle.
+// cost=175
+// model=obj_silver_sickle
+// 2dxof=-4
+// 2dyof=2
+// 2dzoom=980
+// 2dyan=948
+// 2dxan=604
+// iop2=Wield
+// manwear=obj_silver_sickle_manwear,0
+// womanwear=obj_silver_sickle_manwear,6
+// members=yes
+// wearpos=righthand
+// weight=56oz
 
 [cert_silver_sickle]
 certlink=silver_sickle
