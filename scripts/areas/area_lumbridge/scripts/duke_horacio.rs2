@@ -1,4 +1,42 @@
+// [walktrigger,dialogue_cam]
+// anim(null, 0);
+// ~update_bas;
+// cam_reset;
+
+// [opnpc1,_citizen]
+// // p_arrivedelay;
+// def_int $x = coordx(coord);
+// def_int $z = coordz(coord);
+// def_int $npcx = coordx(npc_coord);
+// def_int $npcz = coordz(npc_coord);
+// def_int $dx = calc($x - $npcx);
+// def_int $dz = calc($z - $npcz);
+
+// // if ($dx = 0) { 
+// //     $dx = 1;
+// // } else if ($dz = 0) {
+// //     $dz = 1;
+// // }
+
+// cam_moveto(movecoord(coord, calc($dx*2), 0, calc($dz*2)), 250, 255, 255);
+// cam_lookat(movecoord(npc_coord, calc($dx * -2), 0, calc($dz * -2)), 240, 255, 255);
+// //cam_lookat(movecoord(npc_coord, 0, 0, 0), 0, 255, 255);
+// walktrigger(dialogue_cam);
+// ~chatnpc("<p,neutral>Yo.");
+
 [opnpc1,duke_of_lumbridge]
+
+// def_int $x = coordx(coord);
+// def_int $z = coordz(coord);
+// def_int $npcx = coordx(npc_coord);
+// def_int $npcz = coordz(npc_coord);
+// def_int $dx = calc($x - $npcx);
+// def_int $dz = calc($z - $npcz);
+// cam_moveto(movecoord(coord, -1, 0, calc($dz*2)), 250, 255, 255);
+// cam_lookat(movecoord(npc_coord, calc($dx * -2), 0, calc($dz * -2)), 240, 255, 255);
+// walktrigger(dialogue_cam);
+//cam_lookat(movecoord(npc_coord, 0, 0, 0), 0, 255, 255);
+
 ~chatnpc("<p,neutral>Greetings. Welcome to my castle.");
 
 // if ((%dragon_shield = ^quest_dragon_knows_about_shield | %dragon_progress >= ^dragon_complete) & inv_total(inv, antidragonbreathshield) < 1 & inv_total(worn, antidragonbreathshield) < 1) {
@@ -15,10 +53,12 @@ else if (%runemysteries = ^runemysteries_complete) return(duke_rune_mysteries_co
 else return (duke_rune_mysteries_in_progress);
 
 [label,duke_of_lumbridge_money]
+
 ~chatplayer("<p,quiz>Where can I find money?");
 ~chatnpc("<p,neutral>I've heard that the blacksmiths are prosperous amongst the peasantry. Maybe you could try your hand at that?");
 
 [label,duke_rune_mysteries_start]
+
 ~chatplayer("<p,quiz>Have you any quests for me?");
 ~chatnpc("<p,neutral>Well, it's not really a quest but I recently discovered this strange talisman.");
 ~chatnpc("<p,neutral>It seems to be mystical and I have never seen anything like it before. Would you take it to the head wizard at");
