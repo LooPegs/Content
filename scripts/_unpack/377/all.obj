@@ -5177,25 +5177,6 @@ weight=18oz
 certlink=newcomer_map
 certtemplate=template_for_cert
 
-[amulet_of_ghostspeak]
-name=Ghostspeak amulet
-desc=It lets me talk to ghosts.
-recol1s=7399
-recol1d=31041
-recol2s=15855
-recol2d=31041
-cost=35
-model=obj_amulet_of_ghostspeak
-2dxof=1
-2dyof=16
-2dzoom=620
-2dyan=68
-2dxan=424
-iop2=Wear
-manwear=obj_amulet_of_ghostspeak_manwear,0
-womanwear=obj_amulet_of_ghostspeak_womanwear,0
-wearpos=front
-weight=10g
 
 [ghostskull]
 name=Skull

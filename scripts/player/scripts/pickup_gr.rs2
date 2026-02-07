@@ -1,0 +1,22 @@
+// [opobj3,_ground_item]
+// if (distance(coord, obj_coord) = 0) {
+//     @pickup_gr_floor;
+// } else {
+//     @pickup_gr_table;
+// }
+
+// [label,pickup_gr_floor]
+// if (~pickup_obj_check_for_space(obj_type, obj_count) = false) {
+//     return;
+// }
+// anim(null, 0);
+// obj_takeitem(inv);
+// sound_synth(pick2, 0, 0);
+
+// [label,pickup_gr_table](namedobj $replacement)
+// if (~pickup_obj_check_for_space(obj_type, obj_count) = false) {
+//     return;
+// }
+// anim(human_pickuptable, 0);
+// obj_takeitem(inv);
+// sound_synth(pick2, 0, 0);

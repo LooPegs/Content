@@ -126,6 +126,9 @@ protect=no
 
 [action_delay]
 
+//this isnt in the cache???
+[stunned]
+
 [varp_59]
 
 [sheepherderquest]

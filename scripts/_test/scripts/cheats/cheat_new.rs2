@@ -24,6 +24,26 @@ if_close;
 if (p_finduid(uid) = false) { @please_finish; return; }
 ~player_teleport_normal(0_38_158_15_15);
 
+[debugproc,testarea]
+if_close;
+if (p_finduid(uid) = false) { @please_finish; return; }
+~player_teleport_normal(0_27_89_15_15);
+
+[debugproc,testarea2]
+if_close;
+if (p_finduid(uid) = false) { @please_finish; return; }
+~player_teleport_normal(0_27_81_15_15);
+
+[debugproc,lletya]
+if_close;
+if (p_finduid(uid) = false) { @please_finish; return; }
+~player_teleport_normal(0_36_49_15_15);
+
+[debugproc,canifis]
+if_close;
+if (p_finduid(uid) = false) { @please_finish; return; }
+~player_teleport_normal(0_54_54_15_15);
+
 [debugproc,drain]
 stat_drain(prayer, 10, 0);
 stat_drain(hitpoints, 10, 0);

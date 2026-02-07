@@ -1,0 +1,70 @@
+[amulet_of_ghostspeak]
+name=Ghostspeak amulet
+desc=It lets me talk to ghosts.
+recol1s=7399
+recol1d=31041
+recol2s=15855
+recol2d=31041
+cost=35
+model=obj_amulet_of_ghostspeak
+2dxof=1
+2dyof=16
+2dzoom=620
+2dyan=68
+2dxan=424
+iop2=Wear
+manwear=obj_amulet_of_ghostspeak_manwear,0
+womanwear=obj_amulet_of_ghostspeak_womanwear,0
+wearpos=front
+
+[brass_locket]
+cost=30
+name=Brass locket
+desc=I'd prefer a gold one.
+model=obj_perfect_ruby_necklace
+recol1s=31457
+recol1d=21921
+2dxof=5
+2dyof=44
+2dzoom=600
+2dyan=160
+2dxan=304
+iop2=Wear
+wearpos=front
+manwear=obj_perfect_ruby_necklace_manwear,0
+womanwear=obj_perfect_ruby_necklace_womanwear,0
+weight=10g
+
+[fancy_boots]
+name=Fancy boots
+desc=These will protect my feet.
+cost=300
+model=obj_bronze_armoured_boots
+iop2=Wear
+manwear=obj_bronze_armoured_boots_manwear,0
+womanwear=obj_bronze_armoured_boots_womanwear,0
+members=yes
+2dxof=3
+2dyof=-3
+2dzoom=770
+2dyan=156
+2dxan=164
+wearpos=feet
+weight=3lb
+category=armour_feet
+param=stabdefence,3
+param=slashdefence,3
+param=crushdefence,5
+
+// [gr_bronze_pickaxe]
+// name=Bronze pickaxe
+// desc=Used for mining.
+// model=model_2529_obj
+// recol1s=15855
+// recol1d=8354
+// 2dxof=-2
+// 2dyof=-19
+// 2dzoom=1070
+// 2dyan=1056
+// 2dxan=224
+// category=ground_item

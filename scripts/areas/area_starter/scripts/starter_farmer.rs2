@@ -1,0 +1,17 @@
+[opnpc1,starter_farmer]
+if (random(5) <= 1 ) {
+    npc_anim(nod, 0);
+}
+else if (random(3) = 2) {
+    npc_say("Don't spook the critters now");
+}
+else if (random(3) = 3) {
+    npc_say("Mmhm");
+}
+else {
+    npc_say("Ayup");
+}
+
+//doesnt look at you
+// ~chatplayer("<p,happy> Hi!")
+// ~chatnpc("<p,neutral> ");

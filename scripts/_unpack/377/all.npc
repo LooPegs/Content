@@ -1050,63 +1050,19 @@ vislevel=hide
 walkanim=sheep_walk
 readyanim=sheep_ready
 
-[duck]
-name=Duck
-desc=Quackers.
-model1=npc_duck
-walkanim=duck_swim
-readyanim=duck_swim
-op2=Attack
-minimap=no
-vislevel=1
-
-[duck_female]
-name=Duck
-desc=She quackers.
-model1=npc_duck
-recol1s=7493
-recol1d=13604
-recol2s=16912
-recol2d=11491
-recol3s=22197
-recol3d=10433
-walkanim=duck_swim
-readyanim=duck_swim
-op2=Attack
-minimap=no
-vislevel=1
-
-[duckling]
-name=Duckling
-desc=Mini quackers.
-model1=npc_duck
-recol1s=7493
-recol1d=28267
-recol2s=16912
-recol2d=28267
-recol3s=22197
-recol3d=10433
-walkanim=duck_swim
-readyanim=duck_swim
-op2=Attack
-resizeh=64
-resizev=64
-minimap=no
-vislevel=1
-
-[rat]
-name=Rat
-desc=A popular dwarven delicacy.
-model1=npc_rat
-recol1s=14724
-recol1d=6342
-readyanim=mouse_ready
-walkanim=mouse_walk
-op2=Attack
-minimap=no
-resizeh=133
-resizev=134
-vislevel=1
+// [rat]
+// name=Rat
+// desc=A popular dwarven delicacy.
+// model1=npc_rat
+// recol1s=14724
+// recol1d=6342
+// readyanim=mouse_ready
+// walkanim=mouse_walk
+// op2=Attack
+// minimap=no
+// resizeh=133
+// resizev=134
+// vislevel=1
 
 [oomlie_bird]
 name=Oomlie Bird
@@ -2148,21 +2104,21 @@ readyanim=giant_ready
 op2=Attack
 vislevel=28
 
-[dwarf_normal]
-name=Dwarf
-desc=A short angry guy.
-model1=npc_dwarf_normal
-model2=npc_dwarf_normali2
-model3=npc_dwarf_normali3
-model4=npc_dwarf_normali4
-model5=npc_dwarf_normali5
-model6=npc_dwarf_normali6
-recol1s=15426
-recol1d=8354
-walkanim=dwarf_walk
-readyanim=dwarf_ready
-op2=Attack
-vislevel=10
+// [dwarf_normal]
+// name=Dwarf
+// desc=A short angry guy.
+// model1=npc_dwarf_normal
+// model2=npc_dwarf_normali2
+// model3=npc_dwarf_normali3
+// model4=npc_dwarf_normali4
+// model5=npc_dwarf_normali5
+// model6=npc_dwarf_normali6
+// recol1s=15426
+// recol1d=8354
+// walkanim=dwarf_walk
+// readyanim=dwarf_ready
+// op2=Attack
+// vislevel=10
 
 [dwarf_chaos]
 name=Chaos dwarf

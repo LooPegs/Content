@@ -1,13 +1,5 @@
 [opobj3,_] @pickup_obj;
 
-// [opobj3,logs]
-// if (~pickup_obj_check_for_space(obj_type, obj_count) = false) {
-//     return;
-// }
-// anim(human_pickupfloor, 0);
-// sound_synth(pick, 0, 0);
-// obj_takeitem(inv);
-
 [label,pickup_obj]
 if (distance(coord, obj_coord) = 0) {
     @pickup_obj_floor;
