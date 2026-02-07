@@ -137,3 +137,7 @@ p_telejump(0_45_53_11_56);
 if_close;
 if (p_finduid(uid) = false) { @please_finish; return; }
 p_telejump(0_45_55_19_24);
+[debugproc,gamesroom]
+if_close;
+if (p_finduid(uid) = false) { @please_finish; return; }
+p_telejump(0_34_77_32_32);

@@ -66,3 +66,11 @@ data=cut_gem,dragonstone
 data=level,55
 data=experience,1375
 data=skill_anim,human_dragonstonecutting
+
+[onyx_cutting]
+table=gem_cutting_table
+data=uncut_gem,uncut_onyx
+data=cut_gem,onyx
+data=level,67
+data=experience,1675
+data=skill_anim,human_onyxcutting

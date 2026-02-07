@@ -102,9 +102,9 @@ if ($data = null) {
     return;
 }
 
-// if (afk_event = ^true) {
-//     @macro_randomthieving;
-// }
+if (afk_event = ^true) {
+    @macro_randomthieving;
+}
 
 def_string $pocket = db_getfield($data, pickpocket:pocket, 0);
 def_int $current_level = stat(thieving);

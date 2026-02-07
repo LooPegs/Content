@@ -41,7 +41,7 @@ param=productexp,200
 [sapphire_necklace]
 param=product,sapphire_necklace
 param=gem,sapphire
-param=levelrequired,20
+param=levelrequired,22
 param=productexp,550
 
 [emerald_necklace]
@@ -144,6 +144,21 @@ param=levelrequired,18
 param=productexp,500
 param=name,Silver sickle
 
+[onyx_ring]
+param=product,onyx_ring
+param=gem,onyx
+param=levelrequired,67
+param=productexp,1150
 
+[onyx_necklace]
+param=product,onyx_necklace
+param=gem,onyx
+param=levelrequired,82
+param=productexp,1200
 
-
+[unstrung_onyx_amulet]
+param=product,unstrung_onyx_amulet
+param=strung,strung_onyx_amulet
+param=gem,onyx
+param=levelrequired,90
+param=productexp,1650

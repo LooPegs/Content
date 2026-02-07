@@ -18,3 +18,15 @@ param=product,bowl_empty
 param=levelrequire,8
 param=processexp,180
 param=productexp,150
+
+[plantpot_unfired]
+param=product,plantpot_empty
+param=levelrequire,19
+param=processexp,200
+param=productexp,175
+
+[potlid_unfired]
+param=product,potlid
+param=levelrequire,25
+param=processexp,200
+param=productexp,200
