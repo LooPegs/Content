@@ -1,18 +1,18 @@
-// [bonfire]
-// name=Bonfire
-// desc=hmm.
-// readyanim=pyrefiend_ready
-// model1=obj_slayerguide_pyrfiend
-// recol1s=31011
-// recol1d=32767
-// ambient=60
-// contrast=60
-// vislevel=hide
-// minimap=no
-// defaultmode=none
-// moverestrict=nomove
-// category=bonfire
-// timer=10
+[bonfire]
+name=Bonfire
+desc=hmm.
+readyanim=pyrefiend_ready
+model1=obj_slayerguide_pyrfiend
+recol1s=31011
+recol1d=32767
+ambient=60
+contrast=60
+vislevel=hide
+minimap=no
+defaultmode=none
+moverestrict=nomove
+category=bonfire
+timer=10
 
 [bonfire0]
 name=Bonfire

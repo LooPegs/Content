@@ -3551,7 +3551,6 @@ width=2
 length=4
 
 // todo: name used from 244
-<<<<<<< HEAD
 // [plainrock1]
 // name=Rocks
 // desc=Stoney!
@@ -3594,58 +3593,6 @@ length=4
 // op3=hidden
 // mapscene=12
 // blockrange=no
-=======
-[plainrock1]
-name=Rocks
-desc=Stoney!
-model=rock1
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
-category=mining_rock_normal
-param=mining_rock_empty,1
-
-// todo: name used from 244
-[plainrock1_alt]
-name=Rocks
-desc=Stoney!
-model=rock2
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
-category=mining_rock_normal
-param=mining_rock_empty,1
-
-// todo: name used from 244
-[plainrock2]
-name=Rocks
-desc=Stoney!
-model=rock2
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
-category=mining_rock_normal
-param=mining_rock_empty,1
-
-// todo: name used from 244
-[plainrock3]
-name=Rocks
-desc=Stoney!
-model=rock3
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
-category=mining_rock_normal
-param=mining_rock_empty,1
->>>>>>> upstream/377-wip
 
 [loc_454]
 name=Cave rocks
@@ -14572,359 +14519,359 @@ model=rockery
 // mapscene=12
 // blockrange=no
 // todo: name used from 244
-[copperrock1]
-name=Rocks
-desc=A rocky outcrop.
-model=rock1
-recol1s=6342
-recol1d=14596
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
-category=mining_rock_normal
-param=next_loc_stage_mining,plainrock1
-param=macro_gas,macro_copperrock1
+// [copperrock1]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock1
+// recol1s=6342
+// recol1d=14596
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
+// category=mining_rock_normal
+// param=next_loc_stage_mining,plainrock1
+// param=macro_gas,macro_copperrock1
 
-// todo: name used from 244
-[copperrock2]
-name=Rocks
-desc=A rocky outcrop.
-model=rock2
-recol1s=6342
-recol1d=14596
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
-category=mining_rock_normal
-param=next_loc_stage_mining,plainrock2
-param=macro_gas,macro_copperrock2
+// // todo: name used from 244
+// [copperrock2]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock2
+// recol1s=6342
+// recol1d=14596
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
+// category=mining_rock_normal
+// param=next_loc_stage_mining,plainrock2
+// param=macro_gas,macro_copperrock2
 
-// todo: name used from 244
-[ironrock1]
-name=Rocks
-desc=A rocky outcrop.
-model=rock1
-recol1s=6342
-recol1d=6242
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
-category=mining_rock_fast
-param=next_loc_stage_mining,plainrock1
-param=macro_gas,macro_ironrock1
+// // todo: name used from 244
+// [ironrock1]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock1
+// recol1s=6342
+// recol1d=6242
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
+// category=mining_rock_fast
+// param=next_loc_stage_mining,plainrock1
+// param=macro_gas,macro_ironrock1
 
-// todo: name used from 244
-[ironrock2]
-name=Rocks
-desc=A rocky outcrop.
-model=rock2
-recol1s=6342
-recol1d=6242
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
-category=mining_rock_fast
-param=next_loc_stage_mining,plainrock2
-param=macro_gas,macro_ironrock2
+// // todo: name used from 244
+// [ironrock2]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock2
+// recol1s=6342
+// recol1d=6242
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
+// category=mining_rock_fast
+// param=next_loc_stage_mining,plainrock2
+// param=macro_gas,macro_ironrock2
 
-// todo: name used from 244
-[tinrock1]
-name=Rocks
-desc=A rocky outcrop.
-model=rock1
-recol1s=6342
-recol1d=13741
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
-category=mining_rock_normal
-param=next_loc_stage_mining,plainrock1
-param=macro_gas,macro_tinrock1
+// // todo: name used from 244
+// [tinrock1]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock1
+// recol1s=6342
+// recol1d=13741
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
+// category=mining_rock_normal
+// param=next_loc_stage_mining,plainrock1
+// param=macro_gas,macro_tinrock1
 
-// todo: name used from 244
-[tinrock2]
-name=Rocks
-desc=A rocky outcrop.
-model=rock2
-recol1s=6342
-recol1d=13741
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
-category=mining_rock_normal
-param=next_loc_stage_mining,plainrock2
-param=macro_gas,macro_tinrock2
+// // todo: name used from 244
+// [tinrock2]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock2
+// recol1s=6342
+// recol1d=13741
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
+// category=mining_rock_normal
+// param=next_loc_stage_mining,plainrock2
+// param=macro_gas,macro_tinrock2
 
-// todo: name used from 244
-[coalrock1]
-name=Rocks
-desc=A rocky outcrop.
-model=rock1
-recol1s=6342
-recol1d=4226
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
-category=mining_rock_normal
-param=next_loc_stage_mining,plainrock1
-param=macro_gas,macro_coalrock1
+// // todo: name used from 244
+// [coalrock1]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock1
+// recol1s=6342
+// recol1d=4226
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
+// category=mining_rock_normal
+// param=next_loc_stage_mining,plainrock1
+// param=macro_gas,macro_coalrock1
 
-// todo: name used from 244
-[coalrock2]
-name=Rocks
-desc=A rocky outcrop.
-model=rock2
-recol1s=6342
-recol1d=4226
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
-category=mining_rock_normal
-param=next_loc_stage_mining,plainrock2
-param=macro_gas,macro_coalrock2
+// // todo: name used from 244
+// [coalrock2]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock2
+// recol1s=6342
+// recol1d=4226
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
+// category=mining_rock_normal
+// param=next_loc_stage_mining,plainrock2
+// param=macro_gas,macro_coalrock2
 
-// todo: name used from 244
-[goldrock1]
-name=Rocks
-desc=A rocky outcrop.
-model=rock1
-recol1s=6342
-recol1d=23108
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
-category=mining_rock_normal
-param=next_loc_stage_mining,plainrock1
-param=macro_gas,macro_goldrock1
+// // todo: name used from 244
+// [goldrock1]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock1
+// recol1s=6342
+// recol1d=23108
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
+// category=mining_rock_normal
+// param=next_loc_stage_mining,plainrock1
+// param=macro_gas,macro_goldrock1
 
-// todo: name used from 244
-[goldrock2]
-name=Rocks
-desc=A rocky outcrop.
-model=rock2
-recol1s=6342
-recol1d=23108
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
-category=mining_rock_normal
-param=next_loc_stage_mining,plainrock2
-param=macro_gas,macro_goldrock2
+// // todo: name used from 244
+// [goldrock2]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock2
+// recol1s=6342
+// recol1d=23108
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
+// category=mining_rock_normal
+// param=next_loc_stage_mining,plainrock2
+// param=macro_gas,macro_goldrock2
 
-// todo: name used from 244
-[silverrock1]
-name=Rocks
-desc=A rocky outcrop.
-model=rock1
-recol1s=6342
-recol1d=19026
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
-category=mining_rock_normal
-param=next_loc_stage_mining,plainrock1
-param=macro_gas,macro_silverrock1
+// // todo: name used from 244
+// [silverrock1]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock1
+// recol1s=6342
+// recol1d=19026
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
+// category=mining_rock_normal
+// param=next_loc_stage_mining,plainrock1
+// param=macro_gas,macro_silverrock1
 
-// todo: name used from 244
-[silverrock2]
-name=Rocks
-desc=A rocky outcrop.
-model=rock2
-recol1s=6342
-recol1d=19026
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
-category=mining_rock_normal
-param=next_loc_stage_mining,plainrock2
-param=macro_gas,macro_silverrock2
+// // todo: name used from 244
+// [silverrock2]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock2
+// recol1s=6342
+// recol1d=19026
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
+// category=mining_rock_normal
+// param=next_loc_stage_mining,plainrock2
+// param=macro_gas,macro_silverrock2
 
-// todo: name used from 244
-[mithrilrock1]
-name=Rocks
-desc=A rocky outcrop.
-model=rock1
-recol1s=6342
-recol1d=6346
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
-category=mining_rock_normal
-param=next_loc_stage_mining,plainrock1
-param=macro_gas,macro_mithrilrock1
+// // todo: name used from 244
+// [mithrilrock1]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock1
+// recol1s=6342
+// recol1d=6346
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
+// category=mining_rock_normal
+// param=next_loc_stage_mining,plainrock1
+// param=macro_gas,macro_mithrilrock1
 
-// todo: name used from 244
-[mithrilrock2]
-name=Rocks
-desc=A rocky outcrop.
-model=rock2
-recol1s=6342
-recol1d=6346
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
-category=mining_rock_normal
-param=next_loc_stage_mining,plainrock2
-param=macro_gas,macro_mithrilrock2
+// // todo: name used from 244
+// [mithrilrock2]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock2
+// recol1s=6342
+// recol1d=6346
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
+// category=mining_rock_normal
+// param=next_loc_stage_mining,plainrock2
+// param=macro_gas,macro_mithrilrock2
 
-// todo: name used from 244
-[adamantiterock1]
-name=Rocks
-desc=A rocky outcrop.
-model=rock1
-recol1s=6342
-recol1d=6438
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
-category=mining_rock_normal
-param=next_loc_stage_mining,plainrock1
-param=macro_gas,macro_adamantiterock1
+// // todo: name used from 244
+// [adamantiterock1]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock1
+// recol1s=6342
+// recol1d=6438
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
+// category=mining_rock_normal
+// param=next_loc_stage_mining,plainrock1
+// param=macro_gas,macro_adamantiterock1
 
-// todo: name used from 244
-[adamantiterock2]
-name=Rocks
-desc=A rocky outcrop.
-model=rock2
-recol1s=6342
-recol1d=6438
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
-category=mining_rock_normal
-param=next_loc_stage_mining,plainrock2
-param=macro_gas,macro_adamantiterock2
+// // todo: name used from 244
+// [adamantiterock2]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock2
+// recol1s=6342
+// recol1d=6438
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
+// category=mining_rock_normal
+// param=next_loc_stage_mining,plainrock2
+// param=macro_gas,macro_adamantiterock2
 
-// todo: name used from 244
-[runiterock1]
-name=Rocks
-desc=A rocky outcrop.
-model=rock1
-recol1s=6342
-recol1d=8721
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
-category=mining_rock_normal
-param=next_loc_stage_mining,plainrock1
-param=macro_gas,macro_runiterock1
+// // todo: name used from 244
+// [runiterock1]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock1
+// recol1s=6342
+// recol1d=8721
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
+// category=mining_rock_normal
+// param=next_loc_stage_mining,plainrock1
+// param=macro_gas,macro_runiterock1
 
-// todo: name used from 244
-[runiterock2]
-name=Rocks
-desc=A rocky outcrop.
-model=rock2
-recol1s=6342
-recol1d=8721
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
-category=mining_rock_normal
-param=next_loc_stage_mining,plainrock2
-param=macro_gas,macro_runiterock2
+// // todo: name used from 244
+// [runiterock2]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock2
+// recol1s=6342
+// recol1d=8721
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
+// category=mining_rock_normal
+// param=next_loc_stage_mining,plainrock2
+// param=macro_gas,macro_runiterock2
 
-// todo: name used from 244
-[clayrock1]
-name=Rocks
-desc=A rocky outcrop.
-model=rock1
-recol1s=6342
-recol1d=18854
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
-category=mining_rock_normal
-param=next_loc_stage_mining,plainrock1
-param=macro_gas,macro_clayrock1
+// // todo: name used from 244
+// [clayrock1]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock1
+// recol1s=6342
+// recol1d=18854
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
+// category=mining_rock_normal
+// param=next_loc_stage_mining,plainrock1
+// param=macro_gas,macro_clayrock1
 
-// todo: name used from 244
-[clayrock2]
-name=Rocks
-desc=A rocky outcrop.
-model=rock2
-recol1s=6342
-recol1d=18854
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
-category=mining_rock_normal
-param=next_loc_stage_mining,plainrock2
-param=macro_gas,macro_clayrock2
+// // todo: name used from 244
+// [clayrock2]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock2
+// recol1s=6342
+// recol1d=18854
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
+// category=mining_rock_normal
+// param=next_loc_stage_mining,plainrock2
+// param=macro_gas,macro_clayrock2
 
-// todo: name used from 244
-[bluriterock]
-name=Rocks
-desc=A rocky outcrop.
-model=loc_2110
-recol1s=9513
-recol1d=24511
-recol2s=6342
-recol2d=382
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=25
-blockrange=no
-ambient=10
-ambient=20
-category=mining_rock_normal
-param=next_loc_stage_mining,plainrock2
-param=macro_gas,macro_bluriterock
+// // todo: name used from 244
+// [bluriterock]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=loc_2110
+// recol1s=9513
+// recol1d=24511
+// recol2s=6342
+// recol2d=382
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=25
+// blockrange=no
+// ambient=10
+// ambient=20
+// category=mining_rock_normal
+// param=next_loc_stage_mining,plainrock2
+// param=macro_gas,macro_bluriterock
 
-// todo: name used from 244
-[gemrock]
-name=Rocks
-desc=A rocky outcrop.
-model=rock2
-recol1s=6342
-recol1d=15407
-op1=Mine
-op2=Prospect
-op3=hidden
-mapscene=12
-blockrange=no
-param=next_loc_stage_mining,plainrock2
-param=macro_gas,macro_gemrock
+// // todo: name used from 244
+// [gemrock]
+// name=Rocks
+// desc=A rocky outcrop.
+// model=rock2
+// recol1s=6342
+// recol1d=15407
+// op1=Mine
+// op2=Prospect
+// op3=hidden
+// mapscene=12
+// blockrange=no
+// param=next_loc_stage_mining,plainrock2
+// param=macro_gas,macro_gemrock
 
 [loc_2112]
 name=Door

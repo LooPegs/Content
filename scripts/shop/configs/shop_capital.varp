@@ -3,3 +3,8 @@
 [generalshop1_capital]
 type=int
 scope=perm
+
+//unused?:
+[shop_gp]
+[shop_cap]
+[fractional_shop]

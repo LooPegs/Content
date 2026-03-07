@@ -214,30 +214,30 @@ vislevel=2
 head1=idk_woman_hair_medium_head
 head2=npc_woman2_head
 
-// [farmer1]
-// name=Farmer
-// desc=He grows the crops in this area.
-// model1=idk_man_hair_medium
-// model2=idk_man_jaw_none
-// model3=obj_priest_gown_manwear
-// model4=obj_doctor_gown_manwear2
-// model5=obj_cert_drill_top_manwear3
-// model6=idk_man_legs_turn_ups
-// model7=obj_ikov_bootsoflightness_manwear
-// model8=npc_farmer1
-// model9=npc_farmer1i2
-// recol1s=2340
-// recol1d=24171
-// recol2s=14724
-// recol2d=8353
-// recol3s=14801
-// recol3d=24075
-// walkanim=human_walk_f,human_walk_b,human_walk_l,human_walk_r
-// readyanim=human_ready
-// op3=Pickpocket
-// op2=Attack
-// vislevel=7
-// head1=obj_pickpocket_guide_farmer
+[starter_farmer]
+name=Farmer
+desc=He grows the crops in this area.
+model1=idk_man_hair_medium
+model2=idk_man_jaw_none
+model3=obj_priest_gown_manwear
+model4=obj_doctor_gown_manwear2
+model5=obj_cert_drill_top_manwear3
+model6=idk_man_legs_turn_ups
+model7=obj_ikov_bootsoflightness_manwear
+model8=npc_farmer1
+model9=npc_farmer1i2
+recol1s=2340
+recol1d=24171
+recol2s=14724
+recol2d=8353
+recol3s=14801
+recol3d=24075
+walkanim=human_walk_f,human_walk_b,human_walk_l,human_walk_r
+readyanim=human_ready
+op3=Pickpocket
+op2=Attack
+vislevel=7
+head1=obj_pickpocket_guide_farmer
 
 [thief1]
 name=Thief
@@ -1703,15 +1703,15 @@ readyanim=human_ready
 op2=Attack
 vislevel=16
 
-// [wolf]
-// name=Wolf
-// desc=Not man's best friend.
-// model1=npc_wolf
-// size=2
-// walkanim=dog_walk
-// readyanim=dog_ready
-// op2=Attack
-// vislevel=64
+[wolf]
+name=Wolf
+desc=Not man's best friend.
+model1=npc_wolf
+size=2
+walkanim=dog_walk
+readyanim=dog_ready
+op2=Attack
+vislevel=64
 
 [whitewolf_sentry]
 name=White wolf
@@ -2104,21 +2104,53 @@ readyanim=giant_ready
 op2=Attack
 vislevel=28
 
-// [dwarf_normal]
-// name=Dwarf
-// desc=A short angry guy.
-// model1=npc_dwarf_normal
-// model2=npc_dwarf_normali2
-// model3=npc_dwarf_normali3
-// model4=npc_dwarf_normali4
-// model5=npc_dwarf_normali5
-// model6=npc_dwarf_normali6
-// recol1s=15426
-// recol1d=8354
-// walkanim=dwarf_walk
-// readyanim=dwarf_ready
-// op2=Attack
-// vislevel=10
+[dwarf_normal]
+name=Dwarf
+desc=A short angry guy.
+model1=npc_dwarf_normal
+model2=npc_dwarf_normali2
+model3=npc_dwarf_normali3
+model4=npc_dwarf_normali4
+model5=npc_dwarf_normali5
+model6=npc_dwarf_normali6
+recol1s=15426
+recol1d=8354
+walkanim=dwarf_walk
+readyanim=dwarf_ready
+op2=Attack
+vislevel=10
+
+[dwarf_operator]
+name=Dwarf
+desc=A short angry guy.
+model1=npc_dwarf_normal
+model2=npc_dwarf_normali2
+model3=npc_dwarf_normali3
+model4=npc_dwarf_normali4
+model5=npc_dwarf_normali5
+model6=npc_dwarf_normali6
+recol1s=15426
+recol1d=8354
+walkanim=dwarf_walk
+readyanim=dwarf_ready
+op2=Attack
+vislevel=10
+
+[dwarf_starter]
+name=Dwarf
+desc=A short angry guy.
+model1=npc_dwarf_normal
+model2=npc_dwarf_normali2
+model3=npc_dwarf_normali3
+model4=npc_dwarf_normali4
+model5=npc_dwarf_normali5
+model6=npc_dwarf_normali6
+recol1s=15426
+recol1d=8354
+walkanim=dwarf_walk
+readyanim=dwarf_ready
+op2=Attack
+vislevel=10
 
 [dwarf_chaos]
 name=Chaos dwarf

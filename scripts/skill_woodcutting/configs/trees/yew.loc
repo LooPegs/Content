@@ -2,8 +2,8 @@
 name=Yew
 desc=A splendid tree.
 model=loc_8509
-width=3
-length=3
+width=2
+length=2
 op1=Chop down
 op3=hidden
 mapscene=3

@@ -4568,217 +4568,217 @@ iop1=Read
 cost=1
 weight=20g
 
-[clay]
-name=Clay
-desc=Some hard dry clay.
-recol1s=21140
-recol1d=22025
-model=obj_unicorn_horn_dust
-2dxof=-6
-2dzoom=1210
-2dyan=1892
-2dxan=264
-weight=1kg
-category=category_91
+// [clay]
+// name=Clay
+// desc=Some hard dry clay.
+// recol1s=21140
+// recol1d=22025
+// model=obj_unicorn_horn_dust
+// 2dxof=-6
+// 2dzoom=1210
+// 2dyan=1892
+// 2dxan=264
+// weight=1kg
+// category=category_91
 
 [cert_clay]
 certlink=clay
 certtemplate=template_for_cert
 
-[copper_ore]
-name=Copper ore
-desc=This needs refining.
-recol1s=11488
-recol1d=29095
-cost=3
-model=obj_copper_ore
-2dxof=1
-2dyof=15
-2dzoom=1400
-2dyan=1576
-2dxan=368
-weight=5lb
-category=category_91
+// [copper_ore]
+// name=Copper ore
+// desc=This needs refining.
+// recol1s=11488
+// recol1d=29095
+// cost=3
+// model=obj_copper_ore
+// 2dxof=1
+// 2dyof=15
+// 2dzoom=1400
+// 2dyan=1576
+// 2dxan=368
+// weight=5lb
+// category=category_91
 
-[cert_copper_ore]
-certlink=copper_ore
-certtemplate=template_for_cert
+// [cert_copper_ore]
+// certlink=copper_ore
+// certtemplate=template_for_cert
 
-[tin_ore]
-name=Tin ore
-desc=This needs refining.
-recol1s=11488
-recol1d=14798
-cost=3
-model=obj_copper_ore
-2dxof=1
-2dyof=15
-2dzoom=1400
-2dyan=1576
-2dxan=368
-weight=5lb
-category=category_91
+// [tin_ore]
+// name=Tin ore
+// desc=This needs refining.
+// recol1s=11488
+// recol1d=14798
+// cost=3
+// model=obj_copper_ore
+// 2dxof=1
+// 2dyof=15
+// 2dzoom=1400
+// 2dyan=1576
+// 2dxan=368
+// weight=5lb
+// category=category_91
 
-[cert_tin_ore]
-certlink=tin_ore
-certtemplate=template_for_cert
+// [cert_tin_ore]
+// certlink=tin_ore
+// certtemplate=template_for_cert
 
-[iron_ore]
-name=Iron ore
-desc=This needs refining.
-recol1s=11488
-recol1d=6242
-recol2s=11627
-recol2d=6242
-cost=17
-model=obj_copper_ore
-2dxof=1
-2dyof=15
-2dzoom=1400
-2dyan=1576
-2dxan=368
-weight=5lb
-category=category_91
+// [iron_ore]
+// name=Iron ore
+// desc=This needs refining.
+// recol1s=11488
+// recol1d=6242
+// recol2s=11627
+// recol2d=6242
+// cost=17
+// model=obj_copper_ore
+// 2dxof=1
+// 2dyof=15
+// 2dzoom=1400
+// 2dyan=1576
+// 2dxan=368
+// weight=5lb
+// category=category_91
 
-[cert_iron_ore]
-certlink=iron_ore
-certtemplate=template_for_cert
+// [cert_iron_ore]
+// certlink=iron_ore
+// certtemplate=template_for_cert
 
-[silver_ore]
-name=Silver ore
-desc=This needs refining.
-recol1s=11488
-recol1d=22198
-recol2s=11627
-recol2d=22198
-cost=75
-model=obj_copper_ore
-2dxof=1
-2dyof=15
-2dzoom=1400
-2dyan=1576
-2dxan=368
-weight=5lb
-category=category_91
+// [silver_ore]
+// name=Silver ore
+// desc=This needs refining.
+// recol1s=11488
+// recol1d=22198
+// recol2s=11627
+// recol2d=22198
+// cost=75
+// model=obj_copper_ore
+// 2dxof=1
+// 2dyof=15
+// 2dzoom=1400
+// 2dyan=1576
+// 2dxan=368
+// weight=5lb
+// category=category_91
 
-[cert_silver_ore]
-certlink=silver_ore
-certtemplate=template_for_cert
+// [cert_silver_ore]
+// certlink=silver_ore
+// certtemplate=template_for_cert
 
-[gold_ore]
-name=Gold ore
-desc=This needs refining.
-recol1s=11488
-recol1d=31393
-recol2s=11627
-recol2d=31393
-cost=150
-model=obj_copper_ore
-2dxof=1
-2dyof=15
-2dzoom=1400
-2dyan=1576
-2dxan=368
-weight=5lb
-category=category_91
+// [gold_ore]
+// name=Gold ore
+// desc=This needs refining.
+// recol1s=11488
+// recol1d=31393
+// recol2s=11627
+// recol2d=31393
+// cost=150
+// model=obj_copper_ore
+// 2dxof=1
+// 2dyof=15
+// 2dzoom=1400
+// 2dyan=1576
+// 2dxan=368
+// weight=5lb
+// category=category_91
 
-[cert_gold_ore]
-certlink=gold_ore
-certtemplate=template_for_cert
+// [cert_gold_ore]
+// certlink=gold_ore
+// certtemplate=template_for_cert
 
-[perfect_gold_ore]
-name='perfect' gold ore
-desc=This needs refining.
-recol1s=11488
-recol1d=31393
-recol2s=11627
-recol2d=31393
-cost=150
-model=obj_copper_ore
-2dxof=1
-2dyof=15
-2dzoom=1400
-2dyan=1576
-2dxan=368
-members=yes
-weight=5lb
-category=category_91
+// [perfect_gold_ore]
+// name='perfect' gold ore
+// desc=This needs refining.
+// recol1s=11488
+// recol1d=31393
+// recol2s=11627
+// recol2d=31393
+// cost=150
+// model=obj_copper_ore
+// 2dxof=1
+// 2dyof=15
+// 2dzoom=1400
+// 2dyan=1576
+// 2dxan=368
+// members=yes
+// weight=5lb
+// category=category_91
 
-[mithril_ore]
-name=Mithril ore
-desc=This needs refining.
-recol1s=11488
-recol1d=6346
-cost=162
-model=obj_copper_ore
-2dxof=1
-2dyof=15
-2dzoom=1400
-2dyan=1576
-2dxan=368
-weight=4lb
-category=category_91
+// [mithril_ore]
+// name=Mithril ore
+// desc=This needs refining.
+// recol1s=11488
+// recol1d=6346
+// cost=162
+// model=obj_copper_ore
+// 2dxof=1
+// 2dyof=15
+// 2dzoom=1400
+// 2dyan=1576
+// 2dxan=368
+// weight=4lb
+// category=category_91
 
-[cert_mithril_ore]
-certlink=mithril_ore
-certtemplate=template_for_cert
+// [cert_mithril_ore]
+// certlink=mithril_ore
+// certtemplate=template_for_cert
 
-[adamantite_ore]
-name=Adamantite ore
-desc=This needs refining.
-recol1s=11488
-recol1d=6438
-cost=400
-model=obj_copper_ore
-2dxof=1
-2dyof=15
-2dzoom=1400
-2dyan=1576
-2dxan=368
-weight=6lb
-category=category_91
+// [adamantite_ore]
+// name=Adamantite ore
+// desc=This needs refining.
+// recol1s=11488
+// recol1d=6438
+// cost=400
+// model=obj_copper_ore
+// 2dxof=1
+// 2dyof=15
+// 2dzoom=1400
+// 2dyan=1576
+// 2dxan=368
+// weight=6lb
+// category=category_91
 
-[cert_adamantite_ore]
-certlink=adamantite_ore
-certtemplate=template_for_cert
+// [cert_adamantite_ore]
+// certlink=adamantite_ore
+// certtemplate=template_for_cert
 
-[runite_ore]
-name=Runite ore
-desc=This needs refining.
-recol1s=11488
-recol1d=6476
-cost=3200
-model=obj_copper_ore
-2dxof=1
-2dyof=15
-2dzoom=1400
-2dyan=1576
-2dxan=368
-weight=5lb
-category=category_91
+// [runite_ore]
+// name=Runite ore
+// desc=This needs refining.
+// recol1s=11488
+// recol1d=6476
+// cost=3200
+// model=obj_copper_ore
+// 2dxof=1
+// 2dyof=15
+// 2dzoom=1400
+// 2dyan=1576
+// 2dxan=368
+// weight=5lb
+// category=category_91
 
-[cert_runite_ore]
-certlink=runite_ore
-certtemplate=template_for_cert
+// [cert_runite_ore]
+// certlink=runite_ore
+// certtemplate=template_for_cert
 
-[coal]
-name=Coal
-desc=Hmm a non-renewable energy source!
-recol1s=11488
-recol1d=4226
-cost=45
-model=obj_copper_ore
-2dxof=1
-2dyof=15
-2dzoom=1400
-2dyan=1576
-2dxan=368
-weight=5lb
-category=category_91
+// [coal]
+// name=Coal
+// desc=Hmm a non-renewable energy source!
+// recol1s=11488
+// recol1d=4226
+// cost=45
+// model=obj_copper_ore
+// 2dxof=1
+// 2dyof=15
+// 2dzoom=1400
+// 2dyan=1576
+// 2dxan=368
+// weight=5lb
+// category=category_91
 
-[cert_coal]
-certlink=coal
-certtemplate=template_for_cert
+// [cert_coal]
+// certlink=coal
+// certtemplate=template_for_cert
 
 [barcrawl_card]
 name=Barcrawl card
@@ -16641,23 +16641,23 @@ weight=4lb
 certlink=dragon_mace
 certtemplate=template_for_cert
 
-[blankrune]
-name=Rune essence
-desc=An uncharged Rune Stone.
-recol1s=15855
-recol1d=11627
-cost=4
-model=obj_blankrune
-2dyof=1
-2dzoom=740
-2dyan=1012
-2dxan=528
-weight=2g
-category=category_91
+// [blankrune]
+// name=Rune essence
+// desc=An uncharged Rune Stone.
+// recol1s=15855
+// recol1d=11627
+// cost=4
+// model=obj_blankrune
+// 2dyof=1
+// 2dzoom=740
+// 2dyan=1012
+// 2dxan=528
+// weight=2g
+// category=category_91
 
-[cert_blankrune]
-certlink=blankrune
-certtemplate=template_for_cert
+// [cert_blankrune]
+// certlink=blankrune
+// certtemplate=template_for_cert
 
 [archery_ticket]
 name=Archery ticket

@@ -1,5 +1,6 @@
 [gem_rock_table]
-table=drop_table
+table=mining_table
+data=rock,gemrock
 data=total,128
 data=drop,uncut_opal,1,60
 data=drop,uncut_jade,1,30

@@ -34,3 +34,6 @@ type=npc_uid
 
 [npc_start_coord]
 type=coord
+
+//is this used?
+[shop_capital]
